@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "SP-Regist_Bank" })
+
+  <body class="ecoSp">
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-with-background.html")
+    <section class="ecoUser">
+      <div class="ecoUser__wrap">
+        <h5 class="ecoUser__title ecoUser__title--small">銀行口座</h5>
+        <p class="ecoUser__text">キャッシュバック振込先の銀行口座を登録してください。</p>
+        <div class="formWrap formWrap--banks">
+          <div class="formContent">
+            <p class="formLabel">銀行・支店</p>
+            <div class="formCol">
+              <p class="formCol__content">
+                <button class="formCol__button">銀行． 支”店選択</button>
+              </p>
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formContent">
+            <p class="formLabel">預金種類</p>
+            <div class="formCol">
+              <div class="formCol__content">
+                <p class="formSelect formSelect--error">
+                  <select name="prefetureName" id="prefetureName"  class="formSelect__box">
+                    <option value="" selected="selected">(選択してください)</option>
+                    <option value="01">北海道</option>
+                    <option value="02">青森県</option>
+                  </select>
+                </p>
+                <span class="formError">入力されていません</span>
+              </div>
+            </div>
+          </div>
+          <div class="formContent">
+            <p class="formLabel">口座番号</p>
+            <div class="formCol">
+              <p class="formCol__content">
+                <input class="formInput" type="text" placeholder="杉並区上荻">
+                <span class="formError formError--hide">入力されていません</span>
+              </p>
+            </div>
+          </div>
+          <div class="formContent">
+            <p class="formLabel">口座番号</p>
+            <div class="formCol">
+              <p class="formCol__content">
+                <input class="formInput" type="text" placeholder="杉並区上荻">
+                <span class="formError formError--hide">入力されていません</span>
+              </p>
+            </div>
+          </div>
+          <p class="formButton">
+            <input type="submit" class="Button Button--cyan" value="振込口座登録">
+          </p>
+        </div>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqItem is-active">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収・買い取り</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">産廃の収集運搬</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">不用品処分情報サイト　リユシル</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">お知らせ</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">メディア紹介</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">イベントレポート</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコオクファンドレポート</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">運営企業</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">プライバシーポリシー</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">個人情報の取り扱いについて</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランド会員規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収利用規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランドオークション利用規約</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

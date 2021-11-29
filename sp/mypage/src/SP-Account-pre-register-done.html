@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "SP-Account-pre-register-done" })
+
+  <body class="ecoSp">
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header.html")
+    <section class="ecoUser">
+      <div class="ecoUser__wrap">
+        <h4 class="ecoUser__title">仮登録が完了しました</h4>
+        <p class="ecoUser__text">仮登録が完了しました。ご登録いただいたメールアドレス宛に「仮登録完了メール」を送信しました。<br>メールの内容に従い、「本登録」を続けて行ってください。<br>仮登録から1日経過すると登録情報が無効となります。無効になった場合、再度「仮登録」のお手続きが必<br>要になります。</p>
+        <p class="ecoUser__button">
+          <a href="#" class="Button Button--cyan Button--large">ホリオクトップページへ</a>
+        </p>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

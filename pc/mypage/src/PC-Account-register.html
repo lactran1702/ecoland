@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Account-register" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-register.html", { "slogan": "不用品回収の前にホリオク　～あなたの「いらない」が、誰かの「ほしい」に～" })
+    <section class="ecoUser">
+      <div class="ecoUser__wrap">
+        <h5 class="ecoUser__title ecoUser__title--small">エコランド会員情報の登録をお願い致します。</h5>
+        <p class="ecoUser__text">エコランド会員ページのリニューアルにより、<br>新規登録の方、すでに会員の方も、サービスをご利用するにあたって、会員情報を新しく入力していただく必要がございます。<br>大変お手数ではございますが、下記情報のご登録をお願い致します。</p>
+        <div class="formWrap">
+          <div class="formRow">
+            <div class="formContent">
+              <p class="formLabel">お名前<span class="formLabel__require"> [必須]</span></p>
+              <div class="formCol">
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="山田">
+                  <span class="formError formError--hide">入力されていません</span>
+                </p>
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="恵子">
+                  <span class="formError formError--hide">入力されていません</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <p class="formLabel">お名前（フリガナ）<span class="formLabel__require"> [必須]</span></p>
+              <div class="formCol">
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="ヤマダ">
+                  <span class="formError formError--hide">入力されていません</span>
+                </p>
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="エコ">
+                  <span class="formError formError--hide">入力されていません</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <p class="formLabel">電話番号<span class="formLabel__require"> [必須]</span></p>
+              <div class="formCol formCol--small">
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="">
+                </p>
+                <span class="formCol__dash">-</span>
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="">
+                </p>
+                <span class="formCol__dash">-</span>
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="">
+                </p>
+              </div>
+              <p class="formError formError--hide">入力されていません</p>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <p class="formLabel">郵便番号<span class="formLabel__require"> [必須]</span></p>
+              <div class="formCol formCol--small">
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="">
+                </p>
+                <span class="formCol__dash">-</span>
+                <p class="formCol__content">
+                  <input class="formInput" type="text" placeholder="">
+                </p>
+                <p class="formCol__content">
+                  <button class="formCol__button">検索</button>
+                </p>
+              </div>
+              <p class="formError formError--hide">入力されていません</p>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <div class="formContent__wrap">
+                <div class="formContent__item">
+                  <p class="formLabel">都道府県<span class="formLabel__require"> [必須]</span></p>
+                  <div class="formCol">
+                    <div class="formCol__content">
+                      <p class="formSelect formSelect--error">
+                        <select name="prefetureName" id="prefetureName"  class="formSelect__box">
+                          <option value="" selected="selected">(選択してください)</option>
+                          <option value="01">北海道</option>
+                          <option value="02">青森県</option>
+                          <option value="03">岩手県</option>
+                          <option value="04">宮城県</option>
+                          <option value="05">秋田県</option>
+                          <option value="06">山形県</option>
+                          <option value="07">福島県</option>
+                          <option value="08">茨城県</option>
+                          <option value="09">栃木県</option>
+                          <option value="10">群馬県</option>
+                          <option value="11">埼玉県</option>
+                          <option value="12">千葉県</option>
+                          <option value="13">東京都</option>
+                          <option value="14">神奈川県</option>
+                          <option value="15">新潟県</option>
+                          <option value="16">富山県</option>
+                          <option value="17">石川県</option>
+                          <option value="18">福井県</option>
+                          <option value="19">山梨県</option>
+                          <option value="20">長野県</option>
+                          <option value="21">岐阜県</option>
+                          <option value="22">静岡県</option>
+                          <option value="23">愛知県</option>
+                          <option value="24">三重県</option>
+                          <option value="25">滋賀県</option>
+                          <option value="26">京都府</option>
+                          <option value="27">大阪府</option>
+                          <option value="28">兵庫県</option>
+                          <option value="29">奈良県</option>
+                          <option value="30">和歌山県</option>
+                          <option value="31">鳥取県</option>
+                          <option value="32">島根県</option>
+                          <option value="33">岡山県</option>
+                          <option value="34">広島県</option>
+                          <option value="35">山口県</option>
+                          <option value="36">徳島県</option>
+                          <option value="37">香川県</option>
+                          <option value="38">愛媛県</option>
+                          <option value="39">高知県</option>
+                          <option value="40">福岡県</option>
+                          <option value="41">佐賀県</option>
+                          <option value="42">長崎県</option>
+                          <option value="43">熊本県</option>
+                          <option value="44">大分県</option>
+                          <option value="45">宮崎県</option>
+                          <option value="46">鹿児島県</option>
+                          <option value="47">沖縄県</option>
+                        </select>
+                      </p>
+                      <span class="formError">入力されていません</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="formContent__item">
+                  <p class="formLabel">市区町村<span class="formLabel__require"> [必須]</span></p>
+                  <div class="formCol">
+                    <p class="formCol__content">
+                      <input class="formInput" type="text" placeholder="杉並区上荻">
+                      <span class="formError formError--hide">入力されていません</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <div class="formContent__wrap">
+                <div class="formContent__item">
+                  <p class="formLabel">番地<span class="formLabel__require"> [必須]</span></p>
+                  <div class="formCol">
+                    <p class="formCol__content">
+                      <input class="formInput" type="text" placeholder="2-35-13">
+                      <span class="formError formError--hide">入力されていません</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="formContent__item">
+                  <p class="formLabel">建物名・部屋番号</p>
+                  <div class="formCol">
+                    <p class="formCol__content">
+                      <input class="formInput" type="text" placeholder="エコランドマンション101号室">
+                      <span class="formError formError--hide">入力されていません</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <p class="formLabel">性別<span class="formLabel__require"> [必須]</span></p>
+              <div class="formCol">
+                <div class="formCol__content">
+                  <div class="formRadio">
+                    <p class="formRadio__wrap">
+                      <input class="formRadio__check" type="radio" id="radio1" name="gender">
+                      <label for="radio1" class="formRadio__label">女性</label>
+                    </p>
+                    <p class="formRadio__wrap">
+                      <input class="formRadio__check" type="radio" id="radio2" name="gender">
+                      <label for="radio2" class="formRadio__label">男性</label>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <p class="formLabel">誕生日<span class="formLabel__require"> [必須]</span></p>
+              <div class="formCol formCol--small">
+                <div class="formCol__content">
+                  <p class="formSelect">
+                    <select name="birthYear" id="birthYear" class="formSelect__box" aria-required="true">
+                      <option value="" selected="selected">YYYY</option>
+                      <option value="01">1993</option>
+                      <option value="02">1994</option>
+                      <option value="03">1995</option>
+                    </select>
+                  </p>
+                </div>
+                <span class="formCol__dash">年</span>
+                <div class="formCol__content">
+                  <p class="formSelect">
+                    <select name="birthMonth" id="birthMonth" class="formSelect__box" aria-required="true">
+                      <option value="" selected="selected">MM</option>
+                      <option value="01">02</option>
+                      <option value="02">03</option>
+                      <option value="03">04</option>
+                    </select>
+                  </p>
+                </div>
+                <span class="formCol__dash">月</span>
+                <div class="formCol__content">
+                  <p class="formSelect">
+                    <select name="birthDay" id="birthDay" class="formSelect__box" aria-required="true">
+                      <option value="" selected="selected">DD</option>
+                      <option value="01">17</option>
+                      <option value="02">18</option>
+                      <option value="03">19</option>
+                    </select>
+                  </p>
+                </div>
+                <span class="formCol__dash">日</span>
+              </div>
+              <p class="formError formError--hide">入力されていません</p>
+            </div>
+          </div>
+          <p class="formButton">
+            <input type="submit" class="Button Button--pink" value="この内容で登録する">
+          </p>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

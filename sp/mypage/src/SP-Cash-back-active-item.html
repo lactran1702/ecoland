@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "SP-Cash-back" })
+
+  <body class="ecoSp">
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-with-background.html")
+    <section class="ecoTop">
+      <div class="ecoTop__cash">
+        <h2 class="ecoTop__cashTitle">エコ回収</h2>
+        <h2 class="ecoTop__cashTitle">寄付/キャッシュバック（CB）</h2>
+        <p class="ecoTop__cashText">リユース販売が成功した商品の販売額の10％を寄付にするかキャッシュバック（CB）にするか、お選びいただけます。<br>またキャッシュバックの申請をすることができます。</p>
+        <p class="ecoTop__cashText ecoTop__cashText--warning">※寄付/キャッシュバック（CB）の変更は変更手続き後にリユース販売が終了した商品から適用されます。<br>全ての商品のキャッシュバックをご希望の場合は、回収作業終了前までに「エコ回収一覧」内のエコ回収利用登録と、本ページの「現在の設定」をキャッシュバックに変更する必要があります。</p>
+        <div class="ecoTop__cashStatus">
+          <div class="ecoTop__cashStatusRow">
+            <p class="ecoTop__cashStatusSet">現在の設定</p>
+            <p class="ecoTop__cashStatusText">キャッシュバック</p>
+          </div>
+          <button class="ecoTop__cashStatusButton">寄付に変更</button>
+        </div>
+        <div class="ecoTop__cashAmount">
+          <div class="ecoTop__cashAmountLead">
+            <p class="ecoTop__cashAmountText">総額</p>
+            <p class="ecoTop__cashAmountTotal">0円</p>
+          </div>
+          <ul class="ecoTop__cashAmountTab">
+            <li class="ecoTop__cashAmountTabItem">
+              <a href="#" class="ecoTop__cashAmountTabText">キャッシュバ</a>
+            </li>
+            <li class="ecoTop__cashAmountTabItem">
+              <a href="#" class="ecoTop__cashAmountTabText is-active">寄付</a>
+            </li>
+          </ul>
+          <div class="ecoTop__cashAmountRow">
+            <div class="ecoTop__cashAmountItem is-hide">
+              <p class="ecoTop__cashAmountItemTitle">キャッシュバック貯金額</p>
+              <p class="ecoTop__cashAmountItemTotal">0円</p>
+              <p class="ecoTop__cashAmountItemText">・商品一点ごとのキャッシュバック金額はリユース販売額の10%となります。<br>・キャッシュバック貯金額から振込手数料相当分550円（税込）を差し引いた金額がキャッシュバック可能な金額になります。</p>
+              <button class="ecoTop__cashAmountButton">キャッシュバック申請</button>
+              <a href="#" class="ecoTop__cashAmountLink">現在リユース中の商品はこちら</a>
+              <p class="ecoTop__cashAmountItemTitle">今までのキャッシュバック済み額</p>
+              <p class="ecoTop__cashAmountItemTotal">0円</p>
+            </div>
+            <div class="ecoTop__cashAmountItem">
+              <p class="ecoTop__cashAmountItemTitle">キャッシュバック貯金額</p>
+              <p class="ecoTop__cashAmountItemTotal">0円</p>
+              <p class="ecoTop__cashAmountItemText">エコランドファンド（旧エコオクファンド）支援内容のご案内</p>
+              <a href="#" class="ecoTop__cashAmountItemLink"><img src="assets/img/banner_fundreport.png" alt="banner_fundreport"></a>
+              <a href="#" class="ecoTop__cashAmountItemLink"><img src="assets/img/banner_fundreport.png" alt="banner_fundreport"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqItem is-active">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収・買い取り</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">産廃の収集運搬</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">不用品処分情報サイト　リユシル</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">お知らせ</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">メディア紹介</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">イベントレポート</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコオクファンドレポート</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">運営企業</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">プライバシーポリシー</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">個人情報の取り扱いについて</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランド会員規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収利用規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランドオークション利用規約</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

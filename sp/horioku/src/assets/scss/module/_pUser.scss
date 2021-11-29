@@ -1,0 +1,242 @@
+.ecoSp {
+  .ecoUser {
+    min-height: calc(100vh - 283px);
+
+    &__wrap {
+      width: 100%;
+      margin: 0 auto;
+      padding: 60px 8px 100px;
+    }
+
+    &__title {
+      font-size: 21px;
+      margin-bottom: 20px;
+      color: $text;
+      padding: 0 30px;
+
+      &--small {
+        font-size: 20px;
+      }
+
+      &--center {
+        text-align: center;
+      }
+    }
+
+    &__error {
+      font-size: 14px;
+      color: $red;
+      margin-bottom: 30px;
+    }
+
+    &__member {
+      padding-top: 50px;
+    }
+
+    &__text {
+      color: $text;
+      font-size: 12px;
+      margin-bottom: 15px;
+
+      &--center {
+        text-align: center;
+      }
+    }
+
+    &__row {
+      padding-top: 60px;
+
+      .ecoUser__button {
+        padding-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__button {
+      padding-top: 50px;
+    }
+
+    &__content {
+      padding-top: 10px;
+    }
+
+    &__break {
+      background-color: #ccc;
+      display: block;
+      width: 100%;
+      height: 30px;
+      border: none;
+      margin: 0;
+    }
+
+    &__faq {
+      background: $cyan;
+
+      &Item {
+        &.is-active {
+          .ecoUser__faqLeadIcon {
+            transform: rotate(180deg);
+            transition: $ease;
+          }
+        }
+      }
+
+      &Lead {
+        height: 55px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        border-bottom: 1px solid $white;
+
+        &Title {
+          color: $white;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        &Icon {
+          width: 10px;
+        }
+      }
+
+      &Content {
+        padding: 0 30px;
+
+        &List {
+          padding: 10px 0;
+        }
+
+        &Item {
+          margin-bottom: 5px;
+        }
+
+        &Link {
+          display: block;
+          color: $white;
+        }
+
+        &.is-hide {
+          display: none;
+        }
+      }
+    }
+
+    &__account {
+      margin-bottom: 60px;
+
+      &Title {
+        font-size: 15px;
+        color: $text;
+        padding: 16px;
+        border-bottom: 2px solid $lightGrey;
+        margin-bottom: 25px;
+
+        &:last-of-type {
+          border-top: 2px solid $lightGrey;
+        }
+      }
+
+      .formWrap {
+        padding: 0 8px;
+        margin-bottom: 30px;
+      }
+
+      .formRow {
+        margin-bottom: 4px;
+      }
+
+      .formButton {
+        padding-top: 16px;
+      }
+    }
+  }
+
+  .userInfo {
+    &__row {
+      margin-bottom: 24px;
+    }
+
+    &__label {
+      font-size: 12px;
+      color: $grey;
+      margin-bottom: 6px;
+    }
+
+    &__text {
+      color: $grey;
+      font-size: 12px;
+      margin-bottom: 4px;
+
+      &Link {
+        color: $cyan;
+      }
+
+      &--bold {
+        color: $black;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+
+    &__warning {
+      font-size: 12px;
+      color: $red;
+    }
+
+    &__check {
+      padding-top: 8px;
+
+      &Label {
+        display: flex;
+        align-items: center;
+      }
+
+      &Box {
+        display: none;
+
+        &:checked {
+          ~ .userInfo__checkMark {
+            background-color: $cyan;
+            border-color: transparent;
+            transition: $ease;
+
+            &::after {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &Mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15px;
+        width: 15px;
+        margin-right: 5px;
+        border-radius: 3px;
+        border: 1px solid #707070;
+        background-color: #eee;
+        transition: $ease;
+
+        &::after {
+          content: "";
+          display: none;
+          width: 3px;
+          height: 6px;
+          border: solid $white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+
+      &Content {
+        color: $grey;
+        font-size: 12px;
+        width: calc(100% - 20px);
+      }
+    }
+  }
+}

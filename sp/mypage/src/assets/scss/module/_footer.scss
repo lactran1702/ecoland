@@ -1,0 +1,37 @@
+.ecoSp {
+  .footer {
+    background: $cyan;
+    padding: 15px 0;
+
+    &Wrap {
+      width: 100%;
+      margin: 0 auto 18px;
+      padding: 0 8px;
+    }
+
+    &List {
+      margin-bottom: 10px;
+      &__item {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      &__link {
+        color: $white;
+        font-size: 11px;
+        display: block;
+      }
+
+      &__text {
+        color: $white;
+        font-size: 11px;
+      }
+    }
+
+    &Copy {
+      color: $white;
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+}

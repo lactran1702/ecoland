@@ -1,0 +1,308 @@
+.ecoSp {
+  .ecoUser {
+    min-height: calc(100vh - 290px);
+
+    &__wrap {
+      width: 100%;
+      padding: 60px 10px 120px;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 50px;
+      color: $text;
+      text-align: center;
+
+      &--small {
+        font-size: 20px;
+      }
+    }
+
+    &__error {
+      font-size: 14px;
+      color: $red;
+      margin-bottom: 30px;
+    }
+
+    &__member {
+      padding-top: 60px;
+    }
+
+    &__text {
+      color: $text;
+      margin-bottom: 30px;
+
+      &--center {
+        text-align: center;
+      }
+    }
+
+    &__row {
+      .ecoUser__button {
+        margin: 0 15px;
+        padding-top: 20px;
+      }
+    }
+
+    &__button {
+      padding-top: 50px;
+
+      .Button {
+        font-size: 20px;
+      }
+    }
+
+    &__faq {
+      background: $cyan;
+
+      &Item {
+        &.is-active {
+          .ecoUser__faqLeadIcon {
+            transform: rotate(180deg);
+            transition: $ease;
+          }
+        }
+      }
+
+      &Lead {
+        height: 55px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        border-bottom: 1px solid $white;
+
+        &Title {
+          color: $white;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        &Icon {
+          width: 10px;
+        }
+      }
+
+      &Content {
+        padding: 0 30px;
+
+        &List {
+          padding: 10px 0;
+        }
+
+        &Item {
+          margin-bottom: 5px;
+        }
+
+        &Link {
+          display: block;
+          color: $white;
+        }
+
+        &.is-hide {
+          display: none;
+        }
+      }
+    }
+
+    &__account {
+      width: 70%;
+      padding-top: 20px;
+
+      &--main {
+        width: 100%;
+        padding-top: 0;
+      }
+
+      &Item {
+        margin-bottom: 40px;
+      }
+
+      &Title {
+        font-size: 20px;
+        color: $text;
+        font-weight: bold;
+        margin-bottom: 15px;
+
+        &--small {
+          font-size: 14px;
+          margin-bottom: 2px;
+          font-weight: normal;
+          color: $grey;
+        }
+      }
+
+      &Row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      &Text {
+        font-size: 16px;
+        color: $text;
+        margin-bottom: 10px;
+      }
+
+      &Button {
+        border: none;
+        margin: 0;
+        padding: 0;
+        border-radius: 3px;
+        background-color: $lightGrey;
+        color: $text;
+        padding: 0 28px;
+        height: 35px;
+        line-height: 35px;
+        display: block;
+        transition: $ease;
+
+        &--pink {
+          color: $white;
+          background-color: $pink;
+        }
+      }
+
+      &Wrap {
+        display: flex;
+        width: 100%;
+
+        .ecoUser__accountButton {
+          margin-right: 16px;
+        }
+      }
+
+      .formCol {
+        width: 100%;
+        align-items: center;
+
+        &__content {
+          width: 100%;
+        }
+
+        &--small {
+          margin-bottom: 10px;
+        }
+      }
+
+      .formInput {
+        font-size: 14px;
+      }
+
+      .formRadio {
+        margin: 0;
+      }
+    }
+
+    &__item {
+      border-bottom: 2px solid $lightGrey;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+
+      &Title {
+        font-size: 15px;
+        color: $text;
+        border-bottom: 2px solid $lightGrey;
+        padding-bottom: 14px;
+        margin-bottom: 16px;
+      }
+
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .userInfo {
+    &__row {
+      margin-bottom: 24px;
+    }
+
+    &__label {
+      font-size: 12px;
+      color: $grey;
+      margin-bottom: 6px;
+    }
+
+    &__text {
+      color: $grey;
+      font-size: 12px;
+      margin-bottom: 4px;
+
+      &Link {
+        color: $cyan;
+      }
+
+      &--bold {
+        color: $black;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+
+    &__warning {
+      font-size: 12px;
+      color: $red;
+    }
+
+    &__check {
+      padding-top: 8px;
+
+      &Label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      &Box {
+        display: none;
+
+        &:checked {
+          ~ .userInfo__checkMark {
+            background-color: $cyan;
+            border-color: transparent;
+            transition: $ease;
+
+            &::after {
+              display: block;
+            }
+          }
+        }
+      }
+
+      &Mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 15px;
+        width: 15px;
+        margin-right: 5px;
+        border-radius: 3px;
+        border: 1px solid #707070;
+        background-color: #eee;
+        transition: $ease;
+
+        &::after {
+          content: "";
+          display: none;
+          width: 3px;
+          height: 6px;
+          border: solid $white;
+          border-width: 0 2px 2px 0;
+          margin-top: -2px;
+          transform: rotate(45deg);
+        }
+      }
+
+      &Content {
+        color: $grey;
+        font-size: 12px;
+        width: calc(100% - 20px);
+      }
+    }
+  }
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- SEO -->
+    <title>SP-hamburger-menu-with-sub</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Social Sharing Info -->
+    <meta property="og:url" content="__SHARING_URL__" />
+    <meta property="og:title" content="__SHARING_TITLE_GOES_HERE__" />
+    <meta property="og:description" content="__SHARING_DESCRIPTION_GOES_HERE__" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <!-- Full HD: WIDTH -->
+    <meta property="og:image:height" content="630" />
+    <!-- Full HD: HEIGHT -->
+    <meta property="fb:app_id" content="" />
+
+    <meta name="webroot" content="." />
+
+    <!-- Viewport and mobile -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <!-- FAVICON -->
+    <link rel="image_src" href="./assets/img/favicon.ico" />
+    <link rel="icon" type="image/gif" href="./assets/img/favicon.ico" />
+
+    <!-- Libs CSS -->
+    <!-- <link rel="stylesheet" href="./assets/fonts/feather/feather.css" /> -->
+
+    <!-- CSS: Stylesheet for the website -->
+    <!-- <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" /> -->
+
+
+    <!-- Theme CSS -->
+    
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+     
+
+  </head>
+
+
+  <body class="ecoSp">
+    <!-- NAVBAR
+    ================================================== -->
+    <header class="ecoHeader">
+      <div class="ecoHeader__wrap">
+        <div class="ecoHeader__content">
+          <div class="ecoHeader__top">
+            <a href="#" class="ecoHeader__logo"><img src="assets/img/logo.png" alt="logo"></a>
+          </div>
+        </div>
+      </div>
+      <nav class="navBar">
+        <div class="navBar__lead">
+          <p class="navBar__leadTitle">ホリオク</p>
+          <p class="navBar__leadIcon"><img src="assets/img/ico_close.png" alt="ico_close"></p>
+        </div>
+        <ul class="navBar__list">
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_home.png" alt="ico_home">
+              <span class="navBar__linkText">トップ</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_key.png" alt="ico_key">
+              <span class="navBar__linkText">アカウント</span>
+            </a>
+            <ul class="navBar__sub">
+              <li class="navBar__subItem">
+                <a href="#" class="navBar__subLink">アカウント</a>
+              </li>
+              <li class="navBar__subItem"><a href="#" class="navBar__subLink">退会</a></li>
+              <li class="navBar__subItem">
+                <a href="#" class="navBar__subLink">エコ回収</a>
+              </li>
+              <li class="navBar__subItem">
+                <a href="#" class="navBar__subLink">ホリオク</a>
+              </li>
+              <li class="navBar__subItem"><a href="#" class="navBar__subLink">ログアウト</a></li>
+            </ul>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_clip.png" alt="ico_clip">
+              <span class="navBar__linkText">エコ回収一覧</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_hand.png" alt="ico_hand">
+              <span class="navBar__linkText">寄付/CB</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_truck.png" alt="ico_truck">
+              <span class="navBar__linkText">エコ回収依頼</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_card.png" alt="ico_card">
+              <span class="navBar__linkText">銀行口座</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_question.png" alt="ico_question">
+              <span class="navBar__linkText">ヘルプ</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_log_in.png" alt="ico_log_in">
+              <span class="navBar__linkText">退会</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_mail.png" alt="ico_mail">
+              <span class="navBar__linkText">お問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+        <div class="ecoHeader__phone">
+          <div class="ecoHeader__phoneRow">
+            <p class="ecoHeader__phoneImg"><img src="assets/img/ico_phone.png" alt="ico_phone"></p>
+            <p class="ecoHeader__phoneText">0120-530-539</p>
+          </div>
+          <p class="ecoHeader__phoneText">9:00-18:00 年中無休</p>
+        </div>
+      </nav>
+    </header>
+    <section class="ecoTop">
+      <div class="ecoTop__wrapper">
+        <div class="ecoTop__welcome">
+          <h2 class="ecoTop__welcomeTitle">エコランドへようこそ！</h2>
+          <p class="ecoTop__welcomeText">エコランドでは物を手放したい方、物を買いたい方のニーズに対応したサービスを用意しております。</p>
+        </div>
+        <div class="ecoTop__list">
+          <div class="ecoTop__listItem">
+            <h3 class="ecoTop__listTitle">エコ回収</h3>
+            <p class="ecoTop__listText">不用品回収・粗大ごみに頼む前に<br>エコ回収を考えてみませんか？</p>
+            <p class="ecoTop__listImage"><img src="assets/img/eco-kaisyu.jpg" alt="eco-kaisyu"></p>
+          </div>
+          <div class="ecoTop__listItem">
+            <h3 class="ecoTop__listTitle">掘り出しオークション</h3>
+            <p class="ecoTop__listText">価値ある掘り出しモノ探しに掘り出しオークション<br>気になるモノは展示会で確認できる</p>
+            <p class="ecoTop__listImage"><img src="assets/img/forioku.jpg" alt="forioku"></p>
+          </div>
+        </div>
+        <div class="ecoTop__activity">
+          <div class="ecoTop__activityItem">
+            <a href="#" class="ecoTop__activityLink"></a>
+            <h4 class="ecoTop__activityTitle">あなたの「いらない」を誰かの「ほしい」に</h4>
+            <p class="ecoTop__activityText">リユース代行サービス エコ回収の詳細はこちら</p>
+          </div>
+          <div class="ecoTop__activityItem">
+            <a href="#" class="ecoTop__activityLink"></a>
+            <h4 class="ecoTop__activityTitle">お得にリユース品を買いたい方はこちら </h4>
+            <p class="ecoTop__activityText">ホリオクのページを見る（夕方頃から出品されます）</p>
+          </div>
+          <div class="ecoTop__activityWrap">
+            <div class="ecoTop__activityItem">
+              <a href="#" class="ecoTop__activityLink"></a>
+              <h4 class="ecoTop__activityTitle">エコランド<br>エコフ</h4>
+              <p class="ecoTop__activityText">ファンドを利用した活動と収
+                支のご報告です。</p>
+            </div>
+            <div class="ecoTop__activityItem">
+              <a href="#" class="ecoTop__activityLink"></a>
+              <h4 class="ecoTop__activityTitle">イベント<br>レポート</h4>
+              <p class="ecoTop__activityText">たくさんのイベントを主催/
+                サポートしています。</p>
+            </div>
+          </div>
+          <div class="ecoTop__activityItem">
+            <a href="#" class="ecoTop__activityLink"></a>
+            <h4 class="ecoTop__activityTitle">メディア紹介</h4>
+            <p class="ecoTop__activityText">様々なメディアで取り上げて
+              頂いています。</p>
+          </div>
+        </div>
+        <div class="ecoTop__news">
+          <h2 class="ecoTop__newsTitle">新着情報 & お知らせ</h2>
+          <a href="#" class="ecoTop__newsBanner"><img src="assets/img/banner_news.jpg" alt="banner_news"></a>
+          <div class="ecoTop__newsItem">
+            <a href="#" class="ecoTop__newsLink"></a>
+            <h5 class="ecoTop__newsItemTitle">Pay it Forwardの活動をサポート！</h5>
+            <div class="ecoTop__newsCate">
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_day.png" alt="ico_day">
+                <span>2019-11-27</span>
+              </p>
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_category.png" alt="ico_category">
+                <span>イベント</span>
+              </p>
+            </div>
+          </div>
+          <div class="ecoTop__newsItem">
+            <a href="#" class="ecoTop__newsLink"></a>
+            <h5 class="ecoTop__newsItemTitle">年末年始の営業日について（12月2日更新）</h5>
+            <div class="ecoTop__newsCate">
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_day.png" alt="ico_day">
+                <span>2019-11-25</span>
+              </p>
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_category.png" alt="ico_category">
+                <span>お知らせ</span>
+              </p>
+            </div>
+          </div>
+          <div class="ecoTop__newsItem">
+            <a href="#" class="ecoTop__newsLink"></a>
+            <h5 class="ecoTop__newsItemTitle">【重要】台風19号接近に伴う臨時休業のお知らせ</h5>
+            <div class="ecoTop__newsCate">
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_day.png" alt="ico_day">
+                <span>2019-10-11</span>
+              </p>
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_category.png" alt="ico_category">
+                <span>お知らせ</span>
+              </p>
+            </div>
+          </div>
+          <div class="ecoTop__newsItem">
+            <a href="#" class="ecoTop__newsLink"></a>
+            <h5 class="ecoTop__newsItemTitle">Pay it Forwardの活動をサポート！</h5>
+            <div class="ecoTop__newsCate">
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_day.png" alt="ico_day">
+                <span>2019-09-23</span>
+              </p>
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_category.png" alt="ico_category">
+                <span>イベント</span>
+              </p>
+            </div>
+          </div>
+          <div class="ecoTop__newsItem">
+            <a href="#" class="ecoTop__newsLink"></a>
+            <h5 class="ecoTop__newsItemTitle">消費税率変更に伴うお知らせ</h5>
+            <div class="ecoTop__newsCate">
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_day.png" alt="ico_day">
+                <span>2019-08-03</span>
+              </p>
+              <p class="ecoTop__newsCateItem">
+                <img src="assets/img/ico_category.png" alt="ico_category">
+                <span>お知らせ</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="ecoTop__detail">
+          <div class="ecoTop__detailBanner">
+            <a href="#" class="ecoTop__detailLink"><img src="assets/img/banner_reuseJapanProject.jpg" alt="banner_reuseJapanProject"></a>
+            <a href="#" class="ecoTop__detailLink"><img src="assets/img/banner_warning.jpg" alt="banner_warning"></a>
+          </div>
+          <p class="ecoTop__detailText">あなたにとってのいらないモノをゴミにすることなく、また誰かに使ってもらう。エコランドの「エコ回収」は、「いらない」世界を変える、モノを大切する社会の実現をミッションとしています。<br>これまでも、日々さまざまな「いらないモノ」とたくさんのお客さまと向き合ってきました。昔は「モノを大切にしましょう」とよく耳にしたものですが、大切にするどころか、今の世の中はいらないモノで溢れかえっています。<br>いらなくなったらポイッと捨てるか、処分の仕方もわからないし面倒だし、何より重いからそのまま放置しておく…という方も少なくないでしょう。<br>でも、ちょっと待ってください。もしかしたら、それは誰かが「欲しい！」と思っているモノかもしれません。<br>あなたが今まで大切にしてきた、まだまだ使える「いらないモノ」を誰かの欲しいにつなげて、また大切に使ってもらいませんか？<br>エコランドのエコ回収では、いらないモノを、欲しいと思っている誰かにつなげるお手伝いをしています。<br>また、誰かにまた使ってもらえるという流れは、地球に優しいエコな世の中に変えていくことにもつながっています。モノが溢れかえっている世の中だからこそ、モノのあり方を再度見直してみましょう。<br>エコ回収では、お客さまが大切にしてきた家具や家電など、愛着のあるモノを丁寧におあずかりし、さまざまな独自のルートで販売または寄付をいたします。<br>販売が成功したら、10％の成功額をお客さまへキャッシュバック、または寄付を選べます。<br>また、いらないモノの引き取りは、お客さまのご都合に合わせてご自宅にまで伺いますので、お客さまご自身が重い家電や家具を持ち上げて運ぶ必要はありません。<br>あなたも、これまで大切にしていた「いらないモノ」を、また大切に使ってくれる誰かに渡る感動を体験してみませんか？</p>
+        </div>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqItem is-active">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収・買い取り</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">産廃の収集運搬</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">不用品処分情報サイト　リユシル</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">お知らせ</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">メディア紹介</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">イベントレポート</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコオクファンドレポート</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">運営企業</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">プライバシーポリシー</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">個人情報の取り扱いについて</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランド会員規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収利用規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランドオークション利用規約</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="ecoTop__scroll"></a>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="footer">
+      <div class="footerWrap">
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコ回収</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">リユシル</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド</a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">なりすまし業者にご注意</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">個人情報の扱いについて</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">プライバシーポリシー</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコ回収利用規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">出品禁止商品ガイドライン</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">寄付</a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">紹介先</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド会員規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランドオークション利用規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">特定商取引法に基づく表記</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">古物営業法に基づく表示</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerWrap">
+        <ul class="footerList">
+          <li class="footerList__item">
+            <p class="footerList__text">株式会社エコランド</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">東京都杉並区上荻2-37-7</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">エコランドコンシェルシュ</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">0120-530-539</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">特願2007-262892</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">取得済み</p>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">お問い合わせ</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">運営企業について</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footerCopy">© 2015 Ecoland co, Ltd.</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="./assets/libs/keen-slider/keen-slider.js"></script> -->
+    <!-- <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script> -->
+    <!-- <script src="./assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script> -->
+
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="./assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

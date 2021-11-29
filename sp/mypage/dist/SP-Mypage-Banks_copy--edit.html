@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- SEO -->
+    <title>SP-Mypage-Banks_copy--edit</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Social Sharing Info -->
+    <meta property="og:url" content="__SHARING_URL__" />
+    <meta property="og:title" content="__SHARING_TITLE_GOES_HERE__" />
+    <meta property="og:description" content="__SHARING_DESCRIPTION_GOES_HERE__" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <!-- Full HD: WIDTH -->
+    <meta property="og:image:height" content="630" />
+    <!-- Full HD: HEIGHT -->
+    <meta property="fb:app_id" content="" />
+
+    <meta name="webroot" content="." />
+
+    <!-- Viewport and mobile -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <!-- FAVICON -->
+    <link rel="image_src" href="./assets/img/favicon.ico" />
+    <link rel="icon" type="image/gif" href="./assets/img/favicon.ico" />
+
+    <!-- Libs CSS -->
+    <!-- <link rel="stylesheet" href="./assets/fonts/feather/feather.css" /> -->
+
+    <!-- CSS: Stylesheet for the website -->
+    <!-- <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" /> -->
+
+
+    <!-- Theme CSS -->
+    
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+     
+
+  </head>
+
+
+  <body class="ecoSp">
+    <!-- NAVBAR
+    ================================================== -->
+    <header class="ecoHeader ecoHeader--logIn">
+      <div class="ecoHeader__wrap">
+        <div class="ecoHeader__content">
+          <div class="ecoHeader__top">
+            <a href="#" class="ecoHeader__logo"><img src="assets/img/logo.png" alt="logo"></a>
+          </div>
+          <div class="ecoHeader__info">
+            <div class="ecoHeader__infoItem">
+              <p class="ecoHeader__menu"><img src="assets/img/ico_menu_white.png" alt="ico_menu_white"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="ecoTop">
+      <div class="ecoTop__cash">
+        <div class="ecoTop__info">
+          <h2 class="ecoTop__infoTitle">銀行口座</h2>
+          <p class="ecoTop__infoText">キャッシュバック振込先の銀行口座を編集することができます。</p>
+          <a href="#" class="ecoTop__infoButton ecoTop__infoButton--banks">新しいい口座を追加</a>
+          <div class="ecoTop__infoList ecoTop__infoList--borderRow">
+            <div class="ecoTop__infoListItem is-hide">
+              <p class="ecoTop__infoListText">三菱UFJ銀行 <span class="ecoTop__infoListText--secondary">荻窪支店</span></p>
+              <p class="ecoTop__infoListText">普通 0000000</p>
+              <p class="ecoTop__infoListText">ヤマダハナコ</p>
+              <div class="ecoTop__infoListButton">
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">編集</span>
+                </p>
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">削除</span>
+                </p>
+              </div>
+            </div>
+            <div class="ecoTop__infoListEdit">
+              <h5 class="ecoTop__infoListEditTitle">デフォルトの銀行口座</h5>
+              <div class="formWrap formWrap--banks">
+                <div class="formContent">
+                  <p class="formLabel">銀行・支店</p>
+                  <div class="formCol formCol--small">
+                    <p class="formCol__content">三菱ＵＦＪ銀行</p>
+                    <p class="formCol__content">西荻窪支店</p>
+                    <p class="formCol__content">
+                      <button class="formCol__button">銀行． 支”店選択</button>
+                    </p>
+                  </div>
+                  <p class="formError formError--hide">入力されていません</p>
+                </div>
+                <div class="formContent">
+                  <p class="formLabel">預金種類</p>
+                  <div class="formCol">
+                    <div class="formCol__content">
+                      <p class="formSelect formSelect--error">
+                        <select name="prefetureName" id="prefetureName"  class="formSelect__box">
+                          <option value="" selected="selected">(選択してください)</option>
+                          <option value="01">北海道</option>
+                          <option value="02">青森県</option>
+                          <option value="03">岩手県</option>
+                          <option value="04">宮城県</option>
+                        </select>
+                      </p>
+                      <span class="formError">入力されていません</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="formContent">
+                  <p class="formLabel">口座番号</p>
+                  <div class="formCol">
+                    <p class="formCol__content">
+                      <input class="formInput" type="text" placeholder="杉並区上荻">
+                      <span class="formError formError--hide">入力されていません</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="formContent">
+                  <p class="formLabel">口座番号</p>
+                  <div class="formCol">
+                    <p class="formCol__content">
+                      <input class="formInput" type="text" placeholder="杉並区上荻">
+                      <span class="formError formError--hide">入力されていません</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="formButton">
+                  <p class="formButtonItem">
+                    <input type="submit" class="Button Button--pink" value="保存">
+                  </p>
+                  <p class="formButtonItem">
+                    <input type="submit" class="Button Button--grey" value="キャンセル">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ecoTop__infoList ecoTop__infoList--borderRow">
+            <div class="ecoTop__infoListItem">
+              <p class="ecoTop__infoListText">三菱UFJ銀行 <span class="ecoTop__infoListText--secondary">荻窪支店</span></p>
+              <p class="ecoTop__infoListText">普通 0000000</p>
+              <p class="ecoTop__infoListText">ヤマダハナコ</p>
+              <div class="ecoTop__infoListButton">
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">デフォルトに設定</span>
+                </p>
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">編集</span>
+                </p>
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">削除</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqItem is-active">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収・買い取り</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">産廃の収集運搬</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">不用品処分情報サイト　リユシル</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">お知らせ</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">メディア紹介</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">イベントレポート</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコオクファンドレポート</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">運営企業</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">プライバシーポリシー</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">個人情報の取り扱いについて</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランド会員規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収利用規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランドオークション利用規約</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="footer">
+      <div class="footerWrap">
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコ回収</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">リユシル</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド</a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">なりすまし業者にご注意</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">個人情報の扱いについて</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">プライバシーポリシー</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコ回収利用規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">出品禁止商品ガイドライン</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">寄付</a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">紹介先</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド会員規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランドオークション利用規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">特定商取引法に基づく表記</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">古物営業法に基づく表示</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerWrap">
+        <ul class="footerList">
+          <li class="footerList__item">
+            <p class="footerList__text">株式会社エコランド</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">東京都杉並区上荻2-37-7</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">エコランドコンシェルシュ</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">0120-530-539</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">特願2007-262892</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">取得済み</p>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">お問い合わせ</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">運営企業について</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footerCopy">© 2015 Ecoland co, Ltd.</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="./assets/libs/keen-slider/keen-slider.js"></script> -->
+    <!-- <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script> -->
+    <!-- <script src="./assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script> -->
+
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="./assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

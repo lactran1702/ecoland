@@ -1,0 +1,22 @@
+// Locale Setting
+$locale: "en";
+
+@import "base/config_global";
+@import "base/config_site";
+
+// Partials
+@import "partials/normalize";
+@import "partials/base";
+@import "partials/buttons";
+@import "partials/forms";
+@import "partials/links";
+@import "partials/lists";
+@import "partials/tables";
+@import "partials/typography";
+@import "partials/helper";
+
+// Mixin 
+@import "module/global";
+
+// Pages 
+@import "module/module";

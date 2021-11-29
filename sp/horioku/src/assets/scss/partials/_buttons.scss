@@ -1,0 +1,52 @@
+.ecoSp {
+  .Button {
+    display: block;
+    width: 100%;
+    line-height: 44px;
+    height: 44px;
+    text-align: center;
+    font-weight: 500;
+    padding: 0;
+    border: none;
+    color: $white;
+    border-radius: 2px;
+    transition: $ease;
+
+    &:hover {
+      transition: $ease;
+    }
+
+    &--cyan {
+      background: $cyan;
+      &:hover {
+        background: darken($cyan, 2%);
+      }
+    }
+
+    &--pink {
+      background: $pink;
+
+      &:hover {
+        background: darken($pink, 5%);
+      }
+    }
+
+    &--grey {
+      background: $lightGrey;
+      color: $black;
+
+      &:hover {
+        background: darken($lightGrey, 5%);
+      }
+    }
+
+    &--grey {
+      background: $lightGrey;
+      color: $black;
+
+      &:hover {
+        background: darken($lightGrey, 5%);
+      }
+    }
+  }
+}

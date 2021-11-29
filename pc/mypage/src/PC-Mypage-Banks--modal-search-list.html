@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Mypage-Banks--modal-search-list" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-log-in.html", { "slogan": "エコランド" })
+    <section class="ecoTop">
+      <div class="ecoTop__cash">
+        <div class="ecoTop__info">
+          <h2 class="ecoTop__infoTitle">銀行口座</h2>
+          <p class="ecoTop__infoText">キャッシュバック振込先の銀行口座を編集することができます。</p>
+          <p class="ecoTop__infoButton ecoTop__infoButton--table">
+            <a href="#" class="Button Button--cyan">新しいい口座を追加</a>
+          </p>
+          <ul class="ecoTop__infoList">
+            <li class="ecoTop__infoListItem">
+              <table class="ecoTop__infoTable ecoTop__infoTable--banks is-hide">
+                <tr>
+                  <td class="ecoTop__infoTableData">三菱UFJ銀行</td>
+                  <td class="ecoTop__infoTableData">荻窪支店</td>
+                  <td class="ecoTop__infoTableData">普通 0000000</td>
+                  <td class="ecoTop__infoTableData">ヤマダハナコ</td>
+                  <td class="ecoTop__infoTableData ecoTop__infoTableData--button">
+                    <p class="ecoTop__infoTableButton">
+                      <span class="ecoTop__infoTableButtonIcon"></span>
+                      <span class="ecoTop__infoTableButtonText">編集</span>
+                    </p>
+                    <p class="ecoTop__infoTableButton">
+                      <span class="ecoTop__infoTableButtonIcon"></span>
+                      <span class="ecoTop__infoTableButtonText">削除</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+              <div class="ecoTop__infoEdit">
+                <h5 class="ecoTop__infoEditTitle">デフォルトの銀行口座</h5>
+                <div class="formWrap formWrap--banks">
+                  <div class="formRow">
+                    <div class="formContent">
+                      <label class="formLabel" for="">銀行・支店</label>
+                      <div class="formCol formCol--small">
+                        <p class="formCol__content">三菱ＵＦＪ銀行</p>
+                        <p class="formCol__content">西荻窪支店</p>
+                        <p class="formCol__content">
+                          <button class="formCol__button">銀行・支店選択</button>
+                        </p>
+                      </div>
+                    </div>
+                    <p class="formError formError--hide">入力されていません</p>
+                  </div>
+                  <div class="formRow">
+                    <div class="formContent">
+                      <label class="formLabel" for="">預金種類</label>
+                      <div class="formCol">
+                        <div class="formCol__content">
+                          <p class="formSelect">
+                            <select name="prefetureName" id="prefetureName"  class="formSelect__box">
+                              <option value="" selected="selected">(選択してください)</option>
+                              <option value="01">北海道</option>
+                              <option value="02">青森県</option>
+                              <option value="03">岩手県</option>
+                              <option value="04">宮城県</option>
+                            </select>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="formError formError--hide">入力されていません</p>
+                  </div>
+                  <div class="formRow">
+                    <div class="formContent">
+                      <label class="formLabel" for="">口座番号</label>
+                      <input class="formInput" type="text" placeholder="例）1234567">
+                    </div>
+                    <p class="formError formError--hide">入力されていません</p>
+                  </div>
+                  <div class="formRow">
+                    <div class="formContent">
+                      <label class="formLabel" for="">口座名義</label>
+                      <input class="formInput formInput--error" type="text" placeholder="カタカナ入力　例）ヤマダエコ">
+                    </div>
+                    <p class="formError">入力されていません</p>
+                  </div>
+                  <div class="formButton">
+                    <p class="formButtonItem">
+                      <input type="submit" class="Button Button--pink" value="保存">
+                    </p>
+                    <p class="formButtonItem">
+                      <input type="submit" class="Button Button--grey" value="キャンセル">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="ecoTop__infoListItem">
+              <table class="ecoTop__infoTable ecoTop__infoTable--banks">
+                <tr>
+                  <td class="ecoTop__infoTableData">三菱UFJ銀行</td>
+                  <td class="ecoTop__infoTableData">荻窪支店</td>
+                  <td class="ecoTop__infoTableData">普通 0000000</td>
+                  <td class="ecoTop__infoTableData">ヤマダハナコ</td>
+                  <td class="ecoTop__infoTableData ecoTop__infoTableData--button">
+                    <p class="ecoTop__infoTableButton">
+                      <span class="ecoTop__infoTableButtonIcon"></span>
+                      <span class="ecoTop__infoTableButtonText">デフォルトに設定</span>
+                    <p class="ecoTop__infoTableButton">
+                      <span class="ecoTop__infoTableButtonIcon"></span>
+                      <span class="ecoTop__infoTableButtonText">編集</span>
+                    </p>
+                    <p class="ecoTop__infoTableButton">
+                      <span class="ecoTop__infoTableButtonIcon"></span>
+                      <span class="ecoTop__infoTableButtonText">削除</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqWrap">
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">エコ回収・買い取り</li>
+                <li class="ecoUser__faqContentItem">産廃の収集運搬</li>
+                <li class="ecoUser__faqContentItem">不用品処分情報サイト　リユシル</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">お知らせ</li>
+                <li class="ecoUser__faqContentItem">メディア紹介</li>
+                <li class="ecoUser__faqContentItem">イベントレポート</li>
+                <li class="ecoUser__faqContentItem">エコオクファンドレポート</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">運営企業</li>
+              <li class="ecoUser__faqContentItem">プライバシーポリシー</li>
+              <li class="ecoUser__faqContentItem">個人情報の取り扱いについて</li>
+              <li class="ecoUser__faqContentItem">エコランド会員規約</li>
+              <li class="ecoUser__faqContentItem">エコ回収利用規約</li>
+              <li class="ecoUser__faqContentItem">エコランドオークション利用規約</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="ecoTop__scroll"></a>
+    </section>
+
+    @@include("partials/modal-list-bank.html")
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

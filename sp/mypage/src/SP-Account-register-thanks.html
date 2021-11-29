@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "SP-Account-register-thanks" })
+
+  <body class="ecoSp">
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-register.html")
+    <section class="ecoUser">
+      <div class="ecoUser__wrap">
+        <h4 class="ecoUser__title">仮登録が完了しました</h4>
+        <p class="ecoUser__text">ご登録ありがとうございます。<br>エコランド会員ではエコ回収、掘り出しオークションや会員割引のサービス等がご利用いただけます。</p>
+        <p class="ecoUser__button">
+          <a href="#" class="Button Button--cyan Button--large">ホリオクトップページへ</a>
+        </p>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

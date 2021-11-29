@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "SP-Mypage-Banks--modal-search" })
+
+  <body class="ecoSp">
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-with-background.html")
+    <section class="ecoTop">
+      <div class="ecoTop__cash">
+        <div class="ecoTop__info">
+          <h2 class="ecoTop__infoTitle">銀行口座</h2>
+          <p class="ecoTop__infoText">キャッシュバック振込先の銀行口座を編集することができます。</p>
+          <a href="#" class="ecoTop__infoButton ecoTop__infoButton--banks">新しいい口座を追加</a>
+          <div class="ecoTop__infoList ecoTop__infoList--borderRow">
+            <div class="ecoTop__infoListItem is-hide">
+              <p class="ecoTop__infoListText">三菱UFJ銀行 <span class="ecoTop__infoListText--secondary">荻窪支店</span></p>
+              <p class="ecoTop__infoListText">普通 0000000</p>
+              <p class="ecoTop__infoListText">ヤマダハナコ</p>
+              <div class="ecoTop__infoListButton">
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">編集</span>
+                </p>
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">削除</span>
+                </p>
+              </div>
+            </div>
+            <div class="ecoTop__infoListEdit">
+              <h5 class="ecoTop__infoListEditTitle">デフォルトの銀行口座</h5>
+              <div class="formWrap formWrap--banks">
+                <div class="formContent">
+                  <p class="formLabel">銀行・支店</p>
+                  <div class="formCol formCol--small">
+                    <p class="formCol__content">三菱ＵＦＪ銀行</p>
+                    <p class="formCol__content">西荻窪支店</p>
+                    <p class="formCol__content">
+                      <button class="formCol__button">銀行． 支”店選択</button>
+                    </p>
+                  </div>
+                  <p class="formError formError--hide">入力されていません</p>
+                </div>
+                <div class="formContent">
+                  <p class="formLabel">預金種類</p>
+                  <div class="formCol">
+                    <div class="formCol__content">
+                      <p class="formSelect formSelect--error">
+                        <select name="prefetureName" id="prefetureName"  class="formSelect__box">
+                          <option value="" selected="selected">(選択してください)</option>
+                          <option value="01">北海道</option>
+                          <option value="02">青森県</option>
+                          <option value="03">岩手県</option>
+                          <option value="04">宮城県</option>
+                        </select>
+                      </p>
+                      <span class="formError">入力されていません</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="formContent">
+                  <p class="formLabel">口座番号</p>
+                  <div class="formCol">
+                    <p class="formCol__content">
+                      <input class="formInput" type="text" placeholder="杉並区上荻">
+                      <span class="formError formError--hide">入力されていません</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="formContent">
+                  <p class="formLabel">口座番号</p>
+                  <div class="formCol">
+                    <p class="formCol__content">
+                      <input class="formInput" type="text" placeholder="杉並区上荻">
+                      <span class="formError formError--hide">入力されていません</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="formButton">
+                  <p class="formButtonItem">
+                    <input type="submit" class="Button Button--pink" value="保存">
+                  </p>
+                  <p class="formButtonItem">
+                    <input type="submit" class="Button Button--grey" value="キャンセル">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ecoTop__infoList ecoTop__infoList--borderRow">
+            <div class="ecoTop__infoListItem">
+              <p class="ecoTop__infoListText">三菱UFJ銀行 <span class="ecoTop__infoListText--secondary">荻窪支店</span></p>
+              <p class="ecoTop__infoListText">普通 0000000</p>
+              <p class="ecoTop__infoListText">ヤマダハナコ</p>
+              <div class="ecoTop__infoListButton">
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">デフォルトに設定</span>
+                </p>
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">編集</span>
+                </p>
+                <p class="ecoTop__infoListButtonRow">
+                  <span class="ecoTop__infoListButtonIcon"></span>
+                  <span class="ecoTop__infoListButtonText">削除</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqItem is-active">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収・買い取り</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">産廃の収集運搬</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">不用品処分情報サイト　リユシル</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">お知らせ</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">メディア紹介</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">イベントレポート</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコオクファンドレポート</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">運営企業</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">プライバシーポリシー</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">個人情報の取り扱いについて</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランド会員規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収利用規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランドオークション利用規約</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    @@include("partials/modal-search-bank.html")
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

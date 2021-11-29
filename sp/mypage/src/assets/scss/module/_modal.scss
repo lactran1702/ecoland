@@ -1,0 +1,201 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  &__overlay {
+    @include ovl;
+    background-color: transparentize($white, 0.1);
+    z-index: 1;
+  }
+
+  &__button {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 20px;
+    z-index: 3;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 575px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__search {
+    width: 100%;
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: $white;
+    box-shadow: 0 5px 15px 0 transparentize(#000, 0.7);
+    position: relative;
+
+    &Title {
+      font-size: 20px;
+      color: $text;
+      margin-bottom: 10px;
+    }
+
+    &List {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+
+      &Item {
+        width: calc(100% / 3);
+      }
+
+      &Link {
+        color: $cyan;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+
+    &Content {
+      &Title {
+        font-size: 16px;
+        color: $text;
+        margin-bottom: 20px;
+      }
+    }
+
+    &Field {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      &Text {
+        margin-right: 16px;
+        font-size: 14px;
+        color: $text;
+        width: calc(100% - 81px);
+        border: 1px solid $lightGrey;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 10px;
+      }
+
+      &Button {
+        background-color: $lightGrey;
+        color: $text;
+        font-size: 14px;
+        border: none;
+        margin: 0;
+        display: block;
+        width: 65px;
+        height: 36px;
+        line-height: 36px;
+      }
+    }
+
+    &Key {
+      width: 100%;
+      max-height: 300px;
+      overflow: auto;
+      margin-bottom: 30px;
+
+      &Wrap {
+        width: 100%;
+      }
+
+      &Link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: $cyan;
+        font-size: 14px;
+        padding: 5px 10px;
+
+        &.is-disable {
+          cursor: not-allowed;
+          color: $lightGrey;
+
+          &:hover {
+            color: $lightGrey;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    &Button {
+      border: none;
+      color: $text;
+      display: block;
+      margin: 0 auto;
+      font-size: 14px;
+      padding: 10px 25px;
+      background-color: $lightGrey;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    margin: 10px;
+    padding: 20px 10px;
+    box-shadow: 0 5px 15px 0 transparentize(#000, 0.7);
+    background-color: $white;
+    position: relative;
+
+    &Title {
+      font-size: 20px;
+      color: $text;
+      margin-bottom: 20px;
+    }
+
+    &Wrap {
+      width: 100%;
+      max-height: 300px;
+      overflow: auto;
+      margin-bottom: 30px;
+    }
+
+    &Content {
+      width: 100%;
+
+      &Item {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      &Link {
+        font-size: 14px;
+        color: $cyan;
+        display: block;
+      }
+    }
+
+    &Button {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+
+      .Button {
+        width: auto;
+        padding: 0 20px;
+        color: $text;
+        margin: 0 15px;
+      }
+    }
+  }
+}

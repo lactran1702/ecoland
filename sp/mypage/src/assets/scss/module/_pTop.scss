@@ -1,0 +1,737 @@
+.ecoSp {
+  .ecoTop {
+    &__wrapper {
+      max-width: 1004px;
+      width: 100%;
+      margin: 60px auto 100px;
+    }
+
+    &__scroll {
+      width: 40px;
+      height: 40px;
+      background: url(../../assets/img/ico_arr_up.png) no-repeat center;
+      background-size: 16px;
+      background-color: $cyan;
+      border-radius: 50%;
+      position: fixed;
+      right: 10px;
+      top: 350px;
+      transition: $ease;
+
+      &:hover {
+        background-color: lighten($cyan, 5%);
+        transition: $ease;
+      }
+    }
+
+    &__welcome {
+      text-align: center;
+      margin-bottom: 35px;
+      padding: 0 12px;
+
+      &Title {
+        font-size: 20px;
+        color: $text;
+        margin-bottom: 20px;
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+      }
+    }
+
+    &__list {
+      padding: 0 12px;
+      width: 100%;
+      margin: 0 auto 40px;
+
+      &Item {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &Title {
+        font-size: 18px;
+        color: $text;
+        border-bottom: 2px solid $lightGrey;
+        margin-bottom: 14px;
+        padding-bottom: 14px;
+      }
+
+      &Text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: $text;
+      }
+
+      &Image {
+        height: 208px;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__activity {
+      width: 100%;
+      margin: 0 auto 50px;
+      padding: 0 12px;
+
+      &Item {
+        position: relative;
+        margin-bottom: 15px;
+        padding: 12px;
+        border: 1px solid $lightGrey;
+      }
+
+      &Wrap {
+        display: flex;
+        justify-content: space-between;
+
+        .ecoTop__activityItem {
+          width: 343px;
+        }
+
+        .ecoTop__activityTitle {
+          background-position: center right;
+        }
+      }
+
+      &Link {
+        @include ovl;
+      }
+
+      &Title {
+        font-size: 18px;
+        color: $cyan;
+        background-image: url(../../assets/img/ico_arr_right.png);
+        background-repeat: no-repeat;
+        background-size: 6px 12px;
+        background-position: bottom right;
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+      }
+    }
+
+    &__news {
+      width: 100%;
+      margin: 0 auto 60px;
+      padding: 0 12px;
+
+      &Title {
+        font-size: 30px;
+        color: $text;
+        margin-bottom: 50px;
+      }
+
+      &Banner {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      &Item {
+        border-bottom: 1px solid $lightGrey;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        position: relative;
+
+        &Title {
+          color: $cyan;
+          font-size: 16px;
+          margin-bottom: 4px;
+        }
+      }
+
+      &Link {
+        @include ovl;
+      }
+
+      &Cate {
+        display: flex;
+        align-items: center;
+
+        &Item {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          color: $grey;
+          margin-right: 20px;
+
+          img {
+            width: 14px;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+
+    &__detail {
+      max-width: 848px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 12px;
+
+      &Banner {
+        display: flex;
+        margin-bottom: 40px;
+      }
+
+      &Link {
+        display: block;
+        margin-right: 12px;
+        width: 240px;
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+      }
+    }
+
+    &__request {
+      padding: 0 10px;
+      width: 100%;
+      margin: 60px auto;
+
+      &Title {
+        font-size: 25px;
+        color: $text;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+        margin-bottom: 16px;
+      }
+
+      &Link {
+        font-size: 14px;
+        color: $cyan;
+        display: block;
+        margin-bottom: 50px;
+
+        &:hover {
+          text-decoration: underline;
+          color: lighten($cyan, 5%);
+        }
+      }
+
+      &Table {
+        font-size: 14px;
+        color: $text;
+        width: 100%;
+        border-bottom: 1px dashed $lightGrey;
+        padding: 15px 0;
+        margin-bottom: 15px;
+
+        &Text {
+          color: $text;
+          font-size: 14px;
+
+          &--grey {
+            color: $grey;
+          }
+
+          &--large {
+            font-size: 16px;
+          }
+        }
+
+        &Item {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin: 15px 0;
+        }
+
+        &Row {
+          width: 70%;
+          border: 1px solid $lightGrey;
+          padding: 10px 15px;
+
+          &--center {
+            text-align: center;
+            width: 30%;
+          }
+
+          &--button {
+            border: none;
+            padding: 0;
+            width: 100%;
+          }
+
+          &:last-child {
+            border-left: none;
+          }
+        }
+
+        &Button {
+          display: block;
+          margin-left: auto;
+          color: $text;
+          height: 36px;
+          line-height: 36px;
+          border: none;
+          border-radius: 4px;
+          background-color: $lightGrey;
+          padding: 0 20px;
+        }
+      }
+    }
+
+    &__cash {
+      width: 100%;
+      padding: 0 12px;
+      margin: 60px auto 100px;
+      min-height: calc(100vh - 600px);
+
+      &Title {
+        font-size: 20px;
+        color: $text;
+        margin-bottom: 26px;
+        text-align: center;
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+        margin-bottom: 26px;
+
+        &--warning {
+          color: $red;
+          margin-bottom: 38px;
+        }
+      }
+
+      &Status {
+        border-top: 2px solid $lightGrey;
+        border-bottom: 2px solid $lightGrey;
+        padding: 14px 0;
+        margin-bottom: 40px;
+        text-align: center;
+
+        &Set {
+          font-size: 20px;
+          color: $text;
+          margin-bottom: 20px;
+        }
+
+        &Text {
+          font-size: 20px;
+          color: $pink;
+          margin-bottom: 20px;
+        }
+
+        &Button {
+          color: $white;
+          font-size: 20px;
+          width: 100%;
+          border: none;
+          background-color: $cyan;
+          border-radius: 2px;
+          height: 38px;
+          line-height: 38px;
+          text-align: center;
+        }
+      }
+
+      &Amount {
+        &Lead {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12px;
+          border-bottom: 2px solid $lightGrey;
+          margin-bottom: 10px;
+        }
+
+        &Text {
+          font-size: 14px;
+          color: $text;
+        }
+
+        &Total {
+          font-size: 30px;
+          color: $text;
+          font-weight: bold;
+        }
+
+        &Row {
+          display: flex;
+          width: 100%;
+        }
+
+        &Item {
+          width: 100%;
+
+          &Title {
+            font-size: 16px;
+            color: $text;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          &Text {
+            font-size: 14px;
+            color: $text;
+            margin-bottom: 40px;
+          }
+
+          &Total {
+            font-size: 30px;
+            color: $text;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          &Link {
+            display: block;
+            width: 100%;
+            margin-bottom: 32px;
+          }
+
+          &:last-child {
+            border-right: none;
+          }
+
+          &.is-hide {
+            display: none;
+          }
+        }
+
+        &Button {
+          display: block;
+          background-color: $lightGrey;
+          border: none;
+          border-radius: 4px;
+          color: $white;
+          height: 40px;
+          line-height: 40px;
+          font-size: 16px;
+          width: 100%;
+          margin: 0 auto 30px;
+        }
+
+        &Link {
+          text-align: center;
+          color: $cyan;
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        &Tab {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 20px;
+
+          &Item {
+            width: 50%;
+          }
+
+          &Text {
+            display: block;
+            font-size: 14px;
+            color: $text;
+            text-align: center;
+            line-height: 40px;
+            height: 40px;
+            background-color: $lightGrey;
+            border: 1px solid transparent;
+
+            &.is-active {
+              background-color: $white;
+              border: 1px solid $lightGrey;
+            }
+          }
+        }
+      }
+    }
+
+    &__info {
+      &Title {
+        font-size: 20px;
+        color: $text;
+        margin-bottom: 28px;
+        text-align: center;
+
+        &--small {
+          font-size: 14px;
+          margin-bottom: 28px;
+        }
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+        margin-bottom: 40px;
+      }
+
+      &List {
+        border: 1px solid $lightGrey;
+        padding: 15px;
+        margin-bottom: 30px;
+
+        &Item {
+          &.is-hide {
+            display: none;
+          }
+        }
+
+        &Text {
+          font-size: 14px;
+          color: $text;
+          margin-bottom: 5px;
+
+          &--secondary {
+            padding-left: 10px;
+          }
+        }
+
+        &--noBorder {
+          border: none;
+          padding: 0;
+          background: url(../../assets/img/ico_arr_right.png) no-repeat center
+            right;
+          background-size: 10px;
+        }
+
+        &--borderRow {
+          border-left: none;
+          border-right: none;
+          margin-bottom: 0;
+
+          &:first-of-type {
+            border-bottom-style: none;
+          }
+
+          .ecoTop__infoListText--secondary {
+            padding-left: 40px;
+          }
+        }
+
+        &Button {
+          padding-top: 20px;
+          display: flex;
+          align-items: center;
+
+          &Row {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+          }
+
+          &Icon {
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: $lightGrey;
+            margin-right: 10px;
+          }
+
+          &Text {
+            color: $text;
+          }
+        }
+
+        &Edit {
+          &Title {
+            font-size: 20px;
+            color: $text;
+            margin-bottom: 20px;
+          }
+
+          .formCol--small {
+            flex-wrap: wrap;
+          }
+
+          .formCol__content {
+            width: 100%;
+          }
+
+          .formButton {
+            padding: 0;
+
+            &Item {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      &Row {
+        .Button {
+          margin-bottom: 24px;
+          font-size: 20px;
+        }
+      }
+
+      &Button {
+        color: $text;
+        height: 40px;
+        line-height: 40px;
+        background-color: $lightGrey;
+        border-radius: 2px;
+        width: 100%;
+        display: block;
+        text-align: center;
+
+        &--banks {
+          width: 165px;
+          background-color: $cyan;
+          color: $white;
+          margin-left: auto;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    &__reuse {
+      padding: 24px 12px;
+      border: 2px solid $lightGrey;
+      margin-bottom: 40px;
+
+      &Item {
+        padding-bottom: 16px;
+        margin-bottom: 26px;
+        border-bottom: 2px dashed $lightGrey;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &Row {
+        margin-bottom: 12px;
+
+        &Item {
+          display: flex;
+          align-items: center;
+          margin-right: 36px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &--flex {
+          display: flex;
+          align-items: center;
+        }
+
+        &--grey {
+          .ecoTop__reuseText {
+            color: $grey;
+          }
+        }
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+        margin-right: 16px;
+      }
+
+      &Title {
+        font-size: 20px;
+        color: $text;
+        margin-right: 16px;
+      }
+
+      &Status {
+        display: block;
+        color: $white;
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-color: $pink;
+        border-radius: 2px;
+      }
+
+      &Tab {
+        font-size: 20px;
+        text-align: center;
+        padding: 18px 0;
+        background: url(../../assets/img/ico_arr_down.png) no-repeat center
+          right 18px;
+        background-size: 12px;
+        border-top: 1px solid $text;
+        border-bottom: 1px solid $text;
+        margin-bottom: 40px;
+      }
+
+      &.is-hide {
+        display: none;
+      }
+    }
+
+    &__total {
+      margin-bottom: 60px;
+
+      &Wrap {
+        max-width: 310px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      &Item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+
+        &--sum {
+          border-top: 2px solid $lightGrey;
+          border-bottom: 2px solid $lightGrey;
+          padding: 20px 0;
+          margin-bottom: 0;
+
+          .ecoTop__totalText {
+            font-size: 20px;
+          }
+        }
+      }
+
+      &Text {
+        font-size: 16px;
+        font-weight: bold;
+        color: $text;
+
+        &--pink {
+          color: $pink;
+          font-size: 30px;
+        }
+      }
+    }
+
+    &__button {
+      .Button {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,311 @@
+.ecoSp {
+  .ecoTop {
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__hero {
+      background-color: #029e9e;
+
+      &Content {
+        padding: 50px 0;
+      }
+
+      &Title {
+        font-size: 38px;
+        color: $white;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      &Text {
+        color: $white;
+        font-size: 14px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      &Button {
+        &Time {
+          border: 2px solid $white;
+          height: 90px;
+          width: 305px;
+          margin: 0 auto 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        &Text {
+          font-size: 18px;
+          color: $white;
+          font-weight: bold;
+
+          &--big {
+            margin-left: 22px;
+            font-size: 38px;
+          }
+        }
+
+        &Banner {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    &__search {
+      width: calc(100% - 24px);
+      margin: 28px auto;
+      height: 36px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      position: relative;
+      overflow: hidden;
+      padding: 0 12px;
+
+      &Field {
+        width: calc(100% - 80px);
+        font-size: 16px;
+        color: $text;
+        height: 100%;
+        line-height: 36px;
+        padding: 0 8px;
+        margin: 0;
+        border: none;
+      }
+
+      &Button {
+        width: 80px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+        font-size: 16px;
+        color: $black;
+        font-weight: bold;
+        background: #cccc;
+        border-radius: 3px;
+        border: none;
+        padding: 0;
+        transition: $ease;
+      }
+    }
+
+    &__exhibit {
+      &List {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 38px 0 18px;
+      }
+
+      &Item {
+        width: 50%;
+        margin-bottom: 36px;
+      }
+
+      &Link {
+        color: $text;
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+      }
+    }
+
+    &__tag {
+      background: $cyan;
+      width: 100%;
+      height: 50px;
+      color: $white;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+
+      &--center {
+        justify-content: center;
+      }
+
+      &--bold {
+        font-size: 22px;
+      }
+    }
+
+    &__product {
+      padding: 46px 26px 0;
+      margin-bottom: 20px;
+
+      &Img {
+        margin: 0 auto 25px;
+
+        img {
+          margin: 0 auto;
+        }
+      }
+
+      &Title {
+        font-size: 28px;
+        color: $cyan;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+        margin-bottom: 20px;
+      }
+
+      &List {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &Item {
+          width: 50%;
+          margin-bottom: 10px;
+        }
+
+        &Link {
+          color: $text;
+          font-weight: bold;
+          font-size: 16px;
+          display: block;
+          transition: $ease;
+
+          &:hover {
+            color: $cyan;
+            transition: $ease;
+          }
+        }
+
+        &--hideCheck {
+          margin-left: -20px;
+          .ecoTop__productCheckMark {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+
+      &Check {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        &Box {
+          display: none;
+
+          &:checked {
+            ~ .ecoTop__productCheckMark {
+              background-color: $cyan;
+              border-color: transparent;
+              transition: $ease;
+
+              &::after {
+                display: block;
+              }
+            }
+          }
+        }
+
+        &Mark {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 15px;
+          width: 15px;
+          border-radius: 3px;
+          border: 1px solid #707070;
+          background-color: #eee;
+          transition: $ease;
+
+          &::after {
+            content: "";
+            display: none;
+            width: 3px;
+            height: 6px;
+            border: solid $white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+        }
+
+        &Text {
+          font-size: 16px;
+          font-weight: bold;
+          color: $text;
+          padding-left: 5px;
+        }
+      }
+    }
+
+    &__button {
+      background-color: #707070;
+      color: $white;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      width: calc(100% - 24px);
+      height: 55px;
+      line-height: 55px;
+      margin: 50px auto 30px;
+      display: block;
+      transition: $ease;
+
+      &:hover {
+        background-color: lighten(#707070, 10%);
+        transition: $ease;
+      }
+
+      &--pink {
+        background-color: $pink;
+      }
+    }
+
+    &__notes {
+      padding: 40px 12px;
+
+      &List {
+        margin-bottom: 48px;
+      }
+
+      &Title {
+        font-size: 20px;
+        color: $cyan;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      &Text {
+        font-size: 14px;
+        color: $text;
+      }
+    }
+
+    &__scroll {
+      width: 40px;
+      height: 40px;
+      background: url(../../assets/img/ico_arr_up.png) no-repeat center;
+      background-size: 16px;
+      background-color: $cyan;
+      border-radius: 50%;
+      position: fixed;
+      right: 20px;
+      top: 350px;
+      transition: $ease;
+
+      &:hover {
+        background-color: lighten($cyan, 5%);
+        transition: $ease;
+      }
+    }
+  }
+}
