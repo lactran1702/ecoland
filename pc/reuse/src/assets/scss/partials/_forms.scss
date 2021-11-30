@@ -69,9 +69,9 @@
 
   &Label {
     font-size: 12px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     display: block;
-    color: $grey;
+    color: $text;
 
     &__require {
       color: $red;
@@ -91,7 +91,7 @@
       border: 1px solid $red;
     }
 
-    &:placeholder-shown {
+    &::placeholder {
       color: $grey;
     }
   }
@@ -166,7 +166,7 @@
 
   &Wrap {
     &--banks {
-      width: 60%;
+      width: 50%;
 
       .formLabel {
         font-size: 16px;

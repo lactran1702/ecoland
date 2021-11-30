@@ -2,7 +2,7 @@
 <html lang="vi">
   <!-- HEAD
   ================================================== -->
-  @@include("partials/head.html", { "title": "PC-Regist_Banks" })
+  @@include("partials/head.html", { "title": "PC-Search_Branch" })
 
   <body>
     <!-- NAVBAR
@@ -10,11 +10,6 @@
     @@include("partials/header-log-in.html", { "slogan": "エコランド" })
     <section class="ecoUser">
       <div class="ecoUser__wrap">
-        <div class="ecoUser__lead">
-          <h4 class="ecoUser__title">キャッシュバック対象金額</h4>
-          <p class="ecoUser__text">下記金額は、送料550円を差し引いた金額になります。</p>
-          <p class="ecoUser__text ecoUser__text--strong"><strong>1,500円</strong></p>
-        </div>
         <h4 class="ecoUser__title">銀行口座</h4>
         <p class="ecoUser__text">キャッシュバック振込先の銀行口座を登録してください。</p>
         <div class="formWrap formWrap--banks">
@@ -62,48 +57,14 @@
             </div>
             <p class="formError formError--hide">入力されていません</p>
           </div>
-        </div>
-        <p class="ecoUser__button">
-          <a href="#" class="Button Button--large Button--cyan">振込口座登録</a>
-        </p>
-      </div>
-      <div class="ecoUser__faq">
-        <div class="ecoUser__faqWrap">
-          <div class="ecoUser__faqItem">
-            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
-            <div class="ecoUser__faqContent">
-              <ul class="ecoUser__faqContentList">
-                <li class="ecoUser__faqContentItem">エコ回収・買い取り</li>
-                <li class="ecoUser__faqContentItem">産廃の収集運搬</li>
-                <li class="ecoUser__faqContentItem">不用品処分情報サイト　リユシル</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ecoUser__faqItem">
-            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
-            <div class="ecoUser__faqContent">
-              <ul class="ecoUser__faqContentList">
-                <li class="ecoUser__faqContentItem">お知らせ</li>
-                <li class="ecoUser__faqContentItem">メディア紹介</li>
-                <li class="ecoUser__faqContentItem">イベントレポート</li>
-                <li class="ecoUser__faqContentItem">エコオクファンドレポート</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ecoUser__faqItem">
-            <p class="ecoUser__faqLeadTitle">企業情報</p>
-            <ul class="ecoUser__faqContentList">
-              <li class="ecoUser__faqContentItem">運営企業</li>
-              <li class="ecoUser__faqContentItem">プライバシーポリシー</li>
-              <li class="ecoUser__faqContentItem">個人情報の取り扱いについて</li>
-              <li class="ecoUser__faqContentItem">エコランド会員規約</li>
-              <li class="ecoUser__faqContentItem">エコ回収利用規約</li>
-              <li class="ecoUser__faqContentItem">エコランドオークション利用規約</li>
-            </ul>
-          </div>
+          <p class="formButton">
+            <input type="submit" class="Button Button--cyan" value="振込口座登録">
+          </p>
         </div>
       </div>
     </section>
+
+    @@include("partials/modal-list-branch.html")
   
 
     <!-- FOOTER

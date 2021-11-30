@@ -3,7 +3,7 @@
 
   &__wrap {
     width: 100%;
-    max-width: 750px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 100px 10px 120px;
   }
@@ -18,37 +18,29 @@
     }
   }
 
-  &__error {
-    font-size: 14px;
-    color: $red;
-    margin-bottom: 30px;
-  }
-
-  &__member {
-    padding-top: 60px;
-  }
-
   &__text {
     color: $text;
     margin-bottom: 30px;
-
-    &--center {
-      text-align: center;
-    }
-  }
-
-  &__row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .ecoUser__button {
-      margin: 0 15px;
-    }
   }
 
   &__button {
-    padding-top: 50px;
+    padding-top: 40px;
+  }
+
+  &__lead {
+    margin-bottom: 30px;
+
+    .ecoUser__title {
+      margin-bottom: 10px;
+    }
+
+    .ecoUser__text {
+      margin-bottom: 10px;
+
+      &--strong {
+        font-size: 20px;
+      }
+    }
   }
 
   &__faq {
@@ -79,194 +71,6 @@
         margin-bottom: 5px;
         color: $white;
       }
-    }
-  }
-
-  &__account {
-    width: 70%;
-    padding-top: 20px;
-
-    &--main {
-      width: 100%;
-      padding-top: 0;
-    }
-
-    &Item {
-      margin-bottom: 40px;
-    }
-
-    &Title {
-      font-size: 20px;
-      color: $text;
-      font-weight: bold;
-      margin-bottom: 15px;
-
-      &--small {
-        font-size: 14px;
-        margin-bottom: 2px;
-        font-weight: normal;
-        color: $grey;
-      }
-    }
-
-    &Row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    &Text {
-      font-size: 16px;
-      color: $text;
-      padding-left: 30px;
-    }
-
-    &Button {
-      border: none;
-      margin: 0;
-      padding: 0;
-      border-radius: 3px;
-      background-color: $lightGrey;
-      color: $text;
-      padding: 0 28px;
-      height: 35px;
-      line-height: 35px;
-      display: block;
-      transition: $ease;
-
-      &:hover {
-        background-color: darken($lightGrey, 5%);
-        transition: $ease;
-      }
-
-      &--pink {
-        color: $white;
-        background-color: $pink;
-
-        &:hover {
-          background-color: lighten($pink, 5%);
-        }
-      }
-    }
-
-    &Wrap {
-      display: flex;
-      margin-left: 8px;
-      width: 242px;
-
-      .ecoUser__accountButton {
-        margin: 0 8px;
-      }
-    }
-
-    .formCol {
-      width: calc(100% - 234px);
-      align-items: center;
-
-      &__content {
-        width: 100%;
-      }
-
-      &--small {
-        padding-right: 46px;
-      }
-    }
-
-    .formInput {
-      font-size: 14px;
-    }
-
-    .formRadio {
-      margin: 0;
-    }
-  }
-}
-
-.userInfo {
-  &__row {
-    margin-bottom: 24px;
-  }
-
-  &__label {
-    font-size: 12px;
-    color: $grey;
-    margin-bottom: 6px;
-  }
-
-  &__text {
-    color: $grey;
-    font-size: 12px;
-    margin-bottom: 4px;
-
-    &Link {
-      color: $cyan;
-    }
-
-    &--bold {
-      color: $black;
-      font-weight: bold;
-      font-size: 16px;
-    }
-  }
-
-  &__warning {
-    font-size: 12px;
-    color: $red;
-  }
-
-  &__check {
-    padding-top: 8px;
-
-    &Label {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    &Box {
-      display: none;
-
-      &:checked {
-        ~ .userInfo__checkMark {
-          background-color: $cyan;
-          border-color: transparent;
-          transition: $ease;
-
-          &::after {
-            display: block;
-          }
-        }
-      }
-    }
-
-    &Mark {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 15px;
-      width: 15px;
-      margin-right: 5px;
-      border-radius: 3px;
-      border: 1px solid #707070;
-      background-color: #eee;
-      transition: $ease;
-
-      &::after {
-        content: "";
-        display: none;
-        width: 3px;
-        height: 6px;
-        border: solid $white;
-        border-width: 0 2px 2px 0;
-        margin-top: -2px;
-        transform: rotate(45deg);
-      }
-    }
-
-    &Content {
-      color: $grey;
-      font-size: 12px;
-      width: calc(100% - 20px);
     }
   }
 }

@@ -544,9 +544,9 @@ input {
 
 .formLabel {
   font-size: 12px;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   display: block;
-  color: rgba(0, 0, 0, 0.54); }
+  color: #333; }
   .formLabel__require {
     color: #f00; }
 
@@ -560,11 +560,11 @@ input {
   line-height: 35px; }
   .formInput--error {
     border: 1px solid #f00; }
-  .formInput:-moz-placeholder-shown {
+  .formInput::-moz-placeholder {
     color: rgba(0, 0, 0, 0.54); }
   .formInput:-ms-input-placeholder {
     color: rgba(0, 0, 0, 0.54); }
-  .formInput:placeholder-shown {
+  .formInput::placeholder {
     color: rgba(0, 0, 0, 0.54); }
 
 .formError {
@@ -613,7 +613,7 @@ input {
     padding-left: 4px; }
 
 .formWrap--banks {
-  width: 60%; }
+  width: 50%; }
   .formWrap--banks .formLabel {
     font-size: 16px; }
   .formWrap--banks .formInput {
@@ -870,533 +870,11 @@ img {
     font-size: 14px;
     text-align: center; }
 
-.ecoTop__wrapper {
-  max-width: 1004px;
-  width: 100%;
-  margin: 100px auto; }
-
-.ecoTop__scroll {
-  width: 40px;
-  height: 40px;
-  background: url(../../assets/img/ico_arr_up.png) no-repeat center;
-  background-size: 16px;
-  background-color: #029E9E;
-  border-radius: 50%;
-  position: fixed;
-  right: 20px;
-  top: 350px;
-  transition: all 0.3s ease; }
-  .ecoTop__scroll:hover {
-    background-color: #02b7b7;
-    transition: all 0.3s ease; }
-
-.ecoTop__welcome {
-  text-align: center;
-  margin-bottom: 45px; }
-  .ecoTop__welcomeTitle {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 20px; }
-  .ecoTop__welcomeText {
-    font-size: 16px;
-    color: #333; }
-
-.ecoTop__list {
-  max-width: 848px;
-  padding: 0 10px;
-  width: 100%;
-  margin: 0 auto 75px;
-  display: flex;
-  justify-content: space-between; }
-  .ecoTop__listTitle {
-    font-size: 25px;
-    color: #333;
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 14px; }
-  .ecoTop__listText {
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: #333; }
-  .ecoTop__listImage {
-    height: 208px;
-    width: 370px;
-    overflow: hidden; }
-    .ecoTop__listImage img {
-      width: 100%;
-      height: 100%;
-      -o-object-fit: cover;
-         object-fit: cover; }
-
-.ecoTop__activity {
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto 50px; }
-  .ecoTop__activityItem {
-    position: relative;
-    margin-bottom: 15px;
-    padding: 18px 24px;
-    border: 1px solid #e0e0e0; }
-  .ecoTop__activityWrap {
-    display: flex;
-    justify-content: space-between; }
-    .ecoTop__activityWrap .ecoTop__activityItem {
-      width: 343px; }
-    .ecoTop__activityWrap .ecoTop__activityTitle {
-      background-position: center right; }
-  .ecoTop__activityLink {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  .ecoTop__activityTitle {
-    padding-bottom: 12px;
-    font-size: 28px;
-    color: #029E9E;
-    background-image: url(../../assets/img/ico_arr_right.png);
-    background-repeat: no-repeat;
-    background-size: 6px 12px;
-    background-position: bottom right; }
-  .ecoTop__activityText {
-    font-size: 20px;
-    color: #333; }
-
-.ecoTop__news {
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto 60px; }
-  .ecoTop__newsTitle {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 50px; }
-  .ecoTop__newsBanner {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px; }
-  .ecoTop__newsItem {
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    position: relative; }
-    .ecoTop__newsItemTitle {
-      color: #029E9E;
-      font-size: 16px;
-      margin-bottom: 4px; }
-  .ecoTop__newsLink {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  .ecoTop__newsCate {
-    display: flex;
-    align-items: center; }
-    .ecoTop__newsCateItem {
-      display: flex;
-      align-items: center;
-      font-size: 14px;
-      color: rgba(0, 0, 0, 0.54);
-      margin-right: 20px; }
-      .ecoTop__newsCateItem img {
-        width: 14px;
-        margin-right: 6px; }
-
-.ecoTop__detail {
-  max-width: 848px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px; }
-  .ecoTop__detailBanner {
-    display: flex;
-    margin-bottom: 40px; }
-  .ecoTop__detailLink {
-    display: block;
-    margin-right: 12px;
-    width: 240px; }
-  .ecoTop__detailText {
-    font-size: 14px;
-    color: #333; }
-
-.ecoTop__request {
-  max-width: 948px;
-  padding: 0 10px;
-  width: 100%;
-  margin: 100px auto; }
-  .ecoTop__requestTitle {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 20px; }
-  .ecoTop__requestText {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 16px; }
-  .ecoTop__requestLink {
-    font-size: 14px;
-    color: #029E9E;
-    display: block;
-    margin-bottom: 50px; }
-    .ecoTop__requestLink:hover {
-      text-decoration: underline;
-      color: #02b7b7; }
-  .ecoTop__requestTable {
-    font-size: 14px;
-    color: #333;
-    width: 100%; }
-    .ecoTop__requestTableHead {
-      text-align: left;
-      padding: 0 26px 20px;
-      margin-bottom: 20px; }
-    .ecoTop__requestTableRow {
-      border: 1px solid #e0e0e0;
-      border-bottom: none;
-      width: 100%; }
-      .ecoTop__requestTableRow:last-child {
-        border-top: none;
-        border-bottom: 1px solid #e0e0e0; }
-    .ecoTop__requestTableData {
-      padding: 16px 26px;
-      border-bottom: 1px dashed #e0e0e0;
-      width: calc(100% / 6);
-      word-break: break-all; }
-      .ecoTop__requestTableData strong {
-        font-weight: bold; }
-    .ecoTop__requestTableButton {
-      color: #333;
-      height: 36px;
-      line-height: 36px;
-      border: none;
-      border-radius: 4px;
-      background-color: #e0e0e0;
-      transition: all 0.3s ease; }
-      .ecoTop__requestTableButton:hover {
-        background-color: lightgray;
-        transition: all 0.3s ease; }
-
-.ecoTop__cash {
-  max-width: 840px;
-  width: 100%;
-  padding: 0 10px;
-  margin: 40px auto 100px; }
-  .ecoTop__cashTitle {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 26px;
-    padding-top: 60px; }
-  .ecoTop__cashText {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 26px; }
-    .ecoTop__cashText--warning {
-      color: #f00;
-      margin-bottom: 38px; }
-  .ecoTop__cashStatus {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #e0e0e0;
-    padding: 30px 20px;
-    margin-bottom: 40px; }
-    .ecoTop__cashStatusRow {
-      display: flex;
-      align-items: center; }
-    .ecoTop__cashStatusSet {
-      font-size: 25px;
-      color: #333;
-      margin-right: 80px; }
-    .ecoTop__cashStatusText {
-      font-size: 25px;
-      color: #e74b9c; }
-    .ecoTop__cashStatusButton {
-      color: #fff;
-      font-size: 15px;
-      width: 150px;
-      border: none;
-      background-color: #029E9E;
-      border-radius: 2px; }
-  .ecoTop__cashAmount {
-    border: 2px solid #e0e0e0; }
-    .ecoTop__cashAmountLead {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 24px 0;
-      border-bottom: 2px solid #e0e0e0; }
-    .ecoTop__cashAmountText {
-      font-size: 18px;
-      color: #333; }
-    .ecoTop__cashAmountTotal {
-      font-size: 36px;
-      color: #333;
-      font-weight: bold;
-      margin-left: 40px; }
-    .ecoTop__cashAmountRow {
-      display: flex;
-      width: 100%; }
-    .ecoTop__cashAmountItem {
-      width: 50%;
-      padding: 20px;
-      border-right: 2px solid #e0e0e0; }
-      .ecoTop__cashAmountItem:last-child {
-        border-right: none; }
-      .ecoTop__cashAmountItemTitle {
-        font-size: 18px;
-        color: #333;
-        text-align: center;
-        margin-bottom: 20px; }
-      .ecoTop__cashAmountItemText {
-        font-size: 12px;
-        color: #333;
-        margin-bottom: 40px; }
-      .ecoTop__cashAmountItemTotal {
-        font-size: 36px;
-        color: #333;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 30px; }
-      .ecoTop__cashAmountItemLink {
-        display: block;
-        width: 100%;
-        margin-bottom: 32px; }
-    .ecoTop__cashAmountButton {
-      display: block;
-      background-color: #e0e0e0;
-      border: none;
-      border-radius: 4px;
-      color: #fff;
-      height: 40px;
-      line-height: 40px;
-      font-size: 18px;
-      padding: 0 35px;
-      margin: 0 auto 30px;
-      transition: all 0.3s ease; }
-      .ecoTop__cashAmountButton:hover {
-        background-color: lightgray;
-        transition: all 0.3s ease; }
-    .ecoTop__cashAmountLink {
-      text-align: center;
-      color: #029E9E;
-      display: block; }
-
-.ecoTop__breadcrumb {
-  display: flex;
-  align-items: center; }
-  .ecoTop__breadcrumbItem {
-    display: flex;
-    align-items: center;
-    position: relative; }
-    .ecoTop__breadcrumbItem:hover .ecoTop__breadcrumbText {
-      color: #029E9E;
-      transition: all 0.3s ease; }
-    .ecoTop__breadcrumbItem--disable .ecoTop__breadcrumbStep {
-      background-color: rgba(0, 0, 0, 0.54); }
-    .ecoTop__breadcrumbItem--disable:hover .ecoTop__breadcrumbText {
-      color: #333; }
-  .ecoTop__breadcrumbLink {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  .ecoTop__breadcrumbStep {
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    line-height: 25px;
-    text-align: center;
-    color: #fff;
-    background-color: #029E9E;
-    margin-right: 10px; }
-  .ecoTop__breadcrumbText {
-    font-size: 13px;
-    color: #333;
-    transition: all 0.3s ease; }
-  .ecoTop__breadcrumbImage {
-    width: 13px;
-    margin: 0 15px; }
-
-.ecoTop__info {
-  padding-top: 36px; }
-  .ecoTop__infoTitle {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 36px; }
-    .ecoTop__infoTitle--small {
-      font-size: 20px;
-      margin-bottom: 18px; }
-  .ecoTop__infoText {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 40px; }
-  .ecoTop__infoList {
-    margin-bottom: 60px; }
-    .ecoTop__infoList--reuse {
-      margin-bottom: 30px; }
-    .ecoTop__infoListItem {
-      display: flex;
-      align-items: center;
-      width: 100%; }
-  .ecoTop__infoTable {
-    font-size: 15px;
-    color: #333;
-    border-top: 2px solid #e0e0e0;
-    border-bottom: 2px solid #e0e0e0;
-    width: calc(100% - 176px);
-    margin-right: 16px; }
-    .ecoTop__infoTableData {
-      padding: 30px 20px; }
-      .ecoTop__infoTableData--button {
-        width: 190px; }
-    .ecoTop__infoTable--banks {
-      width: 100%;
-      margin: 0 auto; }
-    .ecoTop__infoTableButton {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      overflow: hidden;
-      margin-bottom: 10px; }
-      .ecoTop__infoTableButtonIcon {
-        display: block;
-        width: 16px;
-        height: 16px;
-        background-color: rgba(0, 0, 0, 0.54);
-        border-radius: 100%;
-        margin-right: 10px;
-        transition: all 0.3s ease; }
-      .ecoTop__infoTableButtonText {
-        color: #333;
-        transition: all 0.3s ease; }
-      .ecoTop__infoTableButton:hover .ecoTop__infoTableButtonIcon {
-        background-color: #029E9E;
-        transition: all 0.3s ease; }
-      .ecoTop__infoTableButton:hover .ecoTop__infoTableButtonText {
-        color: #029E9E;
-        transition: all 0.3s ease; }
-    .ecoTop__infoTable.is-hide {
-      display: none; }
-  .ecoTop__infoButton {
-    color: #333;
-    height: 40px;
-    line-height: 40px;
-    background-color: #e0e0e0;
-    border-radius: 2px;
-    width: 160px;
-    display: block;
-    text-align: center;
-    transition: all 0.3s ease; }
-    .ecoTop__infoButton:hover {
-      background-color: lightgray; }
-    .ecoTop__infoButton--table {
-      width: 100%;
-      height: auto;
-      line-height: normal;
-      background: transparent;
-      text-align: right;
-      margin-bottom: 20px;
-      transition: none; }
-      .ecoTop__infoButton--table:hover {
-        background: transparent;
-        transition: none; }
-      .ecoTop__infoButton--table .Button {
-        margin-right: 0; }
-  .ecoTop__infoEdit {
-    width: 100%;
-    border: 1px solid #e0e0e0;
-    margin-bottom: 20px;
-    padding: 30px 20px; }
-    .ecoTop__infoEditTitle {
-      font-size: 20px;
-      color: #333;
-      margin-bottom: 20px; }
-    .ecoTop__infoEdit .formButton {
-      display: flex; }
-      .ecoTop__infoEdit .formButtonItem {
-        margin-right: 20px; }
-        .ecoTop__infoEdit .formButtonItem .Button {
-          width: auto;
-          padding: 0 20px; }
-
-.ecoTop__reuse {
-  padding: 30px;
-  border: 2px solid #e0e0e0;
-  margin-bottom: 40px; }
-  .ecoTop__reuseItem {
-    padding-bottom: 16px;
-    margin-bottom: 26px;
-    border-bottom: 2px dashed #e0e0e0; }
-    .ecoTop__reuseItem:last-child {
-      margin-bottom: 0; }
-  .ecoTop__reuseRow {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px; }
-    .ecoTop__reuseRowItem {
-      display: flex;
-      align-items: center;
-      margin-right: 36px; }
-    .ecoTop__reuseRow:last-child {
-      margin-bottom: 0; }
-    .ecoTop__reuseRow--grey .ecoTop__reuseText {
-      color: rgba(0, 0, 0, 0.54); }
-  .ecoTop__reuseText {
-    font-size: 14px;
-    color: #333;
-    margin-right: 16px; }
-  .ecoTop__reuseTitle {
-    font-size: 20px;
-    color: #333;
-    margin-right: 16px; }
-  .ecoTop__reuseStatus {
-    display: block;
-    color: #fff;
-    width: 50px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    background-color: #e74b9c;
-    border-radius: 2px; }
-
-.ecoTop__total {
-  margin-bottom: 60px; }
-  .ecoTop__totalWrap {
-    max-width: 310px;
-    width: 100%;
-    margin-left: auto; }
-  .ecoTop__totalItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px; }
-    .ecoTop__totalItem--sum {
-      border-top: 2px solid #e0e0e0;
-      border-bottom: 2px solid #e0e0e0;
-      padding: 20px 0;
-      margin-bottom: 0; }
-      .ecoTop__totalItem--sum .ecoTop__totalText {
-        font-size: 20px; }
-  .ecoTop__totalText {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333; }
-    .ecoTop__totalText--pink {
-      color: #e74b9c;
-      font-size: 30px; }
-
-.ecoTop__button {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .ecoTop__button .Button {
-    margin: 0 15px;
-    width: 120px; }
-    .ecoTop__button .Button--large {
-      width: 235px; }
-
 .ecoUser {
   min-height: calc(100vh - 276px); }
   .ecoUser__wrap {
     width: 100%;
-    max-width: 750px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 100px 10px 120px; }
   .ecoUser__title {
@@ -1405,25 +883,19 @@ img {
     color: #333; }
     .ecoUser__title--small {
       font-size: 20px; }
-  .ecoUser__error {
-    font-size: 14px;
-    color: #f00;
-    margin-bottom: 30px; }
-  .ecoUser__member {
-    padding-top: 60px; }
   .ecoUser__text {
     color: #333;
     margin-bottom: 30px; }
-    .ecoUser__text--center {
-      text-align: center; }
-  .ecoUser__row {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .ecoUser__row .ecoUser__button {
-      margin: 0 15px; }
   .ecoUser__button {
-    padding-top: 50px; }
+    padding-top: 40px; }
+  .ecoUser__lead {
+    margin-bottom: 30px; }
+    .ecoUser__lead .ecoUser__title {
+      margin-bottom: 10px; }
+    .ecoUser__lead .ecoUser__text {
+      margin-bottom: 10px; }
+      .ecoUser__lead .ecoUser__text--strong {
+        font-size: 20px; }
   .ecoUser__faq {
     background: #029E9E;
     border-bottom: 1px solid #fff;
@@ -1443,131 +915,6 @@ img {
     .ecoUser__faqContentItem {
       margin-bottom: 5px;
       color: #fff; }
-  .ecoUser__account {
-    width: 70%;
-    padding-top: 20px; }
-    .ecoUser__account--main {
-      width: 100%;
-      padding-top: 0; }
-    .ecoUser__accountItem {
-      margin-bottom: 40px; }
-    .ecoUser__accountTitle {
-      font-size: 20px;
-      color: #333;
-      font-weight: bold;
-      margin-bottom: 15px; }
-      .ecoUser__accountTitle--small {
-        font-size: 14px;
-        margin-bottom: 2px;
-        font-weight: normal;
-        color: rgba(0, 0, 0, 0.54); }
-    .ecoUser__accountRow {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; }
-    .ecoUser__accountText {
-      font-size: 16px;
-      color: #333;
-      padding-left: 30px; }
-    .ecoUser__accountButton {
-      border: none;
-      margin: 0;
-      padding: 0;
-      border-radius: 3px;
-      background-color: #e0e0e0;
-      color: #333;
-      padding: 0 28px;
-      height: 35px;
-      line-height: 35px;
-      display: block;
-      transition: all 0.3s ease; }
-      .ecoUser__accountButton:hover {
-        background-color: lightgray;
-        transition: all 0.3s ease; }
-      .ecoUser__accountButton--pink {
-        color: #fff;
-        background-color: #e74b9c; }
-        .ecoUser__accountButton--pink:hover {
-          background-color: #ea62a8; }
-    .ecoUser__accountWrap {
-      display: flex;
-      margin-left: 8px;
-      width: 242px; }
-      .ecoUser__accountWrap .ecoUser__accountButton {
-        margin: 0 8px; }
-    .ecoUser__account .formCol {
-      width: calc(100% - 234px);
-      align-items: center; }
-      .ecoUser__account .formCol__content {
-        width: 100%; }
-      .ecoUser__account .formCol--small {
-        padding-right: 46px; }
-    .ecoUser__account .formInput {
-      font-size: 14px; }
-    .ecoUser__account .formRadio {
-      margin: 0; }
-
-.userInfo__row {
-  margin-bottom: 24px; }
-
-.userInfo__label {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.54);
-  margin-bottom: 6px; }
-
-.userInfo__text {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 12px;
-  margin-bottom: 4px; }
-  .userInfo__textLink {
-    color: #029E9E; }
-  .userInfo__text--bold {
-    color: #000;
-    font-weight: bold;
-    font-size: 16px; }
-
-.userInfo__warning {
-  font-size: 12px;
-  color: #f00; }
-
-.userInfo__check {
-  padding-top: 8px; }
-  .userInfo__checkLabel {
-    display: flex;
-    align-items: center;
-    cursor: pointer; }
-  .userInfo__checkBox {
-    display: none; }
-    .userInfo__checkBox:checked ~ .userInfo__checkMark {
-      background-color: #029E9E;
-      border-color: transparent;
-      transition: all 0.3s ease; }
-      .userInfo__checkBox:checked ~ .userInfo__checkMark::after {
-        display: block; }
-  .userInfo__checkMark {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15px;
-    width: 15px;
-    margin-right: 5px;
-    border-radius: 3px;
-    border: 1px solid #707070;
-    background-color: #eee;
-    transition: all 0.3s ease; }
-    .userInfo__checkMark::after {
-      content: "";
-      display: none;
-      width: 3px;
-      height: 6px;
-      border: solid #fff;
-      border-width: 0 2px 2px 0;
-      margin-top: -2px;
-      transform: rotate(45deg); }
-  .userInfo__checkContent {
-    color: rgba(0, 0, 0, 0.54);
-    font-size: 12px;
-    width: calc(100% - 20px); }
 
 #preloader {
   position: fixed;
@@ -1781,11 +1128,17 @@ img {
         margin-right: 16px;
         font-size: 14px;
         color: #333;
-        width: calc(100% - 81px);
+        width: calc(100% - 101px);
         border: 1px solid #e0e0e0;
         height: 36px;
         line-height: 36px;
         padding: 0 10px; }
+        .popup__searchFieldText::-moz-placeholder {
+          color: rgba(0, 0, 0, 0.54); }
+        .popup__searchFieldText:-ms-input-placeholder {
+          color: rgba(0, 0, 0, 0.54); }
+        .popup__searchFieldText::placeholder {
+          color: rgba(0, 0, 0, 0.54); }
       .popup__searchFieldButton {
         background-color: #e0e0e0;
         color: #333;
@@ -1793,7 +1146,7 @@ img {
         border: none;
         margin: 0;
         display: block;
-        width: 65px;
+        width: 85px;
         height: 36px;
         line-height: 36px;
         transition: all 0.3s ease; }

@@ -2,18 +2,64 @@
 <html lang="vi">
   <!-- HEAD
   ================================================== -->
-  @@include("partials/head.html", { "title": "PC-Cash-back-request-done" })
+  @@include("partials/head.html", { "title": "PC-Select_Banks" })
 
   <body>
     <!-- NAVBAR
     ================================================== -->
-    @@include("partials/header-log-in.html", { "slogan": "エコ回収" })
+    @@include("partials/header-log-in.html", { "slogan": "エコランド" })
     <section class="ecoUser">
       <div class="ecoUser__wrap">
-        <h4 class="ecoUser__title">キャッシュバック申請完了</h4>
-        <p class="ecoUser__text">キャッシュバック申請が完了しました。<br>申請内容を確認後、登録された銀行口座へ翌月末に入金いたします。</p>
+        <h4 class="ecoUser__title">銀行口座</h4>
+        <p class="ecoUser__text">キャッシュバック振込先の銀行口座を登録してください。</p>
+        <div class="formWrap formWrap--banks">
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">銀行・支店</label>
+              <div class="formCol">
+                <p class="formCol__content">
+                  <button class="formCol__button">銀行・支店選択</button>
+                </p>
+              </div>
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">預金種類</label>
+              <div class="formCol">
+                <div class="formCol__content">
+                  <p class="formSelect">
+                    <select name="prefetureName" id="prefetureName"  class="formSelect__box">
+                      <option value="" selected="selected">(選択してください)</option>
+                      <option value="01">北海道</option>
+                      <option value="02">青森県</option>
+                      <option value="03">岩手県</option>
+                      <option value="04">宮城県</option>
+                    </select>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">口座番号</label>
+              <input class="formInput" type="text" placeholder="例）1234567">
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">口座名義</label>
+              <input class="formInput" type="text" placeholder="カタカナ入力　例）ヤマダエコ">
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+        </div>
         <p class="ecoUser__button">
-          <a href="#" class="Button Button--cyan Button--large">エコ回収トップページへ</a>
+          <a href="#" class="Button Button--large Button--cyan">振込口座登録</a>
         </p>
       </div>
       <div class="ecoUser__faq">
@@ -53,6 +99,8 @@
         </div>
       </div>
     </section>
+
+    @@include("partials/modal-search-bank.html")
   
 
     <!-- FOOTER

@@ -76,11 +76,15 @@
         margin-right: 16px;
         font-size: 14px;
         color: $text;
-        width: calc(100% - 81px);
+        width: calc(100% - 101px);
         border: 1px solid $lightGrey;
         height: 36px;
         line-height: 36px;
         padding: 0 10px;
+
+        &::placeholder {
+          color: $grey;
+        }
       }
 
       &Button {
@@ -90,7 +94,7 @@
         border: none;
         margin: 0;
         display: block;
-        width: 65px;
+        width: 85px;
         height: 36px;
         line-height: 36px;
         transition: $ease;
