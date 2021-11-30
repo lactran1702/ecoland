@@ -1,0 +1,42 @@
+.footer {
+  background: $cyan;
+  padding: 30px 0 20px;
+
+  &Wrap {
+    max-width: 848px;
+    width: 100%;
+    margin: 0 auto 18px;
+    padding: 0 10px;
+  }
+
+  &List {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &__item {
+      margin: 0 12px 6px 0;
+    }
+
+    &__link {
+      color: $white;
+      text-decoration: underline;
+      font-size: 14px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__text {
+      color: $white;
+      font-size: 14px;
+    }
+  }
+
+  &Copy {
+    padding-top: 10px;
+    color: $white;
+    font-size: 14px;
+    text-align: center;
+  }
+}

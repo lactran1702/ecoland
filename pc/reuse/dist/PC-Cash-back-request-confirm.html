@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- SEO -->
+    <title>PC-Cash-back-request-confirm</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Social Sharing Info -->
+    <meta property="og:url" content="__SHARING_URL__" />
+    <meta property="og:title" content="__SHARING_TITLE_GOES_HERE__" />
+    <meta property="og:description" content="__SHARING_DESCRIPTION_GOES_HERE__" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <!-- Full HD: WIDTH -->
+    <meta property="og:image:height" content="630" />
+    <!-- Full HD: HEIGHT -->
+    <meta property="fb:app_id" content="" />
+
+    <meta name="webroot" content="." />
+
+    <!-- Viewport and mobile -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <!-- FAVICON -->
+    <link rel="image_src" href="./assets/img/favicon.ico" />
+    <link rel="icon" type="image/gif" href="./assets/img/favicon.ico" />
+
+    <!-- Libs CSS -->
+    <!-- <link rel="stylesheet" href="./assets/fonts/feather/feather.css" /> -->
+
+    <!-- CSS: Stylesheet for the website -->
+    <!-- <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight" /> -->
+
+
+    <!-- Theme CSS -->
+    
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+     
+
+  </head>
+
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    <header class="ecoHeader">
+      <div class="ecoHeader__wrap">
+        <div class="ecoHeader__content">
+          <div class="ecoHeader__top">
+            <a href="#" class="ecoHeader__logo"><img src="assets/img/logo.png" alt="logo"></a>
+            <p class="ecoHeader__slogan ecoHeader__slogan--big">エコ回収</p>
+          </div>
+          <div class="ecoHeader__info">
+            <div class="ecoHeader__infoItem">
+              <div class="ecoHeader__phone">
+                <p class="ecoHeader__phoneImg"><img src="assets/img/ico_phone.png" alt="ico_phone"></p>
+                <p class="ecoHeader__phoneText">0120-530-539</p>
+              </div>
+              <p class="ecoHeader__phoneText">9:00-18:00 年中無休</p>
+            </div>
+            <div class="ecoHeader__infoItem">
+              <div class="ecoHeader__user">
+                <p class="ecoHeader__userIcon"><img src="assets/img/ico_user.png" alt="ico_user"></p>
+                <p class="ecoHeader__userText">uno-hayato</p>
+              </div>
+              <ul class="ecoHeader__sub hideElm">
+                <li class="ecoHeader__subItem">
+                  <a href="#" class="ecoHeader__subLink">アカウント</a>
+                  <ul class="ecoHeader__subDeep">
+                    <li class="ecoHeader__subDeepItem"><a href="#" class="ecoHeader__subDeepLink">プロフィール</a></li>
+                    <li class="ecoHeader__subDeepItem"><a href="#" class="ecoHeader__subDeepLink">プロフィール</a></li>
+                    <li class="ecoHeader__subDeepItem"><a href="#" class="ecoHeader__subDeepLink">プロフィール</a></li>
+                  </ul>
+                </li>
+                <li class="ecoHeader__subItem"><a href="#" class="ecoHeader__subLink">退会</a></li>
+                <li class="ecoHeader__subItem">
+                  <a href="#" class="ecoHeader__subLink">エコ回収</a>
+                </li>
+                <li class="ecoHeader__subItem"><a href="#" class="ecoHeader__subLink">ホリオク</a></li>
+                <li class="ecoHeader__subItem"><a href="#" class="ecoHeader__subLink">ログアウト</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navBar">
+        <ul class="navBar__list">
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_home.png" alt="ico_home">
+              <span class="navBar__linkText">トップ</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_key.png" alt="ico_key">
+              <span class="navBar__linkText">アカウント</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_clip.png" alt="ico_clip">
+              <span class="navBar__linkText">エコ回収一覧</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_hand.png" alt="ico_hand">
+              <span class="navBar__linkText">寄付/CB</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_truck.png" alt="ico_truck">
+              <span class="navBar__linkText">エコ回収依頼</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_card.png" alt="ico_card">
+              <span class="navBar__linkText">銀行口座</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_question.png" alt="ico_question">
+              <span class="navBar__linkText">ヘルプ</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_log_in.png" alt="ico_log_in">
+              <span class="navBar__linkText">退会</span>
+            </a>
+          </li>
+          <li class="navBar__item">
+            <a href="#" class="navBar__link">
+              <img class="navBar__linkImg" src="assets/img/ico_mail.png" alt="ico_mail">
+              <span class="navBar__linkText">お問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="ecoTop">
+      <div class="ecoTop__cash">
+        <ul class="ecoTop__breadcrumb">
+          <li class="ecoTop__breadcrumbItem">
+            <a href="#" class="ecoTop__breadcrumbLink"></a>
+            <p class="ecoTop__breadcrumbStep">1</p>
+            <p class="ecoTop__breadcrumbText">寄付／キャッシュバック選択</p>
+            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon.png" alt="ico_polygon"></p>
+          </li>
+          <li class="ecoTop__breadcrumbItem">
+            <a href="#" class="ecoTop__breadcrumbLink"></a>
+            <p class="ecoTop__breadcrumbStep">2</p>
+            <p class="ecoTop__breadcrumbText">振込先設定</p>
+            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon.png" alt="ico_polygon"></p>
+          </li>
+          <li class="ecoTop__breadcrumbItem ecoTop__breadcrumbItem">
+            <a href="#" class="ecoTop__breadcrumbLink"></a>
+            <p class="ecoTop__breadcrumbStep">3</p>
+            <p class="ecoTop__breadcrumbText">申請内容確認</p>
+            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon-grey.png" alt="ico_polygon-grey"></p>
+          </li>
+          <li class="ecoTop__breadcrumbItem ecoTop__breadcrumbItem--disable">
+            <p class="ecoTop__breadcrumbStep">4</p>
+            <p class="ecoTop__breadcrumbText">完了</p>
+          </li>
+        </ul>
+        <div class="ecoTop__info">
+          <h2 class="ecoTop__infoTitle">キャッシュバック申請内容　確認</h2>
+          <h3 class="ecoTop__infoTitle ecoTop__infoTitle--small">キャッシュバック振込先口座</h3>
+          <ul class="ecoTop__infoList ecoTop__infoList--reuse">
+            <li class="ecoTop__infoListItem">
+              <table class="ecoTop__infoTable">
+                <tr>
+                  <td class="ecoTop__infoTableData">三菱UFJ銀行</td>
+                  <td class="ecoTop__infoTableData">荻窪支店</td>
+                  <td class="ecoTop__infoTableData">普通 0000000</td>
+                  <td class="ecoTop__infoTableData">ヤマダハナコ</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+          <h3 class="ecoTop__infoTitle ecoTop__infoTitle--small">リユース内容</h3>
+          <p class="ecoTop__infoText">※販売された品物のみ表示となります。</p>
+        </div>
+        <ul class="ecoTop__reuse">
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+          <li class="ecoTop__reuseItem">
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseText">リユース番号</p>
+              <p class="ecoTop__reuseText">000001008267</p>
+            </div>
+            <div class="ecoTop__reuseRow">
+              <p class="ecoTop__reuseTitle">チェスト</p>
+              <span class="ecoTop__reuseStatus">CB</span>
+            </div>
+            <ul class="ecoTop__reuseRow">
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">CB金額：</p>
+                <p class="ecoTop__reuseText">\156</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">寄付金額：</p>
+                <p class="ecoTop__reuseText">-</p>
+              </li>
+              <li class="ecoTop__reuseRowItem">
+                <p class="ecoTop__reuseText">リユース代行終了日：</p>
+                <p class="ecoTop__reuseText">2019/05/16</p>
+              </li>
+            </ul>
+          </li>          
+        </ul>
+        <div class="ecoTop__total">
+          <div class="ecoTop__totalWrap">
+            <div class="ecoTop__totalItem">
+              <p class="ecoTop__totalText">キャッシュバック合計金額</p>
+              <p class="ecoTop__totalText">\980</p>
+            </div>
+            <div class="ecoTop__totalItem">
+              <p class="ecoTop__totalText">振込手数料</p>
+              <p class="ecoTop__totalText">-\550</p>
+            </div>
+            <div class="ecoTop__totalItem ecoTop__totalItem--sum">
+              <p class="ecoTop__totalText">お振込み予定金額</p>
+              <p class="ecoTop__totalText ecoTop__totalText--pink">\430</p>
+            </div>
+          </div>
+        </div>
+        <div class="ecoTop__button">
+          <a href="#" class="Button Button--cyan Button--large">キャッシュバック申請</a>
+          <a href="#" class="Button Button--grey">戻る</a>
+        </div>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqWrap">
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">エコ回収・買い取り</li>
+                <li class="ecoUser__faqContentItem">産廃の収集運搬</li>
+                <li class="ecoUser__faqContentItem">不用品処分情報サイト　リユシル</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">お知らせ</li>
+                <li class="ecoUser__faqContentItem">メディア紹介</li>
+                <li class="ecoUser__faqContentItem">イベントレポート</li>
+                <li class="ecoUser__faqContentItem">エコオクファンドレポート</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">運営企業</li>
+              <li class="ecoUser__faqContentItem">プライバシーポリシー</li>
+              <li class="ecoUser__faqContentItem">個人情報の取り扱いについて</li>
+              <li class="ecoUser__faqContentItem">エコランド会員規約</li>
+              <li class="ecoUser__faqContentItem">エコ回収利用規約</li>
+              <li class="ecoUser__faqContentItem">エコランドオークション利用規約</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="ecoTop__scroll"></a>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="footer">
+      <div class="footerWrap">
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコ回収</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">リユシル</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド</a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">なりすまし業者にご注意</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">個人情報の扱いについて</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">プライバシーポリシー</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコ回収利用規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">出品禁止商品ガイドライン</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">寄付</a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">紹介先</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランド会員規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">エコランドオークション利用規約</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">特定商取引法に基づく表記</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">古物営業法に基づく表示</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerWrap">
+        <ul class="footerList">
+          <li class="footerList__item">
+            <p class="footerList__text">株式会社エコランド</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">東京都杉並区上荻2-37-7</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">エコランドコンシェルシュ</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">0120-530-539</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">特願2007-262892</p>
+          </li>
+          <li class="footerList__item">
+            <p class="footerList__text">取得済み</p>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">お問い合わせ</a>
+          </li>
+          <li class="footerList__item">
+            <a href="#" class="footerList__link">運営企業について</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footerCopy">© 2015 Ecoland co, Ltd.</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="./assets/libs/keen-slider/keen-slider.js"></script> -->
+    <!-- <script src="./assets/libs/scrollmagic/ScrollMagic.min.js"></script> -->
+    <!-- <script src="./assets/libs/scrollmagic/plugins/debug.addIndicators.min.js"></script> -->
+
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="./assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,754 @@
+.ecoTop {
+  &__wrapper {
+    max-width: 1004px;
+    width: 100%;
+    margin: 100px auto;
+  }
+
+  &__scroll {
+    width: 40px;
+    height: 40px;
+    background: url(../../assets/img/ico_arr_up.png) no-repeat center;
+    background-size: 16px;
+    background-color: $cyan;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    top: 350px;
+    transition: $ease;
+
+    &:hover {
+      background-color: lighten($cyan, 5%);
+      transition: $ease;
+    }
+  }
+
+  &__welcome {
+    text-align: center;
+    margin-bottom: 45px;
+
+    &Title {
+      font-size: 30px;
+      color: $text;
+      margin-bottom: 20px;
+    }
+
+    &Text {
+      font-size: 16px;
+      color: $text;
+    }
+  }
+
+  &__list {
+    max-width: 848px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto 75px;
+    display: flex;
+    justify-content: space-between;
+
+    &Title {
+      font-size: 25px;
+      color: $text;
+      border-bottom: 1px solid $lightGrey;
+      margin-bottom: 14px;
+    }
+
+    &Text {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: $text;
+    }
+
+    &Image {
+      height: 208px;
+      width: 370px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__activity {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto 50px;
+
+    &Item {
+      position: relative;
+      margin-bottom: 15px;
+      padding: 18px 24px;
+      border: 1px solid $lightGrey;
+    }
+
+    &Wrap {
+      display: flex;
+      justify-content: space-between;
+
+      .ecoTop__activityItem {
+        width: 343px;
+      }
+
+      .ecoTop__activityTitle {
+        background-position: center right;
+      }
+    }
+
+    &Link {
+      @include ovl;
+    }
+
+    &Title {
+      padding-bottom: 12px;
+      font-size: 28px;
+      color: $cyan;
+      background-image: url(../../assets/img/ico_arr_right.png);
+      background-repeat: no-repeat;
+      background-size: 6px 12px;
+      background-position: bottom right;
+    }
+
+    &Text {
+      font-size: 20px;
+      color: $text;
+    }
+  }
+
+  &__news {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto 60px;
+
+    &Title {
+      font-size: 30px;
+      color: $text;
+      margin-bottom: 50px;
+    }
+
+    &Banner {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    &Item {
+      border-bottom: 1px solid $lightGrey;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      position: relative;
+
+      &Title {
+        color: $cyan;
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+    }
+
+    &Link {
+      @include ovl;
+    }
+
+    &Cate {
+      display: flex;
+      align-items: center;
+
+      &Item {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: $grey;
+        margin-right: 20px;
+
+        img {
+          width: 14px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  &__detail {
+    max-width: 848px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    &Banner {
+      display: flex;
+      margin-bottom: 40px;
+    }
+
+    &Link {
+      display: block;
+      margin-right: 12px;
+      width: 240px;
+    }
+
+    &Text {
+      font-size: 14px;
+      color: $text;
+    }
+  }
+
+  &__request {
+    max-width: 948px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 100px auto;
+
+    &Title {
+      font-size: 30px;
+      color: $text;
+      margin-bottom: 20px;
+    }
+
+    &Text {
+      font-size: 14px;
+      color: $text;
+      margin-bottom: 16px;
+    }
+
+    &Link {
+      font-size: 14px;
+      color: $cyan;
+      display: block;
+      margin-bottom: 50px;
+
+      &:hover {
+        text-decoration: underline;
+        color: lighten($cyan, 5%);
+      }
+    }
+
+    &Table {
+      font-size: 14px;
+      color: $text;
+      width: 100%;
+
+      &Head {
+        text-align: left;
+        padding: 0 26px 20px;
+        margin-bottom: 20px;
+      }
+
+      &Row {
+        border: 1px solid $lightGrey;
+        border-bottom: none;
+        width: 100%;
+
+        &:last-child {
+          border-top: none;
+          border-bottom: 1px solid $lightGrey;
+        }
+      }
+
+      &Data {
+        padding: 16px 26px;
+        border-bottom: 1px dashed $lightGrey;
+        width: calc(100% / 6);
+        word-break: break-all;
+
+        strong {
+          font-weight: bold;
+        }
+      }
+
+      &Button {
+        color: $text;
+        height: 36px;
+        line-height: 36px;
+        border: none;
+        border-radius: 4px;
+        background-color: $lightGrey;
+        transition: $ease;
+
+        &:hover {
+          background-color: darken($lightGrey, 5%);
+          transition: $ease;
+        }
+      }
+    }
+  }
+
+  &__cash {
+    max-width: 840px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 40px auto 100px;
+
+    &Title {
+      font-size: 30px;
+      color: $text;
+      margin-bottom: 26px;
+      padding-top: 60px;
+    }
+
+    &Text {
+      font-size: 14px;
+      color: $text;
+      margin-bottom: 26px;
+
+      &--warning {
+        color: $red;
+        margin-bottom: 38px;
+      }
+    }
+
+    &Status {
+      display: flex;
+      justify-content: space-between;
+      border: 2px solid $lightGrey;
+      padding: 30px 20px;
+      margin-bottom: 40px;
+
+      &Row {
+        display: flex;
+        align-items: center;
+      }
+
+      &Set {
+        font-size: 25px;
+        color: $text;
+        margin-right: 80px;
+      }
+
+      &Text {
+        font-size: 25px;
+        color: $pink;
+      }
+
+      &Button {
+        color: $white;
+        font-size: 15px;
+        width: 150px;
+        border: none;
+        background-color: $cyan;
+        border-radius: 2px;
+      }
+    }
+
+    &Amount {
+      border: 2px solid $lightGrey;
+
+      &Lead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 0;
+        border-bottom: 2px solid $lightGrey;
+      }
+
+      &Text {
+        font-size: 18px;
+        color: $text;
+      }
+
+      &Total {
+        font-size: 36px;
+        color: $text;
+        font-weight: bold;
+        margin-left: 40px;
+      }
+
+      &Row {
+        display: flex;
+        width: 100%;
+      }
+
+      &Item {
+        width: 50%;
+        padding: 20px;
+        border-right: 2px solid $lightGrey;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &Title {
+          font-size: 18px;
+          color: $text;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        &Text {
+          font-size: 12px;
+          color: $text;
+          margin-bottom: 40px;
+        }
+
+        &Total {
+          font-size: 36px;
+          color: $text;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+
+        &Link {
+          display: block;
+          width: 100%;
+          margin-bottom: 32px;
+        }
+      }
+
+      &Button {
+        display: block;
+        background-color: $lightGrey;
+        border: none;
+        border-radius: 4px;
+        color: $white;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        padding: 0 35px;
+        margin: 0 auto 30px;
+        transition: $ease;
+
+        &:hover {
+          background-color: darken($lightGrey, 5%);
+          transition: $ease;
+        }
+      }
+
+      &Link {
+        text-align: center;
+        color: $cyan;
+        display: block;
+      }
+    }
+  }
+
+  &__breadcrumb {
+    display: flex;
+    align-items: center;
+
+    &Item {
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &:hover {
+        .ecoTop__breadcrumbText {
+          color: $cyan;
+          transition: $ease;
+        }
+      }
+
+      &--disable {
+        .ecoTop__breadcrumbStep {
+          background-color: $grey;
+        }
+
+        &:hover {
+          .ecoTop__breadcrumbText {
+            color: $text;
+          }
+        }
+      }
+    }
+
+    &Link {
+      @include ovl;
+    }
+
+    &Step {
+      width: 25px;
+      height: 25px;
+      border-radius: 100%;
+      line-height: 25px;
+      text-align: center;
+      color: $white;
+      background-color: $cyan;
+      margin-right: 10px;
+    }
+
+    &Text {
+      font-size: 13px;
+      color: $text;
+      transition: $ease;
+    }
+
+    &Image {
+      width: 13px;
+      margin: 0 15px;
+    }
+  }
+
+  &__info {
+    padding-top: 36px;
+
+    &Title {
+      font-size: 30px;
+      color: $text;
+      margin-bottom: 36px;
+
+      &--small {
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+    }
+
+    &Text {
+      font-size: 14px;
+      color: $text;
+      margin-bottom: 40px;
+    }
+
+    &List {
+      margin-bottom: 60px;
+
+      &--reuse {
+        margin-bottom: 30px;
+      }
+
+      &Item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+    }
+
+    &Table {
+      font-size: 15px;
+      color: $text;
+      border-top: 2px solid $lightGrey;
+      border-bottom: 2px solid $lightGrey;
+      width: calc(100% - 176px);
+      margin-right: 16px;
+
+      &Data {
+        padding: 30px 20px;
+
+        &--button {
+          width: 190px;
+        }
+      }
+
+      &--banks {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      &Button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        &Icon {
+          display: block;
+          width: 16px;
+          height: 16px;
+          background-color: $grey;
+          border-radius: 100%;
+          margin-right: 10px;
+          transition: $ease;
+        }
+
+        &Text {
+          color: $text;
+          transition: $ease;
+        }
+
+        &:hover {
+          .ecoTop__infoTableButtonIcon {
+            background-color: $cyan;
+            transition: $ease;
+          }
+
+          .ecoTop__infoTableButtonText {
+            color: $cyan;
+            transition: $ease;
+          }
+        }
+      }
+
+      &.is-hide {
+        display: none;
+      }
+    }
+
+    &Button {
+      color: $text;
+      height: 40px;
+      line-height: 40px;
+      background-color: $lightGrey;
+      border-radius: 2px;
+      width: 160px;
+      display: block;
+      text-align: center;
+      transition: $ease;
+
+      &:hover {
+        background-color: darken($lightGrey, 5%);
+      }
+
+      &--table {
+        width: 100%;
+        height: auto;
+        line-height: normal;
+        background: transparent;
+        text-align: right;
+        margin-bottom: 20px;
+        transition: none;
+
+        &:hover {
+          background: transparent;
+          transition: none;
+        }
+
+        .Button {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &Edit {
+      width: 100%;
+      border: 1px solid $lightGrey;
+      margin-bottom: 20px;
+      padding: 30px 20px;
+
+      &Title {
+        font-size: 20px;
+        color: $text;
+        margin-bottom: 20px;
+      }
+
+      .formButton {
+        display: flex;
+
+        &Item {
+          margin-right: 20px;
+
+          .Button {
+            width: auto;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &__reuse {
+    padding: 30px;
+    border: 2px solid $lightGrey;
+    margin-bottom: 40px;
+
+    &Item {
+      padding-bottom: 16px;
+      margin-bottom: 26px;
+      border-bottom: 2px dashed $lightGrey;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &Row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+
+      &Item {
+        display: flex;
+        align-items: center;
+        margin-right: 36px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &--grey {
+        .ecoTop__reuseText {
+          color: $grey;
+        }
+      }
+    }
+
+    &Text {
+      font-size: 14px;
+      color: $text;
+      margin-right: 16px;
+    }
+
+    &Title {
+      font-size: 20px;
+      color: $text;
+      margin-right: 16px;
+    }
+
+    &Status {
+      display: block;
+      color: $white;
+      width: 50px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background-color: $pink;
+      border-radius: 2px;
+    }
+  }
+
+  &__total {
+    margin-bottom: 60px;
+
+    &Wrap {
+      max-width: 310px;
+      width: 100%;
+      margin-left: auto;
+    }
+
+    &Item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+
+      &--sum {
+        border-top: 2px solid $lightGrey;
+        border-bottom: 2px solid $lightGrey;
+        padding: 20px 0;
+        margin-bottom: 0;
+
+        .ecoTop__totalText {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &Text {
+      font-size: 16px;
+      font-weight: bold;
+      color: $text;
+
+      &--pink {
+        color: $pink;
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .Button {
+      margin: 0 15px;
+      width: 120px;
+
+      &--large {
+        width: 235px;
+      }
+    }
+  }
+}

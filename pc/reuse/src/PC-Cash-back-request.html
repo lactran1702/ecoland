@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Cash-back-request" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-log-in.html", { "slogan": "エコ回収" })
+    <section class="ecoTop">
+      <div class="ecoTop__cash">
+        <ul class="ecoTop__breadcrumb">
+          <li class="ecoTop__breadcrumbItem">
+            <a href="#" class="ecoTop__breadcrumbLink"></a>
+            <p class="ecoTop__breadcrumbStep">1</p>
+            <p class="ecoTop__breadcrumbText">寄付／キャッシュバック選択</p>
+            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon.png" alt="ico_polygon"></p>
+          </li>
+          <li class="ecoTop__breadcrumbItem">
+            <a href="#" class="ecoTop__breadcrumbLink"></a>
+            <p class="ecoTop__breadcrumbStep">2</p>
+            <p class="ecoTop__breadcrumbText">振込先設定</p>
+            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon-grey.png" alt="ico_polygon-grey"></p>
+          </li>
+          <li class="ecoTop__breadcrumbItem ecoTop__breadcrumbItem--disable">
+            <p class="ecoTop__breadcrumbStep">3</p>
+            <p class="ecoTop__breadcrumbText">申請内容確認</p>
+            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon-grey.png" alt="ico_polygon-grey"></p>
+          </li>
+          <li class="ecoTop__breadcrumbItem ecoTop__breadcrumbItem--disable">
+            <p class="ecoTop__breadcrumbStep">4</p>
+            <p class="ecoTop__breadcrumbText">完了</p>
+          </li>
+        </ul>
+
+        <div class="ecoTop__info">
+          <h2 class="ecoTop__infoTitle">キャッシュバック振込先口座</h2>
+          <p class="ecoTop__infoText">キャッシュバック申請には、振込先の銀行口座の設定が必要です。<br>キャッシュバック貯金額は申請された月の翌月末にお振込みいたします。<br>お振込みを確認されるまで銀行口座は削除されないよう、お願いいたします。</p>
+          <ul class="ecoTop__infoList">
+            <li class="ecoTop__infoListItem">
+              <table class="ecoTop__infoTable">
+                <tr>
+                  <td class="ecoTop__infoTableData">三菱UFJ銀行</td>
+                  <td class="ecoTop__infoTableData">荻窪支店</td>
+                  <td class="ecoTop__infoTableData">普通 0000000</td>
+                  <td class="ecoTop__infoTableData">ヤマダハナコ</td>
+                </tr>
+              </table>
+              <a href="#" class="ecoTop__infoButton">口座内容編集</a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="Button Button--cyan Button--large">キャッシュバック申請確認へ</a>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqWrap">
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">エコ回収・買い取り</li>
+                <li class="ecoUser__faqContentItem">産廃の収集運搬</li>
+                <li class="ecoUser__faqContentItem">不用品処分情報サイト　リユシル</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">お知らせ</li>
+                <li class="ecoUser__faqContentItem">メディア紹介</li>
+                <li class="ecoUser__faqContentItem">イベントレポート</li>
+                <li class="ecoUser__faqContentItem">エコオクファンドレポート</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">運営企業</li>
+              <li class="ecoUser__faqContentItem">プライバシーポリシー</li>
+              <li class="ecoUser__faqContentItem">個人情報の取り扱いについて</li>
+              <li class="ecoUser__faqContentItem">エコランド会員規約</li>
+              <li class="ecoUser__faqContentItem">エコ回収利用規約</li>
+              <li class="ecoUser__faqContentItem">エコランドオークション利用規約</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>
