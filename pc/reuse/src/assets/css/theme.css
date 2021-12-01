@@ -933,6 +933,182 @@ img {
       margin-bottom: 5px;
       color: #fff; }
 
+.ecoReuse__wrap {
+  max-width: 850px;
+  width: 100%;
+  margin: 100px auto; }
+
+.ecoReuse__title {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 16px; }
+  .ecoReuse__title--small {
+    font-size: 18px; }
+
+.ecoReuse__text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px; }
+  .ecoReuse__text--grey {
+    color: rgba(0, 0, 0, 0.54); }
+  .ecoReuse__textSpan {
+    color: #e74b9c; }
+
+.ecoReuse__button {
+  display: block;
+  margin-bottom: 16px; }
+
+.ecoReuse__faq {
+  margin-bottom: 25px; }
+  .ecoReuse__faqLead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #e0e0e0;
+    height: 65px;
+    padding: 0 35px;
+    cursor: pointer; }
+  .ecoReuse__faqTitle {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: bold; }
+  .ecoReuse__faqContent {
+    padding: 25px;
+    border: 2px solid #e0e0e0;
+    border-top: none;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54); }
+    .ecoReuse__faqContent.is-hide {
+      display: none; }
+
+.ecoReuse__tagline {
+  font-size: 24px;
+  border-left: 6px solid #029E9E;
+  padding-left: 25px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px; }
+
+.ecoReuse__progress {
+  border: 2px solid #e0e0e0;
+  padding: 25px;
+  margin-bottom: 70px; }
+  .ecoReuse__progressLead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+  .ecoReuse__progressTitle {
+    font-size: 24px;
+    color: #333; }
+  .ecoReuse__progressText {
+    text-align: center;
+    font-size: 14px;
+    color: #333; }
+  .ecoReuse__progressItem {
+    padding: 0 10px;
+    border-bottom: 2px dashed #e0e0e0;
+    margin-bottom: 30px; }
+    .ecoReuse__progressItem:last-child {
+      border: none;
+      margin-bottom: 0; }
+    .ecoReuse__progressItemText {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 16px;
+      padding-right: 15%; }
+      .ecoReuse__progressItemText span {
+        padding-left: 10px; }
+    .ecoReuse__progressItemTitle {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 16px; }
+    .ecoReuse__progressItemRow {
+      display: flex;
+      align-items: center; }
+  .ecoReuse__progress--failure .ecoReuse__progressItem {
+    border: none; }
+
+.ecoReuse__setting {
+  border: 2px solid #e0e0e0;
+  padding: 20px 30px 50px;
+  margin-bottom: 50px; }
+  .ecoReuse__settingWrap {
+    display: flex;
+    width: 100%; }
+  .ecoReuse__settingItem {
+    width: 50%;
+    padding: 10px 30px 20px; }
+    .ecoReuse__settingItem:first-child {
+      border-right: 4px dashed #e0e0e0; }
+  .ecoReuse__settingTitle {
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .ecoReuse__settingContent {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between; }
+  .ecoReuse__settingRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; }
+  .ecoReuse__settingText {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; }
+    .ecoReuse__settingText--total {
+      font-size: 25px;
+      color: #333;
+      font-weight: bold; }
+  .ecoReuse__settingNumber {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold; }
+    .ecoReuse__settingNumber--pink {
+      color: #e74b9c;
+      font-size: 25px;
+      font-weight: bold; }
+  .ecoReuse__settingTotal {
+    padding: 10px 0 0;
+    border-top: 2px solid #e0e0e0; }
+    .ecoReuse__settingTotal .Button {
+      color: #fff;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 20px; }
+  .ecoReuse__settingButton {
+    padding: 0 10px; }
+  .ecoReuse__settingNote {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.54);
+    padding-top: 20px; }
+    .ecoReuse__settingNote--pink {
+      color: #e74b9c; }
+    .ecoReuse__settingNote--big {
+      font-size: 25px; }
+
+.ecoReuse__scroll {
+  width: 40px;
+  height: 40px;
+  background: url(../../assets/img/ico_arr_up.png) no-repeat center;
+  background-size: 16px;
+  background-color: #029E9E;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  top: 350px;
+  transition: all 0.3s ease; }
+  .ecoReuse__scroll:hover {
+    background-color: #02b7b7;
+    transition: all 0.3s ease; }
+
 #preloader {
   position: fixed;
   top: 0;
