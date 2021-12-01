@@ -6,6 +6,10 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 100px 10px 120px;
+
+    &--center {
+      text-align: center;
+    }
   }
 
   &__title {
@@ -40,6 +44,27 @@
       &--strong {
         font-size: 20px;
       }
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    &Label {
+      font-size: 16px;
+      color: $text;
+      margin-right: 10px;
+    }
+
+    &Input {
+      border: 1px solid $grey;
+      line-height: 36px;
+      height: 36px;
+      padding: 0 10px;
+      width: 240px;
     }
   }
 

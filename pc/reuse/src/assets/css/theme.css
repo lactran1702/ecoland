@@ -877,6 +877,8 @@ img {
     max-width: 800px;
     margin: 0 auto;
     padding: 100px 10px 120px; }
+    .ecoUser__wrap--center {
+      text-align: center; }
   .ecoUser__title {
     font-size: 24px;
     margin-bottom: 20px;
@@ -896,6 +898,21 @@ img {
       margin-bottom: 10px; }
       .ecoUser__lead .ecoUser__text--strong {
         font-size: 20px; }
+  .ecoUser__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; }
+    .ecoUser__formLabel {
+      font-size: 16px;
+      color: #333;
+      margin-right: 10px; }
+    .ecoUser__formInput {
+      border: 1px solid rgba(0, 0, 0, 0.54);
+      line-height: 36px;
+      height: 36px;
+      padding: 0 10px;
+      width: 240px; }
   .ecoUser__faq {
     background: #029E9E;
     border-bottom: 1px solid #fff;
