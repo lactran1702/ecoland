@@ -9,7 +9,7 @@
     <meta http-equiv="content-language" content="en" />
 
     <!-- SEO -->
-    <title>PC-Cash-back-request</title>
+    <title>PC-Regist_bank_selected</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
@@ -60,7 +60,7 @@
         <div class="ecoHeader__content">
           <div class="ecoHeader__top">
             <a href="#" class="ecoHeader__logo"><img src="assets/img/logo.png" alt="logo"></a>
-            <p class="ecoHeader__slogan ecoHeader__slogan--big">エコ回収</p>
+            <p class="ecoHeader__slogan ecoHeader__slogan--big">エコランド</p>
           </div>
           <div class="ecoHeader__info">
             <div class="ecoHeader__infoItem">
@@ -154,50 +154,48 @@
         </ul>
       </nav>
     </header>
-    <section class="ecoTop">
-      <div class="ecoTop__cash">
-        <ul class="ecoTop__breadcrumb">
-          <li class="ecoTop__breadcrumbItem">
-            <a href="#" class="ecoTop__breadcrumbLink"></a>
-            <p class="ecoTop__breadcrumbStep">1</p>
-            <p class="ecoTop__breadcrumbText">寄付／キャッシュバック選択</p>
-            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon.png" alt="ico_polygon"></p>
-          </li>
-          <li class="ecoTop__breadcrumbItem">
-            <a href="#" class="ecoTop__breadcrumbLink"></a>
-            <p class="ecoTop__breadcrumbStep">2</p>
-            <p class="ecoTop__breadcrumbText">振込先設定</p>
-            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon-grey.png" alt="ico_polygon-grey"></p>
-          </li>
-          <li class="ecoTop__breadcrumbItem ecoTop__breadcrumbItem--disable">
-            <p class="ecoTop__breadcrumbStep">3</p>
-            <p class="ecoTop__breadcrumbText">申請内容確認</p>
-            <p class="ecoTop__breadcrumbImage"><img src="assets/img/ico_polygon-grey.png" alt="ico_polygon-grey"></p>
-          </li>
-          <li class="ecoTop__breadcrumbItem ecoTop__breadcrumbItem--disable">
-            <p class="ecoTop__breadcrumbStep">4</p>
-            <p class="ecoTop__breadcrumbText">完了</p>
-          </li>
-        </ul>
-
-        <div class="ecoTop__info">
-          <h2 class="ecoTop__infoTitle">キャッシュバック振込先口座</h2>
-          <p class="ecoTop__infoText">キャッシュバック申請には、振込先の銀行口座の設定が必要です。<br>キャッシュバック貯金額は申請された月の翌月末にお振込みいたします。<br>お振込みを確認されるまで銀行口座は削除されないよう、お願いいたします。</p>
-          <ul class="ecoTop__infoList">
-            <li class="ecoTop__infoListItem">
-              <table class="ecoTop__infoTable">
-                <tr>
-                  <td class="ecoTop__infoTableData">三菱UFJ銀行</td>
-                  <td class="ecoTop__infoTableData">荻窪支店</td>
-                  <td class="ecoTop__infoTableData">普通 0000000</td>
-                  <td class="ecoTop__infoTableData">ヤマダハナコ</td>
-                </tr>
-              </table>
-              <a href="#" class="ecoTop__infoButton">口座内容編集</a>
-            </li>
-          </ul>
+    <section class="ecoUser">
+      <div class="ecoUser__wrap">
+        <h4 class="ecoUser__title">銀行口座</h4>
+        <p class="ecoUser__text">キャッシュバック振込先の銀行口座を登録してください。</p>
+        <div class="formWrap formWrap--banks">
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">銀行・支店</label>
+              <div class="formCol formCol--small">
+                <p class="formCol__content">西武信用金庫</p>
+                <p class="formCol__content">荻窪西口支店</p>
+              </div>
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">預金種類</label>
+              <div class="formCol">
+                <p class="formCol__content">北海道</p>
+              </div>
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">口座番号</label>
+              <p class="formCol__content">1234567</p>
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">口座名義</label>
+              <p class="formCol__content">カタカナ入力</p>
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
         </div>
-        <a href="#" class="Button Button--cyan Button--large">キャッシュバック申請確認へ</a>
+        <p class="ecoUser__button">
+          <a href="#" class="Button Button--large Button--cyan">振込口座登録</a>
+        </p>
       </div>
       <div class="ecoUser__faq">
         <div class="ecoUser__faqWrap">
