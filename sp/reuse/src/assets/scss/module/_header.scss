@@ -1,148 +1,84 @@
-.ecoHeader {
-  &__wrap {
-    border-bottom: 2px solid #ccc;
-  }
+.ecoSp {
+  .ecoHeader {
+    position: relative;
 
-  &__content {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1004px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__top {
-    display: flex;
-    align-items: center;
-  }
-
-  &__logo {
-    display: block;
-    width: 75px;
-    margin-right: 14px;
-  }
-
-  &__slogan {
-    font-size: 12px;
-
-    &--big {
-      font-size: 25px;
-    }
-  }
-
-  &__info {
-    display: flex;
-    align-items: center;
-    &Item {
-      padding: 0 26px;
-      position: relative;
-      cursor: pointer;
-
-      &:hover {
-        .ecoHeader__phoneText {
-          text-decoration: underline;
-        }
-
-        .ecoHeader__userText {
-          color: $green;
-          transition: $ease;
-        }
-      }
-    }
-  }
-
-  &__phone {
-    display: flex;
-    align-items: center;
-
-    &Img {
-      width: 15px;
-      margin-right: 6px;
+    &__wrap {
+      border-bottom: 2px solid #ccc;
     }
 
-    &Text {
-      color: $green;
-      font-size: 12px;
-    }
-  }
-
-  &__user {
-    display: flex;
-    align-items: center;
-    height: 46px;
-
-    &Icon {
-      width: 18px;
-      margin-right: 8px;
+    &__content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    &Arrow {
-      width: 12px;
+    &__top {
+      display: flex;
+      align-items: center;
     }
 
-    &Text {
-      font-size: 14px;
-      color: $text;
-      transition: $ease;
-    }
-  }
-
-  &__sub {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-
-    &Item {
-      position: relative;
-      &:last-child {
-        .ecoHeader__subLink {
-          border: none;
-        }
-      }
-
-      &:hover {
-        .ecoHeader__subDeep {
-          right: 100%;
-          opacity: 1;
-          visibility: visible;
-          transition: $ease;
-        }
-      }
-    }
-
-    &Link {
+    &__logo {
       display: block;
-      line-height: 40px;
-      height: 40px;
-      background: #009da0;
-      color: $white;
-      text-align: center;
-      font-weight: bold;
-      border-bottom: 1px dashed $white;
-      transition: $ease;
+      width: 75px;
+    }
 
-      &:hover {
-        background: darken(#009da0, 10%);
+    &__info {
+      display: flex;
+      align-items: center;
+      &Item {
+        padding-right: 14px;
+        position: relative;
+      }
+    }
+
+    &__phone {
+      padding: 25px 0 25px 50px;
+      border: 2px solid $lightGrey;
+
+      &Row {
+        display: flex;
+        align-items: center;
+      }
+
+      &Img {
+        width: 15px;
+        margin-right: 6px;
+      }
+
+      &Text {
+        color: $green;
+        font-size: 12px;
+      }
+    }
+
+    &__user {
+      display: flex;
+      align-items: center;
+      height: 46px;
+
+      &Icon {
+        width: 18px;
+        margin-right: 8px;
+      }
+
+      &Text {
+        font-size: 12px;
+        color: $text;
         transition: $ease;
       }
     }
 
-    &Deep {
+    &__sub {
       position: absolute;
-      top: 0;
-      right: 97%;
+      top: 35px;
+      left: 0;
       width: 100%;
-      border-right: 1px solid $white;
-      opacity: 0;
-      visibility: hidden;
-      transition: $ease;
 
       &Item {
         position: relative;
         &:last-child {
-          .ecoHeader__subDeepLink {
+          .ecoHeader__subLink {
             border: none;
           }
         }
@@ -164,63 +100,123 @@
           transition: $ease;
         }
       }
-    }
-  }
-}
 
-.navBar {
-  width: 100%;
-  border-bottom: 8px solid #ccc;
+      &Deep {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        border-right: 1px solid $white;
 
-  &__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 1004px;
-    width: 100%;
-    margin: 0 auto;
-  }
+        &Item {
+          position: relative;
+          &:last-child {
+            .ecoHeader__subDeepLink {
+              border: none;
+            }
+          }
+        }
 
-  &__item {
-    .navBar__link {
-      border-left: 1px solid #ccc;
-    }
+        &Link {
+          display: block;
+          line-height: 40px;
+          height: 40px;
+          background: #009da0;
+          color: $white;
+          text-align: center;
+          font-weight: bold;
+          border-bottom: 1px dashed $white;
+          transition: $ease;
 
-    &:last-child {
-      .navBar__link {
-        border-right: 1px solid #ccc;
+          &:hover {
+            background: darken(#009da0, 10%);
+            transition: $ease;
+          }
+        }
       }
     }
+
+    &--logIn {
+      background-color: $cyan;
+
+      .ecoHeader__wrap {
+        border: none;
+      }
+    }
+
+    &__menu {
+      width: 17px;
+    }
   }
 
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 16px;
-    background-color: $white;
-    transition: $ease;
+  .navBar {
+    width: 210px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: $white;
+    z-index: 1;
 
-    &Img {
-      height: 18px;
-    }
-
-    &Text {
-      padding-left: 6px;
-      font-size: 12px;
-      color: $text;
-      font-weight: bold;
-      transition: $ease;
-    }
-
-    &:hover,
-    &.is-active {
+    &__lead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 45px;
       background-color: $lightGrey;
-      transition: $ease;
+      padding: 0 16px;
 
-      .navBar__linkText {
-        color: $cyan;
-        transition: $ease;
+      &Title {
+        font-size: 18px;
+        color: $text;
+        font-weight: bold;
+      }
+
+      &Icon {
+        width: 20px;
+      }
+    }
+
+    // &__content {
+    //   height: calc(100vh - 46px);
+    //   overflow-y: scroll;
+    //   -webkit-overflow-scrolling: touch;
+    // }
+
+    &__list {
+      border-right: 1px solid $lightGrey;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      border: 2px solid $lightGrey;
+      border-top: none;
+      padding: 0 16px;
+
+      &Img {
+        width: 30px;
+      }
+
+      &Text {
+        padding-left: 12px;
+        font-size: 14px;
+        color: $text;
+      }
+    }
+
+    &__sub {
+      &Link {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        border: 2px solid #e0e0e0;
+        border-top: none;
+        padding: 0 20px 0 52px;
+        font-size: 14px;
+        color: #333;
       }
     }
   }
