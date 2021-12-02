@@ -204,6 +204,10 @@
         font-size: 14px;
         color: $text;
       }
+
+      &.is-active {
+        background-color: $lightGrey;
+      }
     }
 
     &__sub {

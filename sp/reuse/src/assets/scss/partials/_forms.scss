@@ -12,12 +12,9 @@
 
   &Col {
     display: flex;
-    margin-right: -8px;
-    margin-left: -8px;
 
     &__content {
       width: 50%;
-      padding: 0 8px;
     }
 
     &__button {
@@ -44,12 +41,10 @@
   &Content {
     &__wrap {
       display: flex;
-      margin: 0 -8px 0 -8px;
     }
 
     &__item {
       width: 50%;
-      padding: 0 8px;
     }
 
     .formCol__content {
@@ -166,7 +161,6 @@
 
   &Wrap {
     &--banks {
-      width: 50%;
 
       .formLabel {
         font-size: 16px;
@@ -197,9 +191,13 @@
 
       .formCol--small {
         width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
 
         .formCol__content {
-          width: auto;
+          width: 100%;
+          padding: 0;
+          margin-bottom: 10px;
         }
       }
     }

@@ -1,100 +1,124 @@
-.ecoUser {
-  min-height: calc(100vh - 276px);
+.ecoSp {
+  .ecoUser {
 
-  &__wrap {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 100px 10px 120px;
+    &__wrap {
+      width: 100%;
+      margin: 0 auto;
+      padding: 60px 10px 120px;
 
-    &--center {
+      &--center {
+        text-align: center;
+      }
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: $text;
       text-align: center;
-    }
-  }
 
-  &__title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: $text;
-
-    &--small {
-      font-size: 20px;
-    }
-  }
-
-  &__text {
-    color: $text;
-    margin-bottom: 30px;
-  }
-
-  &__button {
-    padding-top: 40px;
-  }
-
-  &__lead {
-    margin-bottom: 30px;
-
-    .ecoUser__title {
-      margin-bottom: 10px;
-    }
-
-    .ecoUser__text {
-      margin-bottom: 10px;
-
-      &--strong {
+      &--small {
         font-size: 20px;
       }
     }
-  }
 
-  &__form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-
-    &Label {
-      font-size: 16px;
+    &__text {
       color: $text;
-      margin-right: 10px;
+      margin-bottom: 30px;
     }
 
-    &Input {
-      border: 1px solid $grey;
-      line-height: 36px;
-      height: 36px;
-      padding: 0 10px;
-      width: 240px;
-    }
-  }
-
-  &__faq {
-    background: $cyan;
-    border-bottom: 1px solid $white;
-    padding: 60px 0;
-
-    &Wrap {
-      display: flex;
-      justify-content: space-between;
-      max-width: 848px;
-      width: 100%;
-      padding: 0 10px;
-      margin: 0 auto;
+    &__button {
+      padding-top: 40px;
     }
 
-    &Lead {
-      &Title {
-        color: $white;
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 20px;
+    &__lead {
+      margin-bottom: 30px;
+
+      .ecoUser__title {
+        margin-bottom: 10px;
+      }
+
+      .ecoUser__text {
+        margin-bottom: 10px;
+
+        &--strong {
+          font-size: 20px;
+        }
       }
     }
 
-    &Content {
+    &__form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+
+      &Label {
+        font-size: 16px;
+        color: $text;
+        margin-right: 10px;
+      }
+
+      &Input {
+        border: 1px solid $grey;
+        line-height: 36px;
+        height: 36px;
+        padding: 0 10px;
+        width: 240px;
+      }
+    }
+
+    &__faq {
+      background: $cyan;
+
       &Item {
-        margin-bottom: 5px;
-        color: $white;
+        &.is-active {
+          .ecoUser__faqLeadIcon {
+            transform: rotate(180deg);
+            transition: $ease;
+          }
+        }
+      }
+
+      &Lead {
+        height: 55px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        border-bottom: 1px solid $white;
+
+        &Title {
+          color: $white;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        &Icon {
+          width: 10px;
+        }
+      }
+
+      &Content {
+        padding: 0 30px;
+
+        &List {
+          padding: 10px 0;
+        }
+
+        &Item {
+          margin-bottom: 5px;
+        }
+
+        &Link {
+          display: block;
+          color: $white;
+        }
+
+        &.is-hide {
+          display: none;
+        }
       }
     }
   }

@@ -1,42 +1,37 @@
-.footer {
-  background: $cyan;
-  padding: 30px 0 20px;
+.ecoSp {
+  .footer {
+    background: $cyan;
+    padding: 15px 0;
 
-  &Wrap {
-    max-width: 848px;
-    width: 100%;
-    margin: 0 auto 18px;
-    padding: 0 10px;
-  }
-
-  &List {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    &__item {
-      margin: 0 12px 6px 0;
+    &Wrap {
+      width: 100%;
+      margin: 0 auto 18px;
+      padding: 0 8px;
     }
 
-    &__link {
-      color: $white;
-      text-decoration: underline;
-      font-size: 14px;
+    &List {
+      margin-bottom: 10px;
+      &__item {
+        display: inline-block;
+        vertical-align: middle;
+      }
 
-      &:hover {
-        text-decoration: none;
+      &__link {
+        color: $white;
+        font-size: 11px;
+        display: block;
+      }
+
+      &__text {
+        color: $white;
+        font-size: 11px;
       }
     }
 
-    &__text {
+    &Copy {
       color: $white;
-      font-size: 14px;
+      font-size: 11px;
+      text-align: center;
     }
-  }
-
-  &Copy {
-    padding-top: 10px;
-    color: $white;
-    font-size: 14px;
-    text-align: center;
   }
 }

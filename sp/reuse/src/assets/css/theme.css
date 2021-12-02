@@ -460,7 +460,7 @@ input {
 .Button {
   display: block;
   margin: 0 auto;
-  width: 160px;
+  width: 100%;
   line-height: 44px;
   height: 44px;
   text-align: center;
@@ -490,8 +490,6 @@ input {
     color: #000; }
     .Button--grey:hover {
       background: lightgray; }
-  .Button--large {
-    width: 360px; }
 
 .formRow {
   margin-bottom: 12px; }
@@ -502,12 +500,9 @@ input {
     padding-bottom: 18px; }
 
 .formCol {
-  display: flex;
-  margin-right: -8px;
-  margin-left: -8px; }
+  display: flex; }
   .formCol__content {
-    width: 50%;
-    padding: 0 8px; }
+    width: 50%; }
   .formCol__button {
     width: 100%;
     height: 35px;
@@ -524,12 +519,10 @@ input {
       width: 33%; }
 
 .formContent__wrap {
-  display: flex;
-  margin: 0 -8px 0 -8px; }
+  display: flex; }
 
 .formContent__item {
-  width: 50%;
-  padding: 0 8px; }
+  width: 50%; }
 
 .formContent .formCol__content {
   width: 100%; }
@@ -612,27 +605,34 @@ input {
   .formRadio__label {
     padding-left: 4px; }
 
-.formWrap--banks {
-  width: 50%; }
-  .formWrap--banks .formLabel {
-    font-size: 16px; }
-  .formWrap--banks .formInput {
-    font-size: 14px; }
-  .formWrap--banks .formError {
-    font-size: 14px; }
-  .formWrap--banks .Button {
-    width: 235px; }
-  .formWrap--banks .formCol__button {
-    width: auto;
-    padding: 0 20px;
+.formWrap--banks .formLabel {
+  font-size: 16px; }
+
+.formWrap--banks .formInput {
+  font-size: 14px; }
+
+.formWrap--banks .formError {
+  font-size: 14px; }
+
+.formWrap--banks .Button {
+  width: 235px; }
+
+.formWrap--banks .formCol__button {
+  width: auto;
+  padding: 0 20px;
+  transition: all 0.3s ease; }
+  .formWrap--banks .formCol__button:hover {
+    background-color: lightgray;
     transition: all 0.3s ease; }
-    .formWrap--banks .formCol__button:hover {
-      background-color: lightgray;
-      transition: all 0.3s ease; }
-  .formWrap--banks .formCol--small {
-    width: 100%; }
-    .formWrap--banks .formCol--small .formCol__content {
-      width: auto; }
+
+.formWrap--banks .formCol--small {
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0; }
+  .formWrap--banks .formCol--small .formCol__content {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px; }
 
 a {
   text-decoration: none; }
@@ -821,6 +821,8 @@ img {
       padding-left: 12px;
       font-size: 14px;
       color: #333; }
+    .ecoSp .navBar__link.is-active {
+      background-color: #e0e0e0; }
   .ecoSp .navBar__subLink {
     display: flex;
     align-items: center;
@@ -832,260 +834,277 @@ img {
     font-size: 14px;
     color: #333; }
 
-.footer {
+.ecoSp .footer {
   background: #029E9E;
-  padding: 30px 0 20px; }
-  .footerWrap {
-    max-width: 848px;
+  padding: 15px 0; }
+  .ecoSp .footerWrap {
     width: 100%;
     margin: 0 auto 18px;
-    padding: 0 10px; }
-  .footerList {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; }
-    .footerList__item {
-      margin: 0 12px 6px 0; }
-    .footerList__link {
+    padding: 0 8px; }
+  .ecoSp .footerList {
+    margin-bottom: 10px; }
+    .ecoSp .footerList__item {
+      display: inline-block;
+      vertical-align: middle; }
+    .ecoSp .footerList__link {
       color: #fff;
-      text-decoration: underline;
-      font-size: 14px; }
-      .footerList__link:hover {
-        text-decoration: none; }
-    .footerList__text {
+      font-size: 11px;
+      display: block; }
+    .ecoSp .footerList__text {
       color: #fff;
-      font-size: 14px; }
-  .footerCopy {
-    padding-top: 10px;
+      font-size: 11px; }
+  .ecoSp .footerCopy {
     color: #fff;
-    font-size: 14px;
+    font-size: 11px;
     text-align: center; }
 
-.ecoUser {
-  min-height: calc(100vh - 276px); }
-  .ecoUser__wrap {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 100px 10px 120px; }
-    .ecoUser__wrap--center {
-      text-align: center; }
-  .ecoUser__title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333; }
-    .ecoUser__title--small {
+.ecoSp .ecoUser__wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 10px 120px; }
+  .ecoSp .ecoUser__wrap--center {
+    text-align: center; }
+
+.ecoSp .ecoUser__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center; }
+  .ecoSp .ecoUser__title--small {
+    font-size: 20px; }
+
+.ecoSp .ecoUser__text {
+  color: #333;
+  margin-bottom: 30px; }
+
+.ecoSp .ecoUser__button {
+  padding-top: 40px; }
+
+.ecoSp .ecoUser__lead {
+  margin-bottom: 30px; }
+  .ecoSp .ecoUser__lead .ecoUser__title {
+    margin-bottom: 10px; }
+  .ecoSp .ecoUser__lead .ecoUser__text {
+    margin-bottom: 10px; }
+    .ecoSp .ecoUser__lead .ecoUser__text--strong {
       font-size: 20px; }
-  .ecoUser__text {
+
+.ecoSp .ecoUser__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .ecoSp .ecoUser__formLabel {
+    font-size: 16px;
     color: #333;
-    margin-bottom: 30px; }
-  .ecoUser__button {
-    padding-top: 40px; }
-  .ecoUser__lead {
-    margin-bottom: 30px; }
-    .ecoUser__lead .ecoUser__title {
-      margin-bottom: 10px; }
-    .ecoUser__lead .ecoUser__text {
-      margin-bottom: 10px; }
-      .ecoUser__lead .ecoUser__text--strong {
-        font-size: 20px; }
-  .ecoUser__form {
+    margin-right: 10px; }
+  .ecoSp .ecoUser__formInput {
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    line-height: 36px;
+    height: 36px;
+    padding: 0 10px;
+    width: 240px; }
+
+.ecoSp .ecoUser__faq {
+  background: #029E9E; }
+  .ecoSp .ecoUser__faqItem.is-active .ecoUser__faqLeadIcon {
+    transform: rotate(180deg);
+    transition: all 0.3s ease; }
+  .ecoSp .ecoUser__faqLead {
+    height: 55px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 30px; }
-    .ecoUser__formLabel {
-      font-size: 16px;
-      color: #333;
-      margin-right: 10px; }
-    .ecoUser__formInput {
-      border: 1px solid rgba(0, 0, 0, 0.54);
-      line-height: 36px;
-      height: 36px;
-      padding: 0 10px;
-      width: 240px; }
-  .ecoUser__faq {
-    background: #029E9E;
-    border-bottom: 1px solid #fff;
-    padding: 60px 0; }
-    .ecoUser__faqWrap {
-      display: flex;
-      justify-content: space-between;
-      max-width: 848px;
-      width: 100%;
-      padding: 0 10px;
-      margin: 0 auto; }
-    .ecoUser__faqLeadTitle {
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #fff; }
+    .ecoSp .ecoUser__faqLeadTitle {
       color: #fff;
-      font-size: 14px;
-      font-weight: bold;
-      margin-bottom: 20px; }
-    .ecoUser__faqContentItem {
-      margin-bottom: 5px;
+      font-size: 20px;
+      font-weight: bold; }
+    .ecoSp .ecoUser__faqLeadIcon {
+      width: 10px; }
+  .ecoSp .ecoUser__faqContent {
+    padding: 0 30px; }
+    .ecoSp .ecoUser__faqContentList {
+      padding: 10px 0; }
+    .ecoSp .ecoUser__faqContentItem {
+      margin-bottom: 5px; }
+    .ecoSp .ecoUser__faqContentLink {
+      display: block;
       color: #fff; }
+    .ecoSp .ecoUser__faqContent.is-hide {
+      display: none; }
 
-.ecoReuse__wrap {
-  max-width: 850px;
+.ecoSp .ecoReuse__wrap {
   width: 100%;
-  margin: 100px auto; }
+  margin: 60px auto 100px;
+  padding: 0 10px; }
 
-.ecoReuse__title {
+.ecoSp .ecoReuse__title {
   font-size: 30px;
   color: #333;
-  margin-bottom: 16px; }
-  .ecoReuse__title--small {
+  margin-bottom: 16px;
+  text-align: center; }
+  .ecoSp .ecoReuse__title--small {
     font-size: 18px; }
 
-.ecoReuse__text {
+.ecoSp .ecoReuse__text {
   font-size: 14px;
   color: #333;
   margin-bottom: 20px; }
-  .ecoReuse__text--grey {
+  .ecoSp .ecoReuse__text--grey {
     color: rgba(0, 0, 0, 0.54); }
-  .ecoReuse__textSpan {
+  .ecoSp .ecoReuse__textSpan {
     color: #e74b9c; }
 
-.ecoReuse__button {
+.ecoSp .ecoReuse__button {
   display: block;
   margin-bottom: 16px; }
 
-.ecoReuse__faq {
+.ecoSp .ecoReuse__faq {
   margin-bottom: 25px; }
-  .ecoReuse__faqLead {
+  .ecoSp .ecoReuse__faqLead {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 2px solid #e0e0e0;
     height: 65px;
-    padding: 0 35px;
+    padding: 0 10px;
     cursor: pointer; }
-  .ecoReuse__faqTitle {
+  .ecoSp .ecoReuse__faqTitle {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.54);
     font-weight: bold; }
-  .ecoReuse__faqContent {
-    padding: 25px;
+  .ecoSp .ecoReuse__faqContent {
+    padding: 25px 10px;
     border: 2px solid #e0e0e0;
     border-top: none;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.54); }
-    .ecoReuse__faqContent.is-hide {
+    .ecoSp .ecoReuse__faqContent.is-hide {
       display: none; }
 
-.ecoReuse__tagline {
+.ecoSp .ecoReuse__tagline {
   font-size: 24px;
   border-left: 6px solid #029E9E;
-  padding-left: 25px;
+  padding-left: 15px;
   height: 50px;
   line-height: 50px;
   margin-bottom: 10px; }
 
-.ecoReuse__progress {
+.ecoSp .ecoReuse__progress {
   border: 2px solid #e0e0e0;
-  padding: 25px;
-  margin-bottom: 70px; }
-  .ecoReuse__progressLead {
+  padding: 25px 10px;
+  margin-bottom: 40px; }
+  .ecoSp .ecoReuse__progressLead {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px; }
-  .ecoReuse__progressTitle {
+    margin-bottom: 20px; }
+  .ecoSp .ecoReuse__progressTitle {
     font-size: 24px;
     color: #333; }
-  .ecoReuse__progressText {
+  .ecoSp .ecoReuse__progressText {
     text-align: center;
     font-size: 14px;
     color: #333; }
-  .ecoReuse__progressItem {
+  .ecoSp .ecoReuse__progressItem {
     padding: 0 10px;
     border-bottom: 2px dashed #e0e0e0;
-    margin-bottom: 30px; }
-    .ecoReuse__progressItem:last-child {
+    margin-bottom: 20px; }
+    .ecoSp .ecoReuse__progressItem:last-child {
       border: none;
       margin-bottom: 0; }
-    .ecoReuse__progressItemText {
+    .ecoSp .ecoReuse__progressItemText {
       font-size: 14px;
       color: #333;
       margin-bottom: 16px;
-      padding-right: 15%; }
-      .ecoReuse__progressItemText span {
-        padding-left: 10px; }
-    .ecoReuse__progressItemTitle {
+      padding-right: 5%; }
+      .ecoSp .ecoReuse__progressItemText span {
+        display: block;
+        margin-bottom: 5px; }
+    .ecoSp .ecoReuse__progressItemTitle {
       font-size: 20px;
       font-weight: bold;
       color: #333;
       margin-bottom: 16px; }
-    .ecoReuse__progressItemRow {
+    .ecoSp .ecoReuse__progressItemRow {
       display: flex;
-      align-items: center; }
-  .ecoReuse__progress--failure .ecoReuse__progressItem {
+      align-items: center;
+      flex-wrap: wrap; }
+  .ecoSp .ecoReuse__progress--failure .ecoReuse__progressItem {
     border: none; }
 
-.ecoReuse__setting {
+.ecoSp .ecoReuse__setting {
   border: 2px solid #e0e0e0;
-  padding: 20px 30px 50px;
+  padding: 20px 10px 50px;
   margin-bottom: 50px; }
-  .ecoReuse__settingWrap {
-    display: flex;
+  .ecoSp .ecoReuse__settingWrap {
     width: 100%; }
-  .ecoReuse__settingItem {
-    width: 50%;
-    padding: 10px 30px 20px; }
-    .ecoReuse__settingItem:first-child {
-      border-right: 4px dashed #e0e0e0; }
-  .ecoReuse__settingTitle {
+  .ecoSp .ecoReuse__settingItem {
+    width: 100%;
+    padding: 10px 0 30px; }
+    .ecoSp .ecoReuse__settingItem:first-child {
+      border-bottom: 2px dashed #e0e0e0;
+      margin-bottom: 30px; }
+  .ecoSp .ecoReuse__settingTitle {
     font-size: 25px;
     color: #333;
     font-weight: bold;
     margin-bottom: 20px; }
-  .ecoReuse__settingContent {
+  .ecoSp .ecoReuse__settingContent {
     display: flex;
     flex-direction: column;
     height: 80%;
     justify-content: space-between; }
-  .ecoReuse__settingRow {
+  .ecoSp .ecoReuse__settingRow {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px; }
-  .ecoReuse__settingText {
+  .ecoSp .ecoReuse__settingText {
     font-size: 16px;
     font-weight: bold;
     color: #333; }
-    .ecoReuse__settingText--total {
+    .ecoSp .ecoReuse__settingText--total {
       font-size: 25px;
       color: #333;
       font-weight: bold; }
-  .ecoReuse__settingNumber {
+  .ecoSp .ecoReuse__settingNumber {
     font-size: 20px;
     color: #333;
     font-weight: bold; }
-    .ecoReuse__settingNumber--pink {
+    .ecoSp .ecoReuse__settingNumber--pink {
       color: #e74b9c;
       font-size: 25px;
       font-weight: bold; }
-  .ecoReuse__settingTotal {
-    padding: 10px 0 0;
+  .ecoSp .ecoReuse__settingTotal {
+    padding: 20px 0 0;
+    margin-top: 20px;
     border-top: 2px solid #e0e0e0; }
-    .ecoReuse__settingTotal .Button {
+    .ecoSp .ecoReuse__settingTotal .Button {
       color: #fff;
       width: 100%;
       margin-top: 20px;
       font-size: 20px; }
-  .ecoReuse__settingButton {
+  .ecoSp .ecoReuse__settingButton {
     padding: 0 10px; }
-  .ecoReuse__settingNote {
+  .ecoSp .ecoReuse__settingNote {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.54);
     padding-top: 20px; }
-    .ecoReuse__settingNote--pink {
+    .ecoSp .ecoReuse__settingNote--pink {
       color: #e74b9c; }
-    .ecoReuse__settingNote--big {
-      font-size: 25px; }
+    .ecoSp .ecoReuse__settingNote--big {
+      font-size: 25px;
+      text-align: left; }
+    .ecoSp .ecoReuse__settingNote span {
+      display: block; }
 
-.ecoReuse__scroll {
+.ecoSp .ecoReuse__scroll {
   width: 40px;
   height: 40px;
   background: url(../../assets/img/ico_arr_up.png) no-repeat center;
@@ -1093,10 +1112,10 @@ img {
   background-color: #029E9E;
   border-radius: 50%;
   position: fixed;
-  right: 20px;
+  right: 5px;
   top: 350px;
   transition: all 0.3s ease; }
-  .ecoReuse__scroll:hover {
+  .ecoSp .ecoReuse__scroll:hover {
     background-color: #02b7b7;
     transition: all 0.3s ease; }
 
@@ -1249,14 +1268,14 @@ img {
   100% {
     opacity: 1; } }
 
-.popup {
+.ecoSp .popup {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 999; }
-  .popup__overlay {
+  .ecoSp .popup__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1264,7 +1283,15 @@ img {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 1; }
-  .popup__content {
+  .ecoSp .popup__button {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 20px;
+    z-index: 3; }
+    .ecoSp .popup__button img {
+      width: 100%; }
+  .ecoSp .popup__content {
     position: relative;
     z-index: 2;
     display: flex;
@@ -1274,149 +1301,118 @@ img {
     max-width: 575px;
     width: 100%;
     margin: 0 auto; }
-  .popup__search {
+  .ecoSp .popup__search {
     width: 100%;
-    padding: 30px;
+    margin: 10px;
+    padding: 20px 10px;
     background-color: #fff;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3); }
-    .popup__searchTitle {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+    position: relative; }
+    .ecoSp .popup__searchTitle {
       font-size: 20px;
       color: #333;
       margin-bottom: 10px; }
-    .popup__searchList {
+    .ecoSp .popup__searchList {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      flex-wrap: wrap;
       margin-bottom: 10px; }
-      .popup__searchListLink {
+      .ecoSp .popup__searchListItem {
+        width: calc(100% / 3); }
+      .ecoSp .popup__searchListLink {
         color: #029E9E;
         display: block;
         font-size: 14px;
         font-weight: bold;
         padding: 10px;
-        transition: all 0.3s ease; }
-        .popup__searchListLink:hover {
-          color: #028585;
-          background-color: #e0e0e0;
-          transition: all 0.3s ease; }
-    .popup__searchContentTitle {
+        text-align: center; }
+    .ecoSp .popup__searchContentTitle {
       font-size: 16px;
       color: #333;
       margin-bottom: 20px; }
-    .popup__searchField {
+    .ecoSp .popup__searchField {
       display: flex;
       align-items: center;
-      padding: 0 40px;
       margin-bottom: 20px; }
-      .popup__searchFieldText {
+      .ecoSp .popup__searchFieldText {
         margin-right: 16px;
         font-size: 14px;
         color: #333;
-        width: calc(100% - 101px);
+        width: calc(100% - 81px);
         border: 1px solid #e0e0e0;
         height: 36px;
         line-height: 36px;
         padding: 0 10px; }
-        .popup__searchFieldText::-moz-placeholder {
-          color: rgba(0, 0, 0, 0.54); }
-        .popup__searchFieldText:-ms-input-placeholder {
-          color: rgba(0, 0, 0, 0.54); }
-        .popup__searchFieldText::placeholder {
-          color: rgba(0, 0, 0, 0.54); }
-      .popup__searchFieldButton {
+      .ecoSp .popup__searchFieldButton {
         background-color: #e0e0e0;
         color: #333;
         font-size: 14px;
         border: none;
         margin: 0;
         display: block;
-        width: 85px;
+        width: 65px;
         height: 36px;
-        line-height: 36px;
-        transition: all 0.3s ease; }
-        .popup__searchFieldButton:hover {
-          background-color: lightgray;
-          transition: all 0.3s ease; }
-    .popup__searchKey {
+        line-height: 36px; }
+    .ecoSp .popup__searchKey {
       width: 100%;
       max-height: 300px;
       overflow: auto;
       margin-bottom: 30px; }
-      .popup__searchKeyWrap {
+      .ecoSp .popup__searchKeyWrap {
         width: 100%; }
-      .popup__searchKeyLink {
+      .ecoSp .popup__searchKeyLink {
         display: block;
         width: 100%;
         text-align: center;
         color: #029E9E;
         font-size: 14px;
-        padding: 10px;
-        transition: all 0.3s ease; }
-        .popup__searchKeyLink:hover {
-          color: #028585;
-          background-color: #e0e0e0;
-          transition: all 0.3s ease; }
-        .popup__searchKeyLink.is-disable {
+        padding: 5px 10px; }
+        .ecoSp .popup__searchKeyLink.is-disable {
           cursor: not-allowed;
           color: #e0e0e0; }
-          .popup__searchKeyLink.is-disable:hover {
+          .ecoSp .popup__searchKeyLink.is-disable:hover {
             color: #e0e0e0;
             background-color: transparent; }
-    .popup__searchButton {
+    .ecoSp .popup__searchButton {
       border: none;
       color: #333;
       display: block;
       margin: 0 auto;
       font-size: 14px;
-      padding: 10px 15px;
-      background-color: #e0e0e0;
-      transition: all 0.3s ease; }
-      .popup__searchButton:hover {
-        background-color: lightgray;
-        transition: all 0.3s ease; }
-  .popup__list {
+      padding: 10px 25px;
+      background-color: #e0e0e0; }
+  .ecoSp .popup__list {
     width: 100%;
-    padding: 30px;
+    margin: 10px;
+    padding: 20px 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
     background-color: #fff;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3); }
-    .popup__listTitle {
+    position: relative; }
+    .ecoSp .popup__listTitle {
       font-size: 20px;
       color: #333;
       margin-bottom: 20px; }
-    .popup__listWrap {
+    .ecoSp .popup__listWrap {
       width: 100%;
       max-height: 300px;
       overflow: auto;
       margin-bottom: 30px; }
-    .popup__listContent {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap; }
-      .popup__listContentItem {
-        width: 50%;
+    .ecoSp .popup__listContent {
+      width: 100%; }
+      .ecoSp .popup__listContentItem {
+        width: 100%;
         margin-bottom: 10px; }
-      .popup__listContentLink {
+      .ecoSp .popup__listContentLink {
         font-size: 14px;
         color: #029E9E;
-        display: block;
-        transition: all 0.3s ease; }
-        .popup__listContentLink:hover {
-          text-decoration: underline;
-          color: #028585;
-          transition: all 0.3s ease; }
-    .popup__listButton {
+        display: block; }
+    .ecoSp .popup__listButton {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      width: 50%;
-      margin: 0 auto; }
-      .popup__listButton .Button {
+      width: 100%;
+      justify-content: center; }
+      .ecoSp .popup__listButton .Button {
         width: auto;
         padding: 0 20px;
         color: #333;
-        transition: all 0.3s ease; }
-        .popup__listButton .Button:hover {
-          background-color: lightgray;
-          transition: all 0.3s ease; }
+        margin: 0 15px; }

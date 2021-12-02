@@ -1,256 +1,267 @@
-.ecoReuse {
-  &__wrap {
-    max-width: 850px;
-    width: 100%;
-    margin: 100px auto;
-  }
-
-  &__title {
-    font-size: 30px;
-    color: $text;
-    margin-bottom: 16px;
-
-    &--small {
-      font-size: 18px;
-    }
-  }
-
-  &__text {
-    font-size: 14px;
-    color: $text;
-    margin-bottom: 20px;
-
-    &--grey {
-      color: $grey;
+.ecoSp {
+  .ecoReuse {
+    &__wrap {
+      width: 100%;
+      margin: 60px auto 100px;
+      padding: 0 10px;
     }
 
-    &Span {
-      color: $pink;
-    }
-  }
+    &__title {
+      font-size: 30px;
+      color: $text;
+      margin-bottom: 16px;
+      text-align: center;
 
-  &__button {
-    display: block;
-    margin-bottom: 16px;
-  }
-
-  &__faq {
-    margin-bottom: 25px;
-
-    &Lead {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border: 2px solid $lightGrey;
-      height: 65px;
-      padding: 0 35px;
-      cursor: pointer;
-    }
-
-    &Title {
-      font-size: 18px;
-      color: $grey;
-      font-weight: bold;
-    }
-
-    &Content {
-      padding: 25px;
-      border: 2px solid $lightGrey;
-      border-top: none;
-      font-size: 14px;
-      color: $grey;
-
-      &.is-hide {
-        display: none;
+      &--small {
+        font-size: 18px;
       }
     }
-  }
 
-  &__tagline {
-    font-size: 24px;
-    border-left: 6px solid $cyan;
-    padding-left: 25px;
-    height: 50px;
-    line-height: 50px;
-    margin-bottom: 10px;
-  }
-
-  &__progress {
-    border: 2px solid $lightGrey;
-    padding: 25px;
-    margin-bottom: 70px;
-
-    &Lead {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 30px;
-    }
-
-    &Title {
-      font-size: 24px;
-      color: $text;
-    }
-
-    &Text {
-      text-align: center;
+    &__text {
       font-size: 14px;
       color: $text;
+      margin-bottom: 20px;
+
+      &--grey {
+        color: $grey;
+      }
+
+      &Span {
+        color: $pink;
+      }
     }
 
-    &Item {
-      padding: 0 10px;
-      border-bottom: 2px dashed $lightGrey;
-      margin-bottom: 30px;
+    &__button {
+      display: block;
+      margin-bottom: 16px;
+    }
 
-      &:last-child {
-        border: none;
-        margin-bottom: 0;
+    &__faq {
+      margin-bottom: 25px;
+
+      &Lead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid $lightGrey;
+        height: 65px;
+        padding: 0 10px;
+        cursor: pointer;
+      }
+
+      &Title {
+        font-size: 18px;
+        color: $grey;
+        font-weight: bold;
+      }
+
+      &Content {
+        padding: 25px 10px;
+        border: 2px solid $lightGrey;
+        border-top: none;
+        font-size: 14px;
+        color: $grey;
+
+        &.is-hide {
+          display: none;
+        }
+      }
+    }
+
+    &__tagline {
+      font-size: 24px;
+      border-left: 6px solid $cyan;
+      padding-left: 15px;
+      height: 50px;
+      line-height: 50px;
+      margin-bottom: 10px;
+    }
+
+    &__progress {
+      border: 2px solid $lightGrey;
+      padding: 25px 10px;
+      margin-bottom: 40px;
+
+      &Lead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      &Title {
+        font-size: 24px;
+        color: $text;
       }
 
       &Text {
+        text-align: center;
         font-size: 14px;
         color: $text;
-        margin-bottom: 16px;
-        padding-right: 15%;
+      }
 
-        span {
-          padding-left: 10px;
+      &Item {
+        padding: 0 10px;
+        border-bottom: 2px dashed $lightGrey;
+        margin-bottom: 20px;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+        }
+
+        &Text {
+          font-size: 14px;
+          color: $text;
+          margin-bottom: 16px;
+          padding-right: 5%;
+
+          span {
+            display: block;
+            margin-bottom: 5px;
+          }
+        }
+
+        &Title {
+          font-size: 20px;
+          font-weight: bold;
+          color: $text;
+          margin-bottom: 16px;
+        }
+
+        &Row {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+      }
+
+      &--failure {
+        .ecoReuse__progressItem {
+          border: none;
+        }
+      }
+    }
+
+    &__setting {
+      border: 2px solid $lightGrey;
+      padding: 20px 10px 50px;
+      margin-bottom: 50px;
+
+      &Wrap {
+        width: 100%;
+      }
+
+      &Item {
+        width: 100%;
+        padding: 10px 0 30px;
+
+        &:first-child {
+          border-bottom: 2px dashed $lightGrey;
+          margin-bottom: 30px;
         }
       }
 
       &Title {
-        font-size: 20px;
-        font-weight: bold;
+        font-size: 25px;
         color: $text;
-        margin-bottom: 16px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      &Content {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        justify-content: space-between;
       }
 
       &Row {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
       }
-    }
 
-    &--failure {
-      .ecoReuse__progressItem {
-        border: none;
+      &Text {
+        font-size: 16px;
+        font-weight: bold;
+        color: $text;
+
+        &--total {
+          font-size: 25px;
+          color: $text;
+          font-weight: bold;
+        }
       }
-    }
-  }
 
-  &__setting {
-    border: 2px solid $lightGrey;
-    padding: 20px 30px 50px;
-    margin-bottom: 50px;
-
-    &Wrap {
-      display: flex;
-      width: 100%;
-    }
-
-    &Item {
-      width: 50%;
-      padding: 10px 30px 20px;
-
-      &:first-child {
-        border-right: 4px dashed $lightGrey;
-      }
-    }
-
-    &Title {
-      font-size: 25px;
-      color: $text;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    &Content {
-      display: flex;
-      flex-direction: column;
-      height: 80%;
-      justify-content: space-between;
-    }
-
-    &Row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
-
-    &Text {
-      font-size: 16px;
-      font-weight: bold;
-      color: $text;
-
-      &--total {
-        font-size: 25px;
+      &Number {
+        font-size: 20px;
         color: $text;
         font-weight: bold;
+
+        &--pink {
+          color: $pink;
+          font-size: 25px;
+          font-weight: bold;
+        }
       }
-    }
 
-    &Number {
-      font-size: 20px;
-      color: $text;
-      font-weight: bold;
-
-      &--pink {
-        color: $pink;
-        font-size: 25px;
-        font-weight: bold;
-      }
-    }
-
-    &Total {
-      padding: 10px 0 0;
-      border-top: 2px solid $lightGrey;
-
-      .Button {
-        color: $white;
-        width: 100%;
+      &Total {
+        padding: 20px 0 0;
         margin-top: 20px;
-        font-size: 20px;
+        border-top: 2px solid $lightGrey;
+
+        .Button {
+          color: $white;
+          width: 100%;
+          margin-top: 20px;
+          font-size: 20px;
+        }
+      }
+
+      &Button {
+        padding: 0 10px;
+      }
+
+      &Note {
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: $grey;
+        padding-top: 20px;
+
+        &--pink {
+          color: $pink;
+        }
+
+        &--big {
+          font-size: 25px;
+          text-align: left;
+        }
+
+        span {
+          display: block;
+        }
       }
     }
 
-    &Button {
-      padding: 0 10px;
-    }
-
-    &Note {
-      text-align: center;
-      font-size: 16px;
-      font-weight: bold;
-      color: $grey;
-      padding-top: 20px;
-
-      &--pink {
-        color: $pink;
-      }
-
-      &--big {
-        font-size: 25px;
-      }
-    }
-  }
-
-  &__scroll {
-    width: 40px;
-    height: 40px;
-    background: url(../../assets/img/ico_arr_up.png) no-repeat center;
-    background-size: 16px;
-    background-color: $cyan;
-    border-radius: 50%;
-    position: fixed;
-    right: 20px;
-    top: 350px;
-    transition: $ease;
-
-    &:hover {
-      background-color: lighten($cyan, 5%);
+    &__scroll {
+      width: 40px;
+      height: 40px;
+      background: url(../../assets/img/ico_arr_up.png) no-repeat center;
+      background-size: 16px;
+      background-color: $cyan;
+      border-radius: 50%;
+      position: fixed;
+      right: 5px;
+      top: 350px;
       transition: $ease;
+
+      &:hover {
+        background-color: lighten($cyan, 5%);
+        transition: $ease;
+      }
     }
   }
 }
