@@ -52,7 +52,7 @@
   </head>
 
 
-  <body>
+  <body class="ecoSp">
     <!-- NAVBAR
     ================================================== -->
     <header class="ecoHeader">
@@ -60,42 +60,14 @@
         <div class="ecoHeader__content">
           <div class="ecoHeader__top">
             <a href="#" class="ecoHeader__logo"><img src="assets/img/logo.png" alt="logo"></a>
-            <p class="ecoHeader__slogan ecoHeader__slogan--big">エコランド</p>
-          </div>
-          <div class="ecoHeader__info">
-            <div class="ecoHeader__infoItem">
-              <div class="ecoHeader__phone">
-                <p class="ecoHeader__phoneImg"><img src="assets/img/ico_phone.png" alt="ico_phone"></p>
-                <p class="ecoHeader__phoneText">0120-530-539</p>
-              </div>
-              <p class="ecoHeader__phoneText">9:00-18:00 年中無休</p>
-            </div>
-            <div class="ecoHeader__infoItem">
-              <div class="ecoHeader__user">
-                <p class="ecoHeader__userIcon"><img src="assets/img/ico_user.png" alt="ico_user"></p>
-                <p class="ecoHeader__userText">uno-hayato</p>
-              </div>
-              <ul class="ecoHeader__sub hideElm">
-                <li class="ecoHeader__subItem">
-                  <a href="#" class="ecoHeader__subLink">アカウント</a>
-                  <ul class="ecoHeader__subDeep">
-                    <li class="ecoHeader__subDeepItem"><a href="#" class="ecoHeader__subDeepLink">プロフィール</a></li>
-                    <li class="ecoHeader__subDeepItem"><a href="#" class="ecoHeader__subDeepLink">プロフィール</a></li>
-                    <li class="ecoHeader__subDeepItem"><a href="#" class="ecoHeader__subDeepLink">プロフィール</a></li>
-                  </ul>
-                </li>
-                <li class="ecoHeader__subItem"><a href="#" class="ecoHeader__subLink">退会</a></li>
-                <li class="ecoHeader__subItem">
-                  <a href="#" class="ecoHeader__subLink">エコ回収</a>
-                </li>
-                <li class="ecoHeader__subItem"><a href="#" class="ecoHeader__subLink">ホリオク</a></li>
-                <li class="ecoHeader__subItem"><a href="#" class="ecoHeader__subLink">ログアウト</a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
       <nav class="navBar">
+        <div class="navBar__lead">
+          <p class="navBar__leadTitle">ホリオク</p>
+          <p class="navBar__leadIcon"><img src="assets/img/ico_close.png" alt="ico_close"></p>
+        </div>
         <ul class="navBar__list">
           <li class="navBar__item">
             <a href="#" class="navBar__link">
@@ -116,7 +88,7 @@
             </a>
           </li>
           <li class="navBar__item">
-            <a href="#" class="navBar__link">
+            <a href="#" class="navBar__link is-active">
               <img class="navBar__linkImg" src="assets/img/ico_hand.png" alt="ico_hand">
               <span class="navBar__linkText">寄付/CB</span>
             </a>
@@ -152,6 +124,13 @@
             </a>
           </li>
         </ul>
+        <div class="ecoHeader__phone">
+          <div class="ecoHeader__phoneRow">
+            <p class="ecoHeader__phoneImg"><img src="assets/img/ico_phone.png" alt="ico_phone"></p>
+            <p class="ecoHeader__phoneText">0120-530-539</p>
+          </div>
+          <p class="ecoHeader__phoneText">9:00-18:00 年中無休</p>
+        </div>
       </nav>
     </header>
     <section class="ecoUser">
@@ -209,37 +188,72 @@
         </p>
       </div>
       <div class="ecoUser__faq">
-        <div class="ecoUser__faqWrap">
-          <div class="ecoUser__faqItem">
+        <div class="ecoUser__faqItem is-active">
+          <div class="ecoUser__faqLead">
             <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
-            <div class="ecoUser__faqContent">
-              <ul class="ecoUser__faqContentList">
-                <li class="ecoUser__faqContentItem">エコ回収・買い取り</li>
-                <li class="ecoUser__faqContentItem">産廃の収集運搬</li>
-                <li class="ecoUser__faqContentItem">不用品処分情報サイト　リユシル</li>
-              </ul>
-            </div>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
           </div>
-          <div class="ecoUser__faqItem">
-            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
-            <div class="ecoUser__faqContent">
-              <ul class="ecoUser__faqContentList">
-                <li class="ecoUser__faqContentItem">お知らせ</li>
-                <li class="ecoUser__faqContentItem">メディア紹介</li>
-                <li class="ecoUser__faqContentItem">イベントレポート</li>
-                <li class="ecoUser__faqContentItem">エコオクファンドレポート</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ecoUser__faqItem">
-            <p class="ecoUser__faqLeadTitle">企業情報</p>
+          <div class="ecoUser__faqContent">
             <ul class="ecoUser__faqContentList">
-              <li class="ecoUser__faqContentItem">運営企業</li>
-              <li class="ecoUser__faqContentItem">プライバシーポリシー</li>
-              <li class="ecoUser__faqContentItem">個人情報の取り扱いについて</li>
-              <li class="ecoUser__faqContentItem">エコランド会員規約</li>
-              <li class="ecoUser__faqContentItem">エコ回収利用規約</li>
-              <li class="ecoUser__faqContentItem">エコランドオークション利用規約</li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収・買い取り</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">産廃の収集運搬</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">不用品処分情報サイト　リユシル</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">お知らせ</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">メディア紹介</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">イベントレポート</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコオクファンドレポート</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">運営企業</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">プライバシーポリシー</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">個人情報の取り扱いについて</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランド会員規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収利用規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランドオークション利用規約</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -250,6 +264,7 @@
       <div class="popup__overlay"></div>
       <div class="popup__content">
         <div class="popup__search">
+          <p class="popup__button"><img src="assets/img/ico_close.png" alt="ico_close"></p>
           <h6 class="popup__searchTitle">銀行選択</h6>
           <div class="popup__searchContent">
             <div class="popup__searchField">

@@ -52,7 +52,7 @@
   </head>
 
 
-  <body>
+  <body class="ecoSp">
     <!-- NAVBAR
     ================================================== -->
     <header class="ecoHeader">
@@ -60,16 +60,25 @@
         <div class="ecoHeader__content">
           <div class="ecoHeader__top">
             <a href="#" class="ecoHeader__logo"><img src="assets/img/logo.png" alt="logo"></a>
-            <p class="ecoHeader__slogan ecoHeader__slogan--big">エコランド</p>
+          </div>
+          <div class="ecoHeader__info">
+            <div class="ecoHeader__infoItem">
+              <p class="ecoHeader__menu"><img src="assets/img/ico_menu_cyan.png" alt="ico_menu_cyan"></p>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <section class="ecoUser">
       <div class="ecoUser__wrap">
+        <div class="ecoUser__lead">
+          <h4 class="ecoUser__title">キャッシュバック対象金額</h4>
+          <p class="ecoUser__text">下記金額は、送料550円を差し引いた金額になります。</p>
+          <p class="ecoUser__text ecoUser__text--strong"><strong>1,500円</strong></p>
+        </div>
         <h4 class="ecoUser__title">銀行口座</h4>
         <p class="ecoUser__text">キャッシュバック振込先の銀行口座を登録してください。</p>
-        <!-- <div class="formWrap formWrap--banks">
+        <div class="formWrap formWrap--banks">
           <div class="formRow">
             <div class="formContent">
               <label class="formLabel" for="">銀行・支店</label>
@@ -110,14 +119,85 @@
           <div class="formRow">
             <div class="formContent">
               <label class="formLabel" for="">口座名義</label>
-              <input class="formInput formInput--error" type="text" placeholder="カタカナ入力　例）ヤマダエコ">
+              <input class="formInput" type="text" placeholder="カタカナ入力　例）ヤマダエコ">
             </div>
-            <p class="formError">入力されていません</p>
+            <p class="formError formError--hide">入力されていません</p>
           </div>
-          <p class="formButton">
-            <input type="submit" class="Button Button--cyan" value="振込口座登録">
-          </p>
-        </div> -->
+        </div>
+        <p class="ecoUser__button">
+          <a href="#" class="Button Button--large Button--cyan">振込口座登録</a>
+        </p>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqItem is-active">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収・買い取り</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">産廃の収集運搬</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">不用品処分情報サイト　リユシル</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">お知らせ</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">メディア紹介</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">イベントレポート</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコオクファンドレポート</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ecoUser__faqItem">
+          <div class="ecoUser__faqLead">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <p class="ecoUser__faqLeadIcon"><img src="assets/img/ico_arr_down_white.png" alt="ico_arr_down_white"></p>
+          </div>
+          <div class="ecoUser__faqContent is-hide">
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">運営企業</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">プライバシーポリシー</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">個人情報の取り扱いについて</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランド会員規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコ回収利用規約</a>
+              </li>
+              <li class="ecoUser__faqContentItem">
+                <a href="#" class="ecoUser__faqContentLink">エコランドオークション利用規約</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   
