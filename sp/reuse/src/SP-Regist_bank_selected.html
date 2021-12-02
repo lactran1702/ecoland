@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Confirm_Banks" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-log-in.html", { "slogan": "エコランド" })
+    <section class="ecoUser">
+      <div class="ecoUser__wrap">
+        <h4 class="ecoUser__title">銀行口座</h4>
+        <p class="ecoUser__text">キャッシュバック振込先の銀行口座を登録してください。</p>
+        <div class="formWrap formWrap--banks">
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">銀行・支店</label>
+              <div class="formCol formCol--small">
+                <p class="formCol__content">西武信用金庫</p>
+                <p class="formCol__content">荻窪西口支店</p>
+                <p class="formCol__content">
+                  <button class="formCol__button">銀行・支店選択</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">預金種類</label>
+              <div class="formCol">
+                <div class="formCol__content">
+                  <p class="formSelect">
+                    <select name="prefetureName" id="prefetureName"  class="formSelect__box">
+                      <option value="" selected="selected">(選択してください)</option>
+                      <option value="01">北海道</option>
+                      <option value="02">青森県</option>
+                      <option value="03">岩手県</option>
+                      <option value="04">宮城県</option>
+                    </select>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">口座番号</label>
+              <input class="formInput" type="text" placeholder="例）1234567">
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+          <div class="formRow">
+            <div class="formContent">
+              <label class="formLabel" for="">口座名義</label>
+              <input class="formInput" type="text" placeholder="カタカナ入力　例）ヤマダエコ">
+            </div>
+            <p class="formError formError--hide">入力されていません</p>
+          </div>
+        </div>
+        <p class="ecoUser__button">
+          <a href="#" class="Button Button--large Button--cyan">振込口座登録</a>
+        </p>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqWrap">
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">エコ回収・買い取り</li>
+                <li class="ecoUser__faqContentItem">産廃の収集運搬</li>
+                <li class="ecoUser__faqContentItem">不用品処分情報サイト　リユシル</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">お知らせ</li>
+                <li class="ecoUser__faqContentItem">メディア紹介</li>
+                <li class="ecoUser__faqContentItem">イベントレポート</li>
+                <li class="ecoUser__faqContentItem">エコオクファンドレポート</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">運営企業</li>
+              <li class="ecoUser__faqContentItem">プライバシーポリシー</li>
+              <li class="ecoUser__faqContentItem">個人情報の取り扱いについて</li>
+              <li class="ecoUser__faqContentItem">エコランド会員規約</li>
+              <li class="ecoUser__faqContentItem">エコ回収利用規約</li>
+              <li class="ecoUser__faqContentItem">エコランドオークション利用規約</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

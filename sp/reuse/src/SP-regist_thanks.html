@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-regist_thanks" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header-log-in.html", { "slogan": "エコランド" })
+    <section class="ecoUser">
+      <div class="ecoUser__wrap">
+        <h4 class="ecoUser__title">キャッシュバック申請を承りました。</h4>
+        <p class="ecoUser__text">御申請登録ありがとうございました。<br>お振込みまで1か月程度のお時間が必要となります。<br>お振込みまでしばらくお待ちください。</p>
+        <p class="ecoUser__button">
+          <a href="#" class="Button Button--large Button--cyan">振込口座登録</a>
+        </p>
+      </div>
+      <div class="ecoUser__faq">
+        <div class="ecoUser__faqWrap">
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドのサービス</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">エコ回収・買い取り</li>
+                <li class="ecoUser__faqContentItem">産廃の収集運搬</li>
+                <li class="ecoUser__faqContentItem">不用品処分情報サイト　リユシル</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">エコランドの取り組み</p>
+            <div class="ecoUser__faqContent">
+              <ul class="ecoUser__faqContentList">
+                <li class="ecoUser__faqContentItem">お知らせ</li>
+                <li class="ecoUser__faqContentItem">メディア紹介</li>
+                <li class="ecoUser__faqContentItem">イベントレポート</li>
+                <li class="ecoUser__faqContentItem">エコオクファンドレポート</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ecoUser__faqItem">
+            <p class="ecoUser__faqLeadTitle">企業情報</p>
+            <ul class="ecoUser__faqContentList">
+              <li class="ecoUser__faqContentItem">運営企業</li>
+              <li class="ecoUser__faqContentItem">プライバシーポリシー</li>
+              <li class="ecoUser__faqContentItem">個人情報の取り扱いについて</li>
+              <li class="ecoUser__faqContentItem">エコランド会員規約</li>
+              <li class="ecoUser__faqContentItem">エコ回収利用規約</li>
+              <li class="ecoUser__faqContentItem">エコランドオークション利用規約</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>
