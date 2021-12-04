@@ -628,7 +628,8 @@ img {
     font-size: 38px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 36px; }
+    margin-bottom: 36px;
+    position: relative; }
     .ecoOrder__head--question {
       background: url(../../assets/img/ico_question.png) no-repeat center;
       background-size: auto 100%;
@@ -637,6 +638,13 @@ img {
       background: url(../../assets/img/ico_exclam.png) no-repeat center;
       background-size: auto 100%;
       background-position: center; }
+    .ecoOrder__head span {
+      font-size: 14px;
+      color: #e74b9c;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      padding-top: 80px; }
   .ecoOrder__title {
     font-size: 36px;
     color: #029E9E;
