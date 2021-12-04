@@ -25,10 +25,19 @@
     font-size: 38px;
     font-weight: bold;
     text-align: center;
-    background: url(../../assets/img/ico_exclam.png) no-repeat center;
-    background-size: 94px 100%;
-    background-position: center;
     margin-bottom: 36px;
+
+    &--question {
+      background: url(../../assets/img/ico_question.png) no-repeat center;
+      background-size: auto 100%;
+      background-position: center;
+    }
+
+    &--exclam {
+      background: url(../../assets/img/ico_exclam.png) no-repeat center;
+      background-size: auto 100%;
+      background-position: center;
+    }
   }
 
   &__title {
@@ -143,5 +152,52 @@
     &Button {
       margin-top: 70px;
     }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &Item {
+      position: relative;
+      margin: 0 5px;
+      border: 2px solid $cyan;
+      border-radius: 5px;
+      padding: 24px 0;
+      width: 165px;
+      transform: translateY(0);
+      transition: $ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        transition: $ease;
+      }
+    }
+
+    &Overlay {
+      @include ovl;
+    }
+
+    &Icon {
+      width: 84px;
+      margin: 0 auto 10px;
+    }
+
+    &Text {
+      font-size: 18px;
+      color: $cyan;
+      font-weight: bold;
+      text-align: center;
+
+      span {
+        font-size: 10px;
+        display: block;
+      }
+    }
+  }
+
+  .Button {
+    font-weight: bold;
   }
 }

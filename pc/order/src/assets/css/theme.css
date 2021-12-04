@@ -628,10 +628,15 @@ img {
     font-size: 38px;
     font-weight: bold;
     text-align: center;
-    background: url(../../assets/img/ico_exclam.png) no-repeat center;
-    background-size: 94px 100%;
-    background-position: center;
     margin-bottom: 36px; }
+    .ecoOrder__head--question {
+      background: url(../../assets/img/ico_question.png) no-repeat center;
+      background-size: auto 100%;
+      background-position: center; }
+    .ecoOrder__head--exclam {
+      background: url(../../assets/img/ico_exclam.png) no-repeat center;
+      background-size: auto 100%;
+      background-position: center; }
   .ecoOrder__title {
     font-size: 36px;
     color: #029E9E;
@@ -710,3 +715,38 @@ img {
       margin-bottom: 30px; }
     .ecoOrder__chargeButton {
       margin-top: 70px; }
+  .ecoOrder__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px; }
+    .ecoOrder__listItem {
+      position: relative;
+      margin: 0 5px;
+      border: 2px solid #029E9E;
+      border-radius: 5px;
+      padding: 24px 0;
+      width: 165px;
+      transform: translateY(0);
+      transition: all 0.3s ease; }
+      .ecoOrder__listItem:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease; }
+    .ecoOrder__listOverlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+    .ecoOrder__listIcon {
+      width: 84px;
+      margin: 0 auto 10px; }
+    .ecoOrder__listText {
+      font-size: 18px;
+      color: #029E9E;
+      font-weight: bold;
+      text-align: center; }
+      .ecoOrder__listText span {
+        font-size: 10px;
+        display: block; }
+  .ecoOrder .Button {
+    font-weight: bold; }
