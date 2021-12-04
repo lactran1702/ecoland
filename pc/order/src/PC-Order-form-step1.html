@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Order-form-step1" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header.html", { "slogan": "見積もりシミュレーション" })
+    <section class="ecoOrder">
+      <div class="ecoOrder__wrap">
+        <p class="ecoOrder__step">1/10</p>
+        <h2 class="ecoOrder__head">はじめに以下をご確認ください。</h2>
+        <h3 class="ecoOrder__title">回収対応エリア</h3>
+        <div class="ecoOrder__collection">
+          <div class="ecoOrder__collectionColumn">
+            <div class="ecoOrder__collectionItem">
+              <p class="ecoOrder__collectionItemLocation">東京都</p>
+              <p class="ecoOrder__collectionItemCopy">全域</p>
+            </div>
+            <div class="ecoOrder__collectionItem">
+              <p class="ecoOrder__collectionItemLocation">埼玉県</p>
+              <p class="ecoOrder__collectionItemCopy">朝霞市、入間市、入間郡三芳町、川口市、狭山市、志木市、草加市、所沢市、戸田市、新座市、鳩ヶ谷市、富士見市、ふじみ野市、和光市、蕨市、さいたま市、<span>吉川市、越谷市、三郷市、八潮市、上尾市、川越市、日高市、飯能市</span></p>
+            </div>
+          </div>
+          <div class="ecoOrder__collectionColumn">
+            <div class="ecoOrder__collectionItem">
+              <p class="ecoOrder__collectionItemLocation">神奈川県</p>
+              <p class="ecoOrder__collectionItemCopy">川崎市、横浜市、<span>鎌倉市、逗子市、横須賀市、三浦市、葉山町、大和市、相模原市、藤沢市</span></p>
+            </div>
+            <div class="ecoOrder__collectionItem">
+              <p class="ecoOrder__collectionItemLocation">千葉県</p>
+              <p class="ecoOrder__collectionItemCopy">市川市、浦安市、<span>千葉市、習志野市、八千代市、船橋市、鎌ヶ谷市、松戸市、柏市、流山市</span></p>
+            </div>
+          </div>
+          <p class="ecoOrder__collectionText">※赤字のエリアは、基本料金が7,700円(税込)となります。また回収日のご指定はいただけますが、到着時間帯のご指定は承れません。</p>
+        </div>
+        <div class="ecoOrder__charge">
+          <h3 class="ecoOrder__title">料金体系について</h3>
+          <p class="ecoOrder__text ecoOrder__text--center">エコランドでは以下の項目に則り、合計金額を算出します。</p>
+          <div class="ecoOrder__chargeRow">
+            <p class="ecoOrder__chargeItem">基本料金</p>
+            <p class="ecoOrder__chargeIcon"><img src="assets/img/ico_plus.png" alt="ico_plus"></p>
+            <p class="ecoOrder__chargeItem">品物別料金</p>
+            <p class="ecoOrder__chargeIcon"><img src="assets/img/ico_plus.png" alt="ico_plus"></p>
+            <p class="ecoOrder__chargeItem">特殊作業料金</p>
+          </div>
+          <div class="ecoOrder__chargeRow">
+            <p class="ecoOrder__chargeItem">時間指定料金</p>
+            <p class="ecoOrder__chargeIcon"><img src="assets/img/ico_plus.png" alt="ico_plus"></p>
+            <p class="ecoOrder__chargeItem">買取価格</p>
+          </div>
+          <div class="ecoOrder__chargeRow">
+            <p class="ecoOrder__chargeIcon"><img src="assets/img/ico_equal.png" alt="ico_equal"></p>
+          </div>
+          <div class="ecoOrder__chargeRow">
+            <p class="ecoOrder__chargeItem ecoOrder__chargeItem--pink">合計金額</p>
+          </div>
+          <p class="ecoOrder__chargeText">エコ回収では、出張費として1度の訪問につき、基本料金 税込3,300円（赤字のエリアは税込7,700円）を頂戴いたします。この先の質問にお答えいただく事により、合計支払金額の概算をご案内いたします。</p>
+          <p class="ecoOrder__chargeText">エコ回収では、出張費として1度の訪問につき、基本料金 税込3,300円（赤字のエリアは税込7,700円）を頂戴いたします。この先の質問にお答えいただく事により、合計支払金額の概算をご案内いたします。</p>
+          <p class="ecoOrder__chargeText">エコ回収では、出張費として1度の訪問につき、基本料金 税込3,300円（赤字のエリアは税込7,700円）を頂戴いたします。この先の質問にお答えいただく事により、合計支払金額の概算をご案内いたします。</p>
+          <p class="ecoOrder__chargeButton">
+            <a href="#" class="Button Button--pink Button--large">確認しました</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>
