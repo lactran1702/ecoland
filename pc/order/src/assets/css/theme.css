@@ -748,5 +748,59 @@ img {
       .ecoOrder__listText span {
         font-size: 10px;
         display: block; }
+  .ecoOrder__button--row {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .ecoOrder__button--row .Button {
+      margin: 0 10px; }
+  .ecoOrder__check {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px; }
+    .ecoOrder__checkItem {
+      display: flex;
+      align-items: center;
+      margin-right: 30px; }
+    .ecoOrder__checkText {
+      color: #029E9E;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 10px; }
+    .ecoOrder__checkLabel {
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+    .ecoOrder__checkBox {
+      display: none; }
+      .ecoOrder__checkBox:checked ~ .ecoOrder__checkMark {
+        background-color: #029E9E;
+        border-color: transparent;
+        transition: all 0.3s ease; }
+        .ecoOrder__checkBox:checked ~ .ecoOrder__checkMark::after {
+          display: block; }
+    .ecoOrder__checkMark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 55px;
+      width: 55px;
+      margin-right: 5px;
+      border-radius: 5px;
+      border: 2px solid #029E9E;
+      transition: all 0.3s ease; }
+      .ecoOrder__checkMark::after {
+        content: "";
+        display: none;
+        width: 9px;
+        height: 18px;
+        border: solid #fff;
+        border-width: 0 6px 6px 0;
+        transform: rotate(45deg); }
+    .ecoOrder__checkContent {
+      color: #029E9E;
+      font-size: 18px;
+      font-weight: bold; }
   .ecoOrder .Button {
-    font-weight: bold; }
+    font-weight: bold;
+    width: 300px; }
