@@ -832,6 +832,93 @@ img {
         color: #fff;
         background-color: #029E9E;
         transition: all 0.3s ease; }
+  .ecoOrder__select {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 70px; }
+    .ecoOrder__selectItem {
+      border-radius: 5px;
+      border: 2px solid #029E9E;
+      overflow: hidden;
+      margin-right: 25px;
+      width: calc(100% / 3); }
+      .ecoOrder__selectItem:last-child {
+        margin-right: 0; }
+      .ecoOrder__selectItem.is-open .ecoOrder__selectLeadIcon {
+        transform: rotate(0deg);
+        transition: all 0.3s ease; }
+      .ecoOrder__selectItem.is-open .ecoOrder__selectOption {
+        display: block; }
+    .ecoOrder__selectLead {
+      background: #029E9E;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+      .ecoOrder__selectLeadText {
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        margin-right: 12px; }
+      .ecoOrder__selectLeadIcon {
+        width: 10px;
+        transform: rotate(-90deg);
+        transition: all 0.3s ease; }
+    .ecoOrder__selectOption {
+      width: 100%;
+      display: none; }
+      .ecoOrder__selectOptionItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 25px;
+        border-bottom: 1px solid #029E9E; }
+        .ecoOrder__selectOptionItem:last-child {
+          border: none; }
+      .ecoOrder__selectOptionText {
+        font-size: 18px;
+        color: #029E9E; }
+        .ecoOrder__selectOptionText--bold {
+          font-weight: bold; }
+  .ecoOrder__tagline {
+    font-size: 28px;
+    color: #029E9E;
+    padding: 18px 0;
+    border: 2px solid #029E9E;
+    text-align: center;
+    margin-bottom: 50px; }
+  .ecoOrder__furniture {
+    width: 100%;
+    margin-bottom: 100px; }
+    .ecoOrder__furnitureRow {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between; }
+    .ecoOrder__furnitureItem {
+      display: flex;
+      align-items: center;
+      width: calc(100% / 3);
+      margin: 0 25px 25px 0;
+      border-radius: 5px;
+      padding: 10px 25px 10px 10px;
+      background: url(../../assets/img/ico_close.png) no-repeat center;
+      background-position: right 25px center;
+      background-size: 14px auto;
+      background-color: #029E9E; }
+      .ecoOrder__furnitureItem:last-child {
+        margin-right: 0; }
+    .ecoOrder__furnitureHolder {
+      width: 80px;
+      height: 80px;
+      background: #fff;
+      margin-right: 14px; }
+    .ecoOrder__furnitureText {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff; }
   .ecoOrder .Button {
     font-weight: bold;
-    width: 300px; }
+    width: 300px;
+    border-radius: 5px; }
