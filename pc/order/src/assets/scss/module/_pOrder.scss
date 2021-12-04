@@ -278,6 +278,35 @@
     }
   }
 
+  &__choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &Item {
+      color: $cyan;
+      font-size: 18px;
+      font-weight: bold;
+      width: 235px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+      border: 2px solid $cyan;
+      border-radius: 5px;
+      background: $white;
+      transition: $ease;
+
+      &:hover {
+        color: $white;
+        background-color: $cyan;
+        transition: $ease;
+      }
+    }
+  }
+
   .Button {
     font-weight: bold;
     width: 300px;

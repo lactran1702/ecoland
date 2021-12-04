@@ -801,6 +801,29 @@ img {
       color: #029E9E;
       font-size: 18px;
       font-weight: bold; }
+  .ecoOrder__choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px; }
+    .ecoOrder__choiceItem {
+      color: #029E9E;
+      font-size: 18px;
+      font-weight: bold;
+      width: 235px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+      border: 2px solid #029E9E;
+      border-radius: 5px;
+      background: #fff;
+      transition: all 0.3s ease; }
+      .ecoOrder__choiceItem:hover {
+        color: #fff;
+        background-color: #029E9E;
+        transition: all 0.3s ease; }
   .ecoOrder .Button {
     font-weight: bold;
     width: 300px; }
