@@ -561,25 +561,38 @@ img {
   .ecoSp .ecoHeader__logo {
     display: block;
     width: 75px;
-    margin-right: 24px; }
+    margin-right: 10px; }
   .ecoSp .ecoHeader__slogan {
-    font-size: 16px; }
+    font-size: 16px;
+    font-weight: bold; }
 
 .ecoSp .footer {
   background: #029E9E;
-  padding: 80px 0 20px;
+  padding: 30px 0 20px;
   color: #fff; }
   .ecoSp .footer__wrap {
     max-width: 1080px;
     width: 100%;
-    margin: 0 auto 60px;
-    padding: 0 10px;
-    display: flex; }
+    margin: 0 auto 20px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap; }
   .ecoSp .footer__content {
-    width: 50%; }
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 30px 0; }
     .ecoSp .footer__content--row {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      text-align: left;
+      border: none;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0; }
+    .ecoSp .footer__contentItem {
+      margin-bottom: 30px; }
   .ecoSp .footer__text {
     font-size: 11px; }
   .ecoSp .footer__link {
@@ -593,12 +606,10 @@ img {
     font-weight: bold;
     margin-bottom: 10px; }
   .ecoSp .footer__logo {
-    display: flex;
-    align-items: center;
     margin-bottom: 20px; }
     .ecoSp .footer__logoIcon {
       width: 70px;
-      margin-right: 16px; }
+      margin: 0 auto 18px; }
     .ecoSp .footer__logoText {
       font-size: 14px;
       font-weight: bold; }
@@ -607,10 +618,11 @@ img {
     text-align: center; }
 
 .ecoSp .ecoOrder {
-  padding: 40px 0 100px; }
+  padding: 20px 0 40px;
+  min-height: calc(100vh - 465px); }
   .ecoSp .ecoOrder__wrap {
     max-width: 1080px;
-    padding: 0 30px;
+    padding: 0 10px;
     width: 100%;
     margin: 0 auto; }
   .ecoSp .ecoOrder__content {
@@ -629,11 +641,10 @@ img {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 380px;
-    font-size: 38px;
+    height: 200px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 36px;
     position: relative; }
     .ecoSp .ecoOrder__head--question {
       background: url(../../assets/img/ico_question.png) no-repeat center;
@@ -649,9 +660,9 @@ img {
       position: absolute;
       width: 100%;
       text-align: center;
-      padding-top: 80px; }
+      bottom: 4vw; }
   .ecoSp .ecoOrder__title {
-    font-size: 36px;
+    font-size: 24px;
     color: #029E9E;
     text-align: center;
     margin-bottom: 16px; }
@@ -659,51 +670,46 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-top: 50px;
     flex-wrap: wrap;
-    margin-bottom: 120px; }
-    .ecoSp .ecoOrder__collectionColumn {
-      width: calc(50% - 17px); }
+    margin-bottom: 70px; }
     .ecoSp .ecoOrder__collectionItem {
       border: 2px solid #029E9E;
       border-radius: 5px;
       background: #fff;
       display: flex;
+      width: 100%;
       margin-bottom: 10px; }
       .ecoSp .ecoOrder__collectionItemLocation {
         background-color: #029E9E;
         color: #fff;
-        width: 132px;
+        width: 92px;
         display: flex;
         align-items: center;
         justify-content: center; }
       .ecoSp .ecoOrder__collectionItemCopy {
         color: #333;
-        width: calc(100% - 132px);
-        padding: 25px 20px; }
+        width: calc(100% - 92px);
+        padding: 15px 20px; }
         .ecoSp .ecoOrder__collectionItemCopy span {
           color: #e74b9c; }
     .ecoSp .ecoOrder__collectionText {
       width: 100%;
-      text-align: center;
       padding-top: 10px; }
+      .ecoSp .ecoOrder__collectionText span {
+        color: #e74b9c; }
   .ecoSp .ecoOrder__text {
     font-size: 14px;
     color: #333; }
     .ecoSp .ecoOrder__text--center {
       text-align: center; }
+    .ecoSp .ecoOrder__text--pink {
+      color: #e74b9c; }
   .ecoSp .ecoOrder__charge {
     max-width: 780px;
     width: 100%;
     margin: 0 auto; }
     .ecoSp .ecoOrder__chargeRow {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      justify-content: center;
-      margin: 45px 0 24px; }
-      .ecoSp .ecoOrder__chargeRow:last-of-type {
-        margin-bottom: 50px; }
+      margin: 40px 0; }
     .ecoSp .ecoOrder__chargeItem {
       font-size: 18px;
       font-weight: bold;
@@ -714,14 +720,14 @@ img {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin: 0 auto 10px;
       border: 2px solid #333; }
       .ecoSp .ecoOrder__chargeItem--pink {
-        width: 100%;
         border-color: #e74b9c;
         color: #e74b9c; }
     .ecoSp .ecoOrder__chargeIcon {
       width: 12px;
-      margin: 0 5px; }
+      margin: 10px auto; }
     .ecoSp .ecoOrder__chargeText {
       font-size: 14px;
       color: #333;
@@ -730,20 +736,17 @@ img {
       margin-top: 70px; }
   .ecoSp .ecoOrder__list {
     display: flex;
-    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
     margin-bottom: 60px; }
     .ecoSp .ecoOrder__listItem {
       position: relative;
-      margin: 0 5px;
+      margin: 0 5px 10px;
       border: 2px solid #029E9E;
       border-radius: 5px;
       padding: 24px 0;
       width: 165px;
-      transform: translateY(0);
-      transition: all 0.3s ease; }
-      .ecoSp .ecoOrder__listItem:hover {
-        transform: translateY(-5px);
-        transition: all 0.3s ease; }
+      width: calc(50% - 10px); }
     .ecoSp .ecoOrder__listOverlay {
       position: absolute;
       top: 0;
@@ -762,11 +765,9 @@ img {
         font-size: 10px;
         display: block; }
   .ecoSp .ecoOrder__button--row {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    margin-top: 70px; }
     .ecoSp .ecoOrder__button--row .Button {
-      margin: 0 10px; }
+      margin: 0 auto 10px; }
   .ecoSp .ecoOrder__button--big {
     max-width: 620px;
     width: 100%;
@@ -779,13 +780,13 @@ img {
       justify-content: center;
       font-size: 27px; }
   .ecoSp .ecoOrder__check {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px; }
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto 40px; }
     .ecoSp .ecoOrder__checkItem {
       display: flex;
       align-items: center;
-      margin-right: 30px; }
+      margin-bottom: 10px; }
     .ecoSp .ecoOrder__checkText {
       color: #029E9E;
       font-size: 18px;
@@ -834,12 +835,12 @@ img {
       color: #029E9E;
       font-size: 18px;
       font-weight: bold;
-      width: 235px;
+      width: 165px;
       height: 70px;
+      margin: 0 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 16px;
       border: 2px solid #029E9E;
       border-radius: 5px;
       background: #fff;
@@ -849,18 +850,17 @@ img {
         background-color: #029E9E;
         transition: all 0.3s ease; }
   .ecoSp .ecoOrder__select {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 70px; }
+    margin-bottom: 50px; }
     .ecoSp .ecoOrder__selectItem {
       border-radius: 5px;
-      border: 2px solid #029E9E;
-      overflow: hidden;
-      margin-right: 25px;
-      width: calc(100% / 3); }
+      border: 1px solid transparent;
+      width: 100%;
+      margin-bottom: 10px; }
       .ecoSp .ecoOrder__selectItem:last-child {
         margin-right: 0; }
+      .ecoSp .ecoOrder__selectItem.is-open .ecoOrder__selectLead {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px; }
       .ecoSp .ecoOrder__selectItem.is-open .ecoOrder__selectLeadIcon {
         transform: rotate(0deg);
         transition: all 0.3s ease; }
@@ -869,6 +869,7 @@ img {
     .ecoSp .ecoOrder__selectLead {
       background: #029E9E;
       padding: 15px 25px;
+      border-radius: 5px;
       display: flex;
       align-items: center;
       cursor: pointer; }
@@ -883,6 +884,10 @@ img {
         transition: all 0.3s ease; }
     .ecoSp .ecoOrder__selectOption {
       width: 100%;
+      border: 1px solid #029E9E;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
       display: none; }
       .ecoSp .ecoOrder__selectOptionItem {
         display: flex;
@@ -899,26 +904,21 @@ img {
         .ecoSp .ecoOrder__selectOptionText--bold {
           font-weight: bold; }
   .ecoSp .ecoOrder__tagline {
-    font-size: 28px;
+    font-size: 24px;
     color: #029E9E;
     padding: 18px 0;
     border: 2px solid #029E9E;
+    border-left: none;
+    border-right: none;
     text-align: center;
-    margin-bottom: 50px; }
-    .ecoSp .ecoOrder__tagline--left {
-      font-size: 24px;
-      text-align: left;
-      padding: 18px 30px; }
+    margin-bottom: 30px; }
   .ecoSp .ecoOrder__furniture {
     width: 100%;
-    margin-bottom: 100px; }
-    .ecoSp .ecoOrder__furnitureRow {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between; }
+    margin-bottom: 50px; }
     .ecoSp .ecoOrder__furnitureItem {
       width: calc(100% / 3);
-      margin: 0 25px 25px 0;
+      width: 100%;
+      margin-bottom: 10px;
       border-radius: 5px;
       background-color: #fff; }
       .ecoSp .ecoOrder__furnitureItem:last-child {
@@ -993,12 +993,11 @@ img {
       .ecoSp .ecoOrder__furnitureContentRow {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding-left: 15px;
-        padding: 0 15px; }
+        padding-left: 15px; }
         .ecoSp .ecoOrder__furnitureContentRowItem {
           display: flex;
-          align-items: center; }
+          align-items: center;
+          margin: 0 5px; }
       .ecoSp .ecoOrder__furnitureContentText {
         font-size: 12px;
         color: #333;
@@ -1033,7 +1032,7 @@ img {
           font-size: 24px;
           font-weight: bold; }
     .ecoSp .ecoOrder__furnitureIcon {
-      margin: 50px auto;
+      margin: 30px auto;
       width: 30px; }
       .ecoSp .ecoOrder__furnitureIcon--equal {
         width: 18px; }
@@ -1044,6 +1043,8 @@ img {
       border: 2px solid #029E9E;
       border-radius: 5px;
       overflow: hidden; }
+      .ecoSp .ecoOrder__furnitureTotal--medium {
+        padding: 0 30px; }
       .ecoSp .ecoOrder__furnitureTotalLead {
         font-size: 24px;
         font-weight: bold;
@@ -1067,18 +1068,24 @@ img {
           font-weight: bold; }
       .ecoSp .ecoOrder__furnitureTotalWrap {
         display: flex;
-        justify-content: space-between;
-        padding: 30px 30px 30px 20px; }
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 15px; }
       .ecoSp .ecoOrder__furnitureTotalLeft {
-        width: 50%; }
+        width: 100%; }
       .ecoSp .ecoOrder__furnitureTotalRight {
-        align-self: flex-end;
         display: flex;
         align-items: center;
-        justify-content: flex-end; }
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 20px;
+        border-top: 1px solid #029E9E;
+        margin-top: 20px; }
         .ecoSp .ecoOrder__furnitureTotalRight--border {
           border-bottom: 1px solid #333;
-          padding-bottom: 3px; }
+          border-top: none;
+          padding-bottom: 5px;
+          margin-bottom: 20px; }
       .ecoSp .ecoOrder__furnitureTotalItem {
         display: flex;
         align-items: center;
@@ -1097,17 +1104,18 @@ img {
   .ecoSp .ecoOrder__packing {
     max-width: 676px;
     width: 100%;
-    margin: 0 auto 100px;
+    margin: 0 auto 40px;
     border: 2px solid #029E9E;
     border-radius: 5px; }
     .ecoSp .ecoOrder__packingWrap {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding-top: 25px;
+      padding-top: 20px;
       margin-bottom: 10px; }
     .ecoSp .ecoOrder__packingItem {
-      margin: 0 35px 15px; }
+      margin: 0 10px 15px;
+      width: calc(50% - 20px); }
       .ecoSp .ecoOrder__packingItem .ecoOrder__checkMark {
         width: 18px;
         height: 18px;
@@ -1127,8 +1135,7 @@ img {
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      padding: 10px;
-      margin: 0 30px;
+      padding: 10px 25px;
       border-top: 1px solid #029E9E; }
       .ecoSp .ecoOrder__packingTotalText {
         font-size: 16px;
@@ -1140,12 +1147,12 @@ img {
         font-weight: bold;
         color: #e74b9c; }
   .ecoSp .ecoOrder__form {
-    width: 60%;
-    margin-bottom: 90px; }
+    width: 100%;
+    margin-bottom: 40px; }
     .ecoSp .ecoOrder__formItem {
       margin-bottom: 25px; }
       .ecoSp .ecoOrder__formItemWrap {
-        margin: 40px 0 70px; }
+        margin: 40px 0; }
     .ecoSp .ecoOrder__formTitle {
       font-size: 14px;
       font-weight: bold;
@@ -1160,7 +1167,10 @@ img {
       margin-bottom: 10px; }
       .ecoSp .ecoOrder__formRowItem {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        margin-right: 15px; }
+        .ecoSp .ecoOrder__formRowItem:last-child {
+          margin-right: 0; }
       .ecoSp .ecoOrder__formRow--small {
         display: flex;
         align-items: center; }
@@ -1174,22 +1184,24 @@ img {
       .ecoSp .ecoOrder__formRow--flex {
         display: flex;
         align-items: center;
-        justify-content: space-between; }
+        width: 100%; }
         .ecoSp .ecoOrder__formRow--flex .ecoOrder__formInput {
-          width: auto; }
+          width: 120px; }
         .ecoSp .ecoOrder__formRow--flex .ecoOrder__formText {
           margin-right: 6px;
           margin-bottom: 0; }
-      .ecoSp .ecoOrder__formRow--column .ecoOrder__formSelect {
-        width: 210px; }
-      .ecoSp .ecoOrder__formRow--column .ecoOrder__formText {
-        margin-bottom: 0;
-        margin-right: 10px; }
-      .ecoSp .ecoOrder__formRow--column .ecoOrder__formButton {
-        width: 76px;
-        margin-left: 10px; }
-      .ecoSp .ecoOrder__formRow--column .ecoOrder__formRowItem {
-        margin-bottom: 10px; }
+      .ecoSp .ecoOrder__formRow--column {
+        padding-right: 0; }
+        .ecoSp .ecoOrder__formRow--column .ecoOrder__formSelect {
+          width: 210px; }
+        .ecoSp .ecoOrder__formRow--column .ecoOrder__formText {
+          margin-bottom: 0;
+          margin-right: 10px; }
+        .ecoSp .ecoOrder__formRow--column .ecoOrder__formButton {
+          width: 76px;
+          margin-left: 10px; }
+        .ecoSp .ecoOrder__formRow--column .ecoOrder__formRowItem {
+          margin-bottom: 10px; }
     .ecoSp .ecoOrder__formInput {
       border: 1px solid #333;
       border-radius: 5px;
@@ -1242,11 +1254,14 @@ img {
     .ecoSp .ecoOrder__formRadio {
       display: flex;
       align-items: center;
+      justify-content: center;
       margin-top: 40px; }
       .ecoSp .ecoOrder__formRadioWrap {
         margin-right: 50px;
         display: flex;
         align-items: center; }
+        .ecoSp .ecoOrder__formRadioWrap:last-child {
+          margin-right: 0; }
       .ecoSp .ecoOrder__formRadioCheck {
         width: 21px;
         height: 21px;
@@ -1257,11 +1272,11 @@ img {
   .ecoSp .ecoOrder__area {
     max-width: 765px;
     width: 100%;
-    height: 250px;
+    height: 200px;
     margin: 0 auto;
     color: #333;
     font-size: 14px;
-    margin-bottom: 100px; }
+    margin-bottom: 40px; }
     .ecoSp .ecoOrder__areaHolder {
       width: 100%;
       height: 100%;
@@ -1270,8 +1285,11 @@ img {
       padding: 10px;
       border-radius: 5px; }
   .ecoSp .ecoOrder .Button {
+    font-size: 18px;
     font-weight: bold;
     width: 300px;
+    height: 50px;
+    line-height: 50px;
     border-radius: 5px; }
     .ecoSp .ecoOrder .Button--grey {
       color: #fff;

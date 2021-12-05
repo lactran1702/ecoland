@@ -687,6 +687,8 @@ img {
       width: 100%;
       text-align: center;
       padding-top: 10px; }
+      .ecoOrder__collectionText span {
+        color: #e74b9c; }
   .ecoOrder__text {
     font-size: 14px;
     color: #333; }
