@@ -2,6 +2,13 @@
   padding: 40px 0 100px;
 
   &__wrap {
+    max-width: 1080px;
+    padding: 0 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__content {
     max-width: 1100px;
     padding: 0 10px;
     width: 100%;
@@ -417,6 +424,12 @@
     border: 2px solid $cyan;
     text-align: center;
     margin-bottom: 50px;
+
+    &--left {
+      font-size: 24px;
+      text-align: left;
+      padding: 18px 30px;
+    }
   }
 
   &__furniture {
@@ -750,6 +763,205 @@
         font-weight: bold;
         color: $pink;
       }
+    }
+  }
+
+  &__form {
+    width: 60%;
+    margin-bottom: 90px;
+
+    &Item {
+      margin-bottom: 25px;
+
+      &Wrap {
+        margin: 40px 0 70px;
+      }
+    }
+
+    &Title {
+      font-size: 14px;
+      font-weight: bold;
+      color: $text;
+      margin-bottom: 10px;
+    }
+
+    &Require {
+      font-size: 14px;
+      font-weight: bold;
+      color: $pink;
+    }
+
+    &Row {
+      padding: 0 15px;
+      margin-bottom: 10px;
+
+      &Item {
+        display: flex;
+        align-items: center;
+      }
+
+      &--small {
+        display: flex;
+        align-items: center;
+
+        .ecoOrder__formInput {
+          width: 55px;
+        }
+      }
+
+      &--medium {
+        display: flex;
+        align-items: center;
+
+        .ecoOrder__formInput {
+          width: 90px;
+        }
+      }
+
+      &--flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .ecoOrder__formInput {
+          width: auto;
+        }
+
+        .ecoOrder__formText {
+          margin-right: 6px;
+          margin-bottom: 0;
+        }
+      }
+
+      &--column {
+        .ecoOrder__formSelect {
+          width: 210px;
+        }
+
+        .ecoOrder__formText {
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+
+        .ecoOrder__formButton {
+          width: 76px;
+          margin-left: 10px;
+        }
+
+        .ecoOrder__formRowItem {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &Input {
+      border: 1px solid $text;
+      border-radius: 5px;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    &Text {
+      font-size: 14px;
+      color: $text;
+      margin-bottom: 14px;
+
+      span {
+        color: $pink;
+      }
+    }
+
+    &Dash {
+      font-size: 12px;
+      color: $text;
+      margin: 0 8px;
+    }
+
+    &Button {
+      border-radius: 5px;
+      border: none;
+      background: $cyan;
+      color: $white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 0;
+      width: 90px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin-left: 18px;
+    }
+
+    &Note {
+      color: $pink;
+      font-size: 12px;
+      margin-top: 14px;
+      padding: 0 15px;
+    }
+
+    &Select {
+      width: 100%;
+      border: 1px solid $text;
+      border-radius: 5px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 12px;
+      background: url(../../assets/img/ico_arrow-down-black.png) no-repeat
+        center;
+      background-size: 8px auto;
+      background-position: right 15px center;
+    }
+
+    &Wrap {
+      margin-bottom: 40px;
+
+      .ecoOrder__formText {
+        margin-bottom: 30px;
+      }
+    }
+
+    &Radio {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+
+      &Wrap {
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      &Check {
+        width: 21px;
+        height: 21px;
+        margin-right: 8px;
+      }
+
+      &Label {
+        font-size: 14px;
+        color: $text;
+      }
+    }
+  }
+
+  &__area {
+    max-width: 765px;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    color: $text;
+    font-size: 14px;
+    margin-bottom: 100px;
+
+    &Holder {
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      resize: none;
+      padding: 10px;
+      border-radius: 5px;
     }
   }
 

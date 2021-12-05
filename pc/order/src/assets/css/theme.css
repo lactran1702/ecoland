@@ -609,6 +609,11 @@ img {
 .ecoOrder {
   padding: 40px 0 100px; }
   .ecoOrder__wrap {
+    max-width: 1080px;
+    padding: 0 30px;
+    width: 100%;
+    margin: 0 auto; }
+  .ecoOrder__content {
     max-width: 1100px;
     padding: 0 10px;
     width: 100%;
@@ -900,6 +905,10 @@ img {
     border: 2px solid #029E9E;
     text-align: center;
     margin-bottom: 50px; }
+    .ecoOrder__tagline--left {
+      font-size: 24px;
+      text-align: left;
+      padding: 18px 30px; }
   .ecoOrder__furniture {
     width: 100%;
     margin-bottom: 100px; }
@@ -1130,6 +1139,136 @@ img {
         font-size: 24px;
         font-weight: bold;
         color: #e74b9c; }
+  .ecoOrder__form {
+    width: 60%;
+    margin-bottom: 90px; }
+    .ecoOrder__formItem {
+      margin-bottom: 25px; }
+      .ecoOrder__formItemWrap {
+        margin: 40px 0 70px; }
+    .ecoOrder__formTitle {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px; }
+    .ecoOrder__formRequire {
+      font-size: 14px;
+      font-weight: bold;
+      color: #e74b9c; }
+    .ecoOrder__formRow {
+      padding: 0 15px;
+      margin-bottom: 10px; }
+      .ecoOrder__formRowItem {
+        display: flex;
+        align-items: center; }
+      .ecoOrder__formRow--small {
+        display: flex;
+        align-items: center; }
+        .ecoOrder__formRow--small .ecoOrder__formInput {
+          width: 55px; }
+      .ecoOrder__formRow--medium {
+        display: flex;
+        align-items: center; }
+        .ecoOrder__formRow--medium .ecoOrder__formInput {
+          width: 90px; }
+      .ecoOrder__formRow--flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .ecoOrder__formRow--flex .ecoOrder__formInput {
+          width: auto; }
+        .ecoOrder__formRow--flex .ecoOrder__formText {
+          margin-right: 6px;
+          margin-bottom: 0; }
+      .ecoOrder__formRow--column .ecoOrder__formSelect {
+        width: 210px; }
+      .ecoOrder__formRow--column .ecoOrder__formText {
+        margin-bottom: 0;
+        margin-right: 10px; }
+      .ecoOrder__formRow--column .ecoOrder__formButton {
+        width: 76px;
+        margin-left: 10px; }
+      .ecoOrder__formRow--column .ecoOrder__formRowItem {
+        margin-bottom: 10px; }
+    .ecoOrder__formInput {
+      border: 1px solid #333;
+      border-radius: 5px;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      margin: 0; }
+    .ecoOrder__formText {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 14px; }
+      .ecoOrder__formText span {
+        color: #e74b9c; }
+    .ecoOrder__formDash {
+      font-size: 12px;
+      color: #333;
+      margin: 0 8px; }
+    .ecoOrder__formButton {
+      border-radius: 5px;
+      border: none;
+      background: #029E9E;
+      color: #fff;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 0;
+      width: 90px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin-left: 18px; }
+    .ecoOrder__formNote {
+      color: #e74b9c;
+      font-size: 12px;
+      margin-top: 14px;
+      padding: 0 15px; }
+    .ecoOrder__formSelect {
+      width: 100%;
+      border: 1px solid #333;
+      border-radius: 5px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 12px;
+      background: url(../../assets/img/ico_arrow-down-black.png) no-repeat center;
+      background-size: 8px auto;
+      background-position: right 15px center; }
+    .ecoOrder__formWrap {
+      margin-bottom: 40px; }
+      .ecoOrder__formWrap .ecoOrder__formText {
+        margin-bottom: 30px; }
+    .ecoOrder__formRadio {
+      display: flex;
+      align-items: center;
+      margin-top: 40px; }
+      .ecoOrder__formRadioWrap {
+        margin-right: 50px;
+        display: flex;
+        align-items: center; }
+      .ecoOrder__formRadioCheck {
+        width: 21px;
+        height: 21px;
+        margin-right: 8px; }
+      .ecoOrder__formRadioLabel {
+        font-size: 14px;
+        color: #333; }
+  .ecoOrder__area {
+    max-width: 765px;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 100px; }
+    .ecoOrder__areaHolder {
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      resize: none;
+      padding: 10px;
+      border-radius: 5px; }
   .ecoOrder .Button {
     font-weight: bold;
     width: 300px;
