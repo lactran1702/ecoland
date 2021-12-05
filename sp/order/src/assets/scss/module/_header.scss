@@ -1,23 +1,25 @@
-.ecoHeader {
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-
-  &__wrap {
+.ecoSp {
+  .ecoHeader {
     width: 100%;
-    max-width: 1080px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-  }
+    border-bottom: 1px solid #ccc;
 
-  &__logo {
-    display: block;
-    width: 75px;
-    margin-right: 24px;
-  }
+    &__wrap {
+      width: 100%;
+      max-width: 1080px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+    }
 
-  &__slogan {
-    font-size: 16px;
+    &__logo {
+      display: block;
+      width: 75px;
+      margin-right: 24px;
+    }
+
+    &__slogan {
+      font-size: 16px;
+    }
   }
 }

@@ -2,18 +2,76 @@
 <html lang="vi">
   <!-- HEAD
   ================================================== -->
-  @@include("partials/head.html", { "title": "PC-Order-form-step9" })
+  @@include("partials/head.html", { "title": "SP-Order-form-step11" })
 
-  <body>
+  <body class="ecoSp">
     <!-- NAVBAR
     ================================================== -->
     @@include("partials/header.html", { "slogan": "見積もりシミュレーション" })
     <section class="ecoOrder">
       <div class="ecoOrder__wrap">
-        <p class="ecoOrder__step">9/10</p>
-        <h2 class="ecoOrder__head">概算の合計金額です。ご確認ください。</h2>
+        <p class="ecoOrder__step">10/10</p>
+        <h2 class="ecoOrder__head">最終確認をお願いいたします。</h2>
       </div>
       <div class="ecoOrder__content">
+        <h4 class="ecoOrder__tagline ecoOrder__tagline--left">お客様情報</h4>
+      </div>
+      <div class="ecoOrder__wrap">
+        <div class="ecoOrder__form">
+          <div class="ecoOrder__formItem">
+            <p class="ecoOrder__formTitle">・住所</p>
+            <p class="ecoOrder__formRow">〒206-0812<br>東京都 稲城市矢野口 2480</p>
+          </div>
+          <div class="ecoOrder__formItem">
+            <p class="ecoOrder__formTitle">・氏名</p>
+            <p class="ecoOrder__formRow">宇野 颯人（ウノ ハヤト）</p>
+          </div>
+          <div class="ecoOrder__formItem">
+            <p class="ecoOrder__formTitle">・電話番号</p>
+            <p class="ecoOrder__formRow">090-6153-4217</p>
+          </div>
+          <div class="ecoOrder__formItem">
+            <p class="ecoOrder__formTitle">・メールアドレス</p>
+            <p class="ecoOrder__formRow">hayato.u625@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="ecoOrder__content">
+        <h4 class="ecoOrder__tagline ecoOrder__tagline--left">ご希望の集荷日時・ご連絡方法</h4>
+      </div>
+      <div class="ecoOrder__wrap">
+        <div class="ecoOrder__form">
+          <p class="ecoOrder__formText">※第1希望だけが計算に含まれています。</p>
+          <div class="ecoOrder__formItemWrap">
+            <div class="ecoOrder__formItem">
+              <p class="ecoOrder__formTitle">・回収希望日時（第１希望）</p>
+              <p class="ecoOrder__formRow">2021年 08月 24日 (火) <br>13時～16時</p>
+            </div>
+            <div class="ecoOrder__formItem">
+              <p class="ecoOrder__formTitle">・回収希望日時（第２希望）</p>
+              <p class="ecoOrder__formRow">2021年 08月 24日 (火) <br>13時～16時</p>
+            </div>
+            <div class="ecoOrder__formItem">
+              <p class="ecoOrder__formTitle">・回収希望日時（第３希望）</p>
+              <p class="ecoOrder__formRow">2021年 08月 24日 (火) <br>13時～16時</p>
+            </div>
+            <div class="ecoOrder__formItem">
+              <p class="ecoOrder__formTitle">・ご希望のご連絡方法</p>
+              <p class="ecoOrder__formRow">メールでのご連絡・対応</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ecoOrder__content">
+        <h4 class="ecoOrder__tagline ecoOrder__tagline--left">ご質問、ご要望、買取詳細など</h4>
+      </div>
+      <div class="ecoOrder__wrap">
+        <div class="ecoOrder__form">
+          <p class="ecoOrder__formText">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div>
+      </div>
+      <div class="ecoOrder__content">
+        <h4 class="ecoOrder__tagline ecoOrder__tagline--left">回収するもの</h4>
         <div class="ecoOrder__furniture">
           <div class="ecoOrder__furnitureRow">
             <div class="ecoOrder__furnitureItem is-open">
@@ -389,12 +447,11 @@
           <p class="ecoOrder__furnitureNote ecoOrder__furnitureNote--pink">※概算のお見積り金額になります。集荷エリアや希望日時などによって、料金が変更になる場合があります。</p>
           <p class="ecoOrder__furnitureNote">買取希望をご希望される商品は、この後に、製品情報をコメント欄に入力いただきます。<br>お申込み後、その内容をもって買取の可否をコールセンターよりご案内させていただきます。</p>
         </div>
-        <p class="ecoOrder__button ecoOrder__button--big">
-          <a href="#" class="Button Button--pink">エコ回収を依頼する</a>
-        </p>
+      </div>
+      <div class="ecoOrder__wrap">
         <p class="ecoOrder__button ecoOrder__button--row">
           <a href="#" class="Button Button--cyan">前に戻る</a>
-          <a href="#" class="Button Button--grey">見積もりを終了する</a>
+          <a href="#" class="Button Button--pink">次に進む</a>
         </p>
       </div>
     </section>
