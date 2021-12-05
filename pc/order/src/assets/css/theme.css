@@ -762,6 +762,17 @@ img {
     justify-content: center; }
     .ecoOrder__button--row .Button {
       margin: 0 10px; }
+  .ecoOrder__button--big {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto 20px; }
+    .ecoOrder__button--big .Button {
+      width: 100% !important;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px; }
   .ecoOrder__check {
     display: flex;
     justify-content: center;
@@ -1012,6 +1023,68 @@ img {
           color: #e74b9c;
           font-size: 24px;
           font-weight: bold; }
+    .ecoOrder__furnitureIcon {
+      margin: 50px auto;
+      width: 30px; }
+      .ecoOrder__furnitureIcon--equal {
+        width: 18px; }
+    .ecoOrder__furnitureTotal {
+      max-width: 740px;
+      width: 100%;
+      margin: 0 auto;
+      border: 2px solid #029E9E;
+      border-radius: 5px;
+      overflow: hidden; }
+      .ecoOrder__furnitureTotalLead {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        background: #029E9E; }
+      .ecoOrder__furnitureTotalText {
+        font-size: 16px;
+        color: #333; }
+        .ecoOrder__furnitureTotalText--bold {
+          font-weight: bold;
+          margin-right: 15px; }
+        .ecoOrder__furnitureTotalText--pink {
+          font-size: 32px;
+          font-weight: bold;
+          color: #e74b9c;
+          line-height: 1; }
+        .ecoOrder__furnitureTotalText--big {
+          font-size: 26px;
+          font-weight: bold; }
+      .ecoOrder__furnitureTotalWrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 30px 30px 20px; }
+      .ecoOrder__furnitureTotalLeft {
+        width: 50%; }
+      .ecoOrder__furnitureTotalRight {
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; }
+        .ecoOrder__furnitureTotalRight--border {
+          border-bottom: 1px solid #333;
+          padding-bottom: 3px; }
+      .ecoOrder__furnitureTotalItem {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px; }
+        .ecoOrder__furnitureTotalItem:last-child {
+          margin-bottom: 0; }
+    .ecoOrder__furnitureNote {
+      max-width: 740px;
+      width: 100%;
+      margin: 20px auto;
+      font-size: 12px;
+      color: #333; }
+      .ecoOrder__furnitureNote--pink {
+        color: #e74b9c; }
   .ecoOrder__packing {
     max-width: 676px;
     width: 100%;
@@ -1061,3 +1134,8 @@ img {
     font-weight: bold;
     width: 300px;
     border-radius: 5px; }
+    .ecoOrder .Button--grey {
+      color: #fff;
+      background: #7e7e7e; }
+      .ecoOrder .Button--grey:hover {
+        background: #989898; }
