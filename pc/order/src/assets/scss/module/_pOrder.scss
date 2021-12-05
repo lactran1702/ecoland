@@ -443,8 +443,21 @@
           background-position: right 15px center;
           background-size: 14px auto;
           background-color: $cyan;
-          transform: rotate(0deg);
           transition: $ease;
+        }
+
+        .ecoOrder__furnitureContent {
+          padding-top: 20px;
+        }
+
+        .ecoOrder__furnitureContentItem {
+          display: block;
+        }
+
+        .ecoOrder__furnitureContentTotal {
+          margin-top: 20px;
+          border-top: none;
+          border-top: 1px solid $cyan;
         }
       }
     }
@@ -457,7 +470,12 @@
       border-radius: 5px;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
+      background: url(../../assets/img/ico_arrow-right.png) no-repeat center;
+      background-position: right 15px center;
+      background-size: 8px auto;
       background-color: $cyan;
+      transition: $ease;
+      cursor: pointer;
     }
 
     &Holder {
@@ -482,7 +500,7 @@
     }
 
     &Content {
-      padding-top: 20px;
+      padding-top: 0;
       border: 2px solid $cyan;
       border-top: none;
       border-bottom-left-radius: 5px;
@@ -491,6 +509,7 @@
       &Item {
         margin-bottom: 10px;
         padding: 0 10px;
+        display: none;
       }
 
       &Title {
@@ -521,6 +540,11 @@
         &--pink {
           color: $pink;
         }
+
+        &--bold {
+          font-size: 14px;
+          font-weight: bold;
+        }
       }
 
       &Input {
@@ -540,9 +564,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-top: 1px solid $cyan;
         padding: 20px 10px;
-        margin-top: 20px;
 
         &Text {
           font-size: 16px;
@@ -555,6 +577,69 @@
           font-size: 24px;
           font-weight: bold;
         }
+      }
+    }
+  }
+
+  &__packing {
+    max-width: 676px;
+    width: 100%;
+    margin: 0 auto 100px;
+    border: 2px solid $cyan;
+    border-radius: 5px;
+
+    &Wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    &Item {
+      margin: 0 35px 15px;
+
+      .ecoOrder__checkMark {
+        width: 18px;
+        height: 18px;
+        border-radius: 0;
+        border-width: 1px;
+      }
+
+      .ecoOrder__checkMark::after {
+        width: 3px;
+        height: 6px;
+        border-width: 0 2px 2px 0;
+      }
+
+      .ecoOrder__checkContent {
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $text;
+        line-height: 18px;
+      }
+    }
+
+    &Total {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      margin: 0 30px;
+      border-top: 1px solid $cyan;
+
+      &Text {
+        font-size: 16px;
+        color: $text;
+        font-weight: bold;
+        margin-right: 25px;
+      }
+
+      &Number {
+        font-size: 24px;
+        font-weight: bold;
+        color: $pink;
       }
     }
   }
