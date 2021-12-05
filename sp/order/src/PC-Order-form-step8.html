@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Order-form-step8" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header.html", { "slogan": "見積もりシミュレーション" })
+    <section class="ecoOrder">
+      <div class="ecoOrder__wrap">
+        <p class="ecoOrder__step">8/10</p>
+        <h2 class="ecoOrder__head">希望のオプションをご選択ください。</h2>
+        <div class="ecoOrder__packing">
+          <div class="ecoOrder__packingWrap">
+            <p class="ecoOrder__packingItem">
+              <label for="hoge" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hoge" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+            <p class="ecoOrder__packingItem">
+              <label for="hoge2" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hoge2" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+            <p class="ecoOrder__packingItem">
+              <label for="hoge3" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hoge3" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+            <p class="ecoOrder__packingItem">
+              <label for="hog4" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hog4" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+            <p class="ecoOrder__packingItem">
+              <label for="hoge5" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hoge5" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+            <p class="ecoOrder__packingItem">
+              <label for="hoge6" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hoge6" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+            <p class="ecoOrder__packingItem">
+              <label for="hog7" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hog7" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+            <p class="ecoOrder__packingItem">
+              <label for="hoge8" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hoge8" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+            <p class="ecoOrder__packingItem">
+              <label for="hoge9" class="ecoOrder__checkLabel">
+                <input type="checkbox" id="hoge9" class="ecoOrder__checkBox">
+                <span class="ecoOrder__checkMark"></span>
+                <span class="ecoOrder__checkContent">梱包作業</span>
+                <span class="ecoOrder__checkContent">¥11,000</span>
+              </label>
+            </p>
+          </div>
+          <div class="ecoOrder__packingTotal">
+            <p class="ecoOrder__packingTotalText">計</p>
+            <p class="ecoOrder__packingTotalNumber">¥22,000</p>
+          </div>
+        </div>
+      </div>
+      <div class="ecoOrder__content">
+        <h4 class="ecoOrder__tagline">集荷依頼予定リスト</h4>
+        <div class="ecoOrder__furniture">
+          <div class="ecoOrder__furnitureRow">
+            <div class="ecoOrder__furnitureItem is-open">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">座椅子</p>
+              </div>
+              <div class="ecoOrder__furnitureContent">
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・サイズ(cm)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">幅(W)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">奥行(D)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">高さ(H)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・重量(kg)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40</span>
+                      <span class="ecoOrder__furnitureContentText">kg</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・個数</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">1</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・買取の選択</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">買取しない</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentTotal">
+                  <p class="ecoOrder__furnitureContentTotalText">単価</p>
+                  <p class="ecoOrder__furnitureContentTotalNumber">¥7,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="ecoOrder__furnitureItem is-open">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">冷蔵庫</p>
+              </div>
+              <div class="ecoOrder__furnitureContent">
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・サイズ(cm)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">幅(W)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">奥行(D)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">高さ(H)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・重量(kg)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40</span>
+                      <span class="ecoOrder__furnitureContentText">kg</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・個数</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">1</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・買取の選択</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">買取しない</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentTotal">
+                  <p class="ecoOrder__furnitureContentTotalText">単価</p>
+                  <p class="ecoOrder__furnitureContentTotalNumber">¥7,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="ecoOrder__furnitureItem is-open">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">エアコン</p>
+              </div>
+              <div class="ecoOrder__furnitureContent">
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・サイズ(cm)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">幅(W)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">奥行(D)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">高さ(H)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・重量(kg)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40</span>
+                      <span class="ecoOrder__furnitureContentText">kg</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・個数</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">1</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・買取の選択</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">買取しない</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentTotal">
+                  <p class="ecoOrder__furnitureContentTotalText">単価</p>
+                  <p class="ecoOrder__furnitureContentTotalNumber">¥7,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ecoOrder__furnitureRow">
+            <div class="ecoOrder__furnitureItem">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">座椅子</p>
+              </div>
+              <div class="ecoOrder__furnitureContent">
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・サイズ(cm)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">幅(W)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">奥行(D)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">高さ(H)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・重量(kg)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40</span>
+                      <span class="ecoOrder__furnitureContentText">kg</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・個数</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">1</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・買取の選択</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">買取しない</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentTotal">
+                  <p class="ecoOrder__furnitureContentTotalText">単価</p>
+                  <p class="ecoOrder__furnitureContentTotalNumber">¥7,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="ecoOrder__furnitureItem">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">座椅子</p>
+              </div>
+              <div class="ecoOrder__furnitureContent">
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・サイズ(cm)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">幅(W)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">奥行(D)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">高さ(H)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・重量(kg)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40</span>
+                      <span class="ecoOrder__furnitureContentText">kg</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・個数</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">1</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・買取の選択</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">買取しない</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentTotal">
+                  <p class="ecoOrder__furnitureContentTotalText">単価</p>
+                  <p class="ecoOrder__furnitureContentTotalNumber">¥7,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="ecoOrder__furnitureItem">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">その他（家電）</p>
+              </div>
+              <div class="ecoOrder__furnitureContent">
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・サイズ(cm)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">幅(W)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">奥行(D)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText">高さ(H)</span>
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40cm</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・重量(kg)</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">40</span>
+                      <span class="ecoOrder__furnitureContentText">kg</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・個数</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">1</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentItem">
+                  <p class="ecoOrder__furnitureContentTitle">・買取の選択</p>
+                  <div class="ecoOrder__furnitureContentRow">
+                    <p class="ecoOrder__furnitureContentRowItem">
+                      <span class="ecoOrder__furnitureContentText ecoOrder__furnitureContentText--bold">買取しない</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="ecoOrder__furnitureContentTotal">
+                  <p class="ecoOrder__furnitureContentTotalText">単価</p>
+                  <p class="ecoOrder__furnitureContentTotalNumber">¥7,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="ecoOrder__button ecoOrder__button--row">
+          <a href="#" class="Button Button--cyan">前に戻る</a>
+          <a href="#" class="Button Button--pink">詳細の入力に進む</a>
+        </p>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

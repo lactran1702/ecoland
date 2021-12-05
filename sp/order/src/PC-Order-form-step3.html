@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Order-form-step3" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header.html", { "slogan": "見積もりシミュレーション" })
+    <section class="ecoOrder">
+      <div class="ecoOrder__wrap">
+        <p class="ecoOrder__step">3/10</p>
+        <h2 class="ecoOrder__head ecoOrder__head--question">建物は何階立てですか？<br>また荷物はどこにありますか？</h2>
+        <div class="ecoOrder__check">
+          <div class="ecoOrder__checkItem">
+            <p class="ecoOrder__checkText">建物は</p>
+            <label for="hoge" class="ecoOrder__checkLabel">
+              <input type="checkbox" id="hoge" class="ecoOrder__checkBox">
+              <span class="ecoOrder__checkMark"></span>
+              <span class="ecoOrder__checkContent">階建てで、</span>
+            </label>
+          </div>
+          <div class="ecoOrder__checkItem">
+            <p class="ecoOrder__checkText">荷物は</p>
+            <label for="hoge2" class="ecoOrder__checkLabel">
+              <input type="checkbox" id="hoge2" class="ecoOrder__checkBox">
+              <span class="ecoOrder__checkMark"></span>
+              <span class="ecoOrder__checkContent">階にある</span>
+            </label>
+          </div>
+        </div>
+        <p class="ecoOrder__button ecoOrder__button--row">
+          <a href="#" class="Button Button--cyan">前に戻る</a>
+          <a href="#" class="Button Button--pink">次に進む</a>
+        </p>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

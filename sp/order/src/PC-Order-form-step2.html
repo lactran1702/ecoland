@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Order-form-step2" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header.html", { "slogan": "見積もりシミュレーション" })
+    <section class="ecoOrder">
+      <div class="ecoOrder__wrap">
+        <p class="ecoOrder__step">2/10</p>
+        <h2 class="ecoOrder__head ecoOrder__head--question">お住まいのご自宅に関して<br>お聞かせください。</h2>
+        <ul class="ecoOrder__list">
+          <li class="ecoOrder__listItem">
+            <a href="#" class="ecoOrder__listOverlay"></a>
+            <p class="ecoOrder__listIcon"><img src="assets/img/ico_building.png" alt="ico_building"></p>
+            <p class="ecoOrder__listText">集合住宅</p>
+          </li>
+          <li class="ecoOrder__listItem">
+            <a href="#" class="ecoOrder__listOverlay"></a>
+            <p class="ecoOrder__listIcon"><img src="assets/img/ico_home.png" alt="ico_home"></p>
+            <p class="ecoOrder__listText">一戸建て</p>
+          </li>
+          <li class="ecoOrder__listItem">
+            <a href="#" class="ecoOrder__listOverlay"></a>
+            <p class="ecoOrder__listIcon"><img src="assets/img/ico_city.png" alt="ico_city"></p>
+            <p class="ecoOrder__listText">オフィスビル</p>
+          </li>
+          <li class="ecoOrder__listItem">
+            <a href="#" class="ecoOrder__listOverlay"></a>
+            <p class="ecoOrder__listIcon"><img src="assets/img/ico_school.png" alt="ico_school"></p>
+            <p class="ecoOrder__listText">その他<span>トランクルーム・学校など</span></p>
+          </li>
+        </ul>
+        <p class="ecoOrder__button">
+          <a href="#" class="Button Button--cyan">前に戻る</a>
+        </p>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

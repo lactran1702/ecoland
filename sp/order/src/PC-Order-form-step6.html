@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <!-- HEAD
+  ================================================== -->
+  @@include("partials/head.html", { "title": "PC-Order-form-step6" })
+
+  <body>
+    <!-- NAVBAR
+    ================================================== -->
+    @@include("partials/header.html", { "slogan": "見積もりシミュレーション" })
+    <section class="ecoOrder">
+      <div class="ecoOrder__wrap">
+        <p class="ecoOrder__step">6/10</p>
+        <h2 class="ecoOrder__head">該当する商品を選択してください。</h2>
+      </div>
+      <div class="ecoOrder__content">
+        <div class="ecoOrder__select">
+          <div class="ecoOrder__selectItem is-open">
+            <p class="ecoOrder__selectLead">
+              <span class="ecoOrder__selectLeadText">家具</span>
+              <img class="ecoOrder__selectLeadIcon" src="assets/img/ico_arrow-down.png" alt="ico_arrow-down">
+            </p>
+            <ul class="ecoOrder__selectOption">
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">イス</p>
+                <p class="ecoOrder__selectOptionText">10</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">テーブル・デスク</p>
+                <p class="ecoOrder__selectOptionText">20</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">寝具</p>
+                <p class="ecoOrder__selectOptionText">40</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">収納</p>
+                <p class="ecoOrder__selectOptionText">11</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">その他</p>
+                <p class="ecoOrder__selectOptionText">3</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ecoOrder__selectItem">
+            <p class="ecoOrder__selectLead">
+              <span class="ecoOrder__selectLeadText">家電</span>
+              <img class="ecoOrder__selectLeadIcon" src="assets/img/ico_arrow-down.png" alt="ico_arrow-down">
+            </p>
+            <ul class="ecoOrder__selectOption">
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">イス</p>
+                <p class="ecoOrder__selectOptionText">10</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">テーブル・デスク</p>
+                <p class="ecoOrder__selectOptionText">20</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">寝具</p>
+                <p class="ecoOrder__selectOptionText">40</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">収納</p>
+                <p class="ecoOrder__selectOptionText">11</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">その他</p>
+                <p class="ecoOrder__selectOptionText">3</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ecoOrder__selectItem">
+            <p class="ecoOrder__selectLead">
+              <span class="ecoOrder__selectLeadText">日用品</span>
+              <img class="ecoOrder__selectLeadIcon" src="assets/img/ico_arrow-down.png" alt="ico_arrow-down">
+            </p>
+            <ul class="ecoOrder__selectOption">
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">イス</p>
+                <p class="ecoOrder__selectOptionText">10</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">テーブル・デスク</p>
+                <p class="ecoOrder__selectOptionText">20</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">寝具</p>
+                <p class="ecoOrder__selectOptionText">40</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">収納</p>
+                <p class="ecoOrder__selectOptionText">11</p>
+              </li>
+              <li class="ecoOrder__selectOptionItem">
+                <p class="ecoOrder__selectOptionText ecoOrder__selectOptionText--bold">その他</p>
+                <p class="ecoOrder__selectOptionText">3</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="ecoOrder__tagline">集荷依頼予定リスト</h4>
+        <div class="ecoOrder__furniture">
+          <div class="ecoOrder__furnitureRow">
+            <div class="ecoOrder__furnitureItem ecoOrder__furnitureItem--default">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">座椅子</p>
+              </div>
+            </div>
+            <div class="ecoOrder__furnitureItem ecoOrder__furnitureItem--default">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">冷蔵庫</p>
+              </div>
+            </div>
+            <div class="ecoOrder__furnitureItem ecoOrder__furnitureItem--default">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">エアコン</p>
+              </div>
+            </div>
+          </div>
+          <div class="ecoOrder__furnitureRow">
+            <div class="ecoOrder__furnitureItem ecoOrder__furnitureItem--default">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">座椅子</p>
+              </div>
+            </div>
+            <div class="ecoOrder__furnitureItem ecoOrder__furnitureItem--default">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">座椅子</p>
+              </div>
+            </div>
+            <div class="ecoOrder__furnitureItem ecoOrder__furnitureItem--default">
+              <div class="ecoOrder__furnitureLead">
+                <p class="ecoOrder__furnitureHolder"></p>
+                <p class="ecoOrder__furnitureText">その他（家具）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="ecoOrder__button ecoOrder__button--row">
+          <a href="#" class="Button Button--cyan">前に戻る</a>
+          <a href="#" class="Button Button--pink">詳細の入力に進む</a>
+        </p>
+      </div>
+    </section>
+  
+
+    <!-- FOOTER
+    ================================================== -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <!-- <script src="@@webRoot/assets/js/pages/pHome.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,982 @@
+.ecoOrder {
+  padding: 40px 0 100px;
+
+  &__wrap {
+    max-width: 1080px;
+    padding: 0 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__content {
+    max-width: 1100px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__step {
+    text-align: right;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    color: $text;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 380px;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 36px;
+    position: relative;
+
+    &--question {
+      background: url(../../assets/img/ico_question.png) no-repeat center;
+      background-size: auto 100%;
+      background-position: center;
+    }
+
+    &--exclam {
+      background: url(../../assets/img/ico_exclam.png) no-repeat center;
+      background-size: auto 100%;
+      background-position: center;
+    }
+
+    span {
+      font-size: 14px;
+      color: $pink;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      padding-top: 80px;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    color: $cyan;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__collection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+
+    &Column {
+      width: calc(50% - 17px);
+    }
+
+    &Item {
+      border: 2px solid $cyan;
+      border-radius: 5px;
+      background: $white;
+      display: flex;
+      margin-bottom: 10px;
+
+      &Location {
+        background-color: $cyan;
+        color: $white;
+        width: 132px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &Copy {
+        color: $text;
+        width: calc(100% - 132px);
+        padding: 25px 20px;
+
+        span {
+          color: $pink;
+        }
+      }
+    }
+
+    &Text {
+      width: 100%;
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $text;
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &__charge {
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+
+    &Row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      justify-content: center;
+      margin: 45px 0 24px;
+
+      &:last-of-type {
+        margin-bottom: 50px;
+      }
+    }
+
+    &Item {
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      background-color: $white;
+      width: 246px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid $text;
+
+      &--pink {
+        width: 100%;
+        border-color: $pink;
+        color: $pink;
+      }
+    }
+
+    &Icon {
+      width: 12px;
+      margin: 0 5px;
+    }
+
+    &Text {
+      font-size: 14px;
+      color: $text;
+      margin-bottom: 30px;
+    }
+
+    &Button {
+      margin-top: 70px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &Item {
+      position: relative;
+      margin: 0 5px;
+      border: 2px solid $cyan;
+      border-radius: 5px;
+      padding: 24px 0;
+      width: 165px;
+      transform: translateY(0);
+      transition: $ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        transition: $ease;
+      }
+    }
+
+    &Overlay {
+      @include ovl;
+    }
+
+    &Icon {
+      width: 84px;
+      margin: 0 auto 10px;
+    }
+
+    &Text {
+      font-size: 18px;
+      color: $cyan;
+      font-weight: bold;
+      text-align: center;
+
+      span {
+        font-size: 10px;
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    &--row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .Button {
+        margin: 0 10px;
+      }
+    }
+
+    &--big {
+      max-width: 620px;
+      width: 100%;
+      margin: 0 auto 20px;
+
+      .Button {
+        width: 100% !important;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 27px;
+      }
+    }
+  }
+
+  &__check {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &Item {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    &Text {
+      color: $cyan;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    &Label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &Box {
+      display: none;
+
+      &:checked {
+        ~ .ecoOrder__checkMark {
+          background-color: $cyan;
+          border-color: transparent;
+          transition: $ease;
+
+          &::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &Mark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 55px;
+      width: 55px;
+      margin-right: 5px;
+      border-radius: 5px;
+      border: 2px solid $cyan;
+      transition: $ease;
+
+      &::after {
+        content: "";
+        display: none;
+        width: 9px;
+        height: 18px;
+        border: solid $white;
+        border-width: 0 6px 6px 0;
+        transform: rotate(45deg);
+      }
+    }
+
+    &Content {
+      color: $cyan;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  &__choice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &Item {
+      color: $cyan;
+      font-size: 18px;
+      font-weight: bold;
+      width: 235px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 16px;
+      border: 2px solid $cyan;
+      border-radius: 5px;
+      background: $white;
+      transition: $ease;
+
+      &:hover {
+        color: $white;
+        background-color: $cyan;
+        transition: $ease;
+      }
+    }
+  }
+
+  &__select {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    &Item {
+      border-radius: 5px;
+      border: 2px solid $cyan;
+      overflow: hidden;
+      margin-right: 25px;
+      width: calc(100% / 3);
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.is-open {
+        .ecoOrder__selectLeadIcon {
+          transform: rotate(0deg);
+          transition: $ease;
+        }
+
+        .ecoOrder__selectOption {
+          display: block;
+        }
+      }
+    }
+
+    &Lead {
+      background: $cyan;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &Text {
+        font-size: 18px;
+        color: $white;
+        font-weight: bold;
+        margin-right: 12px;
+      }
+
+      &Icon {
+        width: 10px;
+        transform: rotate(-90deg);
+        transition: $ease;
+      }
+    }
+
+    &Option {
+      width: 100%;
+      display: none;
+
+      &Item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 25px;
+        border-bottom: 1px solid $cyan;
+
+        &:last-child {
+          border: none;
+        }
+      }
+
+      &Text {
+        font-size: 18px;
+        color: $cyan;
+
+        &--bold {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  &__tagline {
+    font-size: 28px;
+    color: $cyan;
+    padding: 18px 0;
+    border: 2px solid $cyan;
+    text-align: center;
+    margin-bottom: 50px;
+
+    &--left {
+      font-size: 24px;
+      text-align: left;
+      padding: 18px 30px;
+    }
+  }
+
+  &__furniture {
+    width: 100%;
+    margin-bottom: 100px;
+
+    &Row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    &Item {
+      width: calc(100% / 3);
+      margin: 0 25px 25px 0;
+      border-radius: 5px;
+      background-color: $white;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &--default {
+        border: none;
+        border-radius: 0;
+
+        .ecoOrder__furnitureLead {
+          background: url(../../assets/img/ico_close.png) no-repeat center;
+          background-position: right 15px center;
+          background-size: 14px auto;
+          background-color: $cyan;
+          border-radius: 5px;
+        }
+      }
+
+      &.is-open {
+        .ecoOrder__furnitureLead {
+          background: url(../../assets/img/ico_arrow-down.png) no-repeat center;
+          background-position: right 15px center;
+          background-size: 14px auto;
+          background-color: $cyan;
+          transition: $ease;
+        }
+
+        .ecoOrder__furnitureContent {
+          padding-top: 20px;
+        }
+
+        .ecoOrder__furnitureContentItem {
+          display: block;
+        }
+
+        .ecoOrder__furnitureContentTotal {
+          margin-top: 20px;
+          border-top: none;
+          border-top: 1px solid $cyan;
+        }
+      }
+    }
+
+    &Lead {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      background: url(../../assets/img/ico_arrow-right.png) no-repeat center;
+      background-position: right 15px center;
+      background-size: 8px auto;
+      background-color: $cyan;
+      transition: $ease;
+      cursor: pointer;
+    }
+
+    &Holder {
+      width: 80px;
+      height: 80px;
+      background: $white;
+      margin-right: 14px;
+    }
+
+    &Text {
+      font-size: 24px;
+      font-weight: bold;
+      color: $white;
+
+      &--pink {
+        text-align: center;
+        color: $pink;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 60px;
+      }
+    }
+
+    &Content {
+      padding-top: 0;
+      border: 2px solid $cyan;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+
+      &Item {
+        margin-bottom: 10px;
+        padding: 0 10px;
+        display: none;
+      }
+
+      &Title {
+        font-size: 14px;
+        font-weight: bold;
+        color: $text;
+        margin-bottom: 5px;
+      }
+
+      &Row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding: 0 15px;
+
+        &Item {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &Text {
+        font-size: 12px;
+        color: $text;
+        margin-right: 6px;
+
+        &--pink {
+          color: $pink;
+        }
+
+        &--bold {
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+
+      &Input {
+        margin: 0;
+        border-radius: 5px;
+        border: 1px solid $grey;
+        width: 40px;
+        padding: 0 5px;
+        font-size: 12px;
+        color: $text;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 6px;
+      }
+
+      &Total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 10px;
+
+        &Text {
+          font-size: 16px;
+          font-weight: bold;
+          color: $text;
+        }
+
+        &Number {
+          color: $pink;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    &Icon {
+      margin: 50px auto;
+      width: 30px;
+
+      &--equal {
+        width: 18px;
+      }
+    }
+
+    &Total {
+      max-width: 740px;
+      width: 100%;
+      margin: 0 auto;
+      border: 2px solid $cyan;
+      border-radius: 5px;
+      overflow: hidden;
+
+      &Lead {
+        font-size: 24px;
+        font-weight: bold;
+        color: $white;
+        text-align: center;
+        padding: 20px 0;
+        background: $cyan;
+      }
+
+      &Text {
+        font-size: 16px;
+        color: $text;
+
+        &--bold {
+          font-weight: bold;
+          margin-right: 15px;
+        }
+
+        &--pink {
+          font-size: 32px;
+          font-weight: bold;
+          color: $pink;
+          line-height: 1;
+        }
+
+        &--big {
+          font-size: 26px;
+          font-weight: bold;
+        }
+      }
+
+      &Wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 30px 30px 20px;
+      }
+
+      &Left {
+        width: 50%;
+      }
+
+      &Right {
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        &--border {
+          border-bottom: 1px solid $text;
+          padding-bottom: 3px;
+        }
+      }
+
+      &Item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &Note {
+      max-width: 740px;
+      width: 100%;
+      margin: 20px auto;
+      font-size: 12px;
+      color: $text;
+
+      &--pink {
+        color: $pink;
+      }
+    }
+  }
+
+  &__packing {
+    max-width: 676px;
+    width: 100%;
+    margin: 0 auto 100px;
+    border: 2px solid $cyan;
+    border-radius: 5px;
+
+    &Wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    &Item {
+      margin: 0 35px 15px;
+
+      .ecoOrder__checkMark {
+        width: 18px;
+        height: 18px;
+        border-radius: 0;
+        border-width: 1px;
+      }
+
+      .ecoOrder__checkMark::after {
+        width: 3px;
+        height: 6px;
+        border-width: 0 2px 2px 0;
+      }
+
+      .ecoOrder__checkContent {
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: $text;
+        line-height: 18px;
+      }
+    }
+
+    &Total {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      margin: 0 30px;
+      border-top: 1px solid $cyan;
+
+      &Text {
+        font-size: 16px;
+        color: $text;
+        font-weight: bold;
+        margin-right: 25px;
+      }
+
+      &Number {
+        font-size: 24px;
+        font-weight: bold;
+        color: $pink;
+      }
+    }
+  }
+
+  &__form {
+    width: 60%;
+    margin-bottom: 90px;
+
+    &Item {
+      margin-bottom: 25px;
+
+      &Wrap {
+        margin: 40px 0 70px;
+      }
+    }
+
+    &Title {
+      font-size: 14px;
+      font-weight: bold;
+      color: $text;
+      margin-bottom: 10px;
+    }
+
+    &Require {
+      font-size: 14px;
+      font-weight: bold;
+      color: $pink;
+    }
+
+    &Row {
+      padding: 0 15px;
+      margin-bottom: 10px;
+
+      &Item {
+        display: flex;
+        align-items: center;
+      }
+
+      &--small {
+        display: flex;
+        align-items: center;
+
+        .ecoOrder__formInput {
+          width: 55px;
+        }
+      }
+
+      &--medium {
+        display: flex;
+        align-items: center;
+
+        .ecoOrder__formInput {
+          width: 90px;
+        }
+      }
+
+      &--flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .ecoOrder__formInput {
+          width: auto;
+        }
+
+        .ecoOrder__formText {
+          margin-right: 6px;
+          margin-bottom: 0;
+        }
+      }
+
+      &--column {
+        .ecoOrder__formSelect {
+          width: 210px;
+        }
+
+        .ecoOrder__formText {
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+
+        .ecoOrder__formButton {
+          width: 76px;
+          margin-left: 10px;
+        }
+
+        .ecoOrder__formRowItem {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &Input {
+      border: 1px solid $text;
+      border-radius: 5px;
+      width: 100%;
+      height: 30px;
+      line-height: 30px;
+      margin: 0;
+    }
+
+    &Text {
+      font-size: 14px;
+      color: $text;
+      margin-bottom: 14px;
+
+      span {
+        color: $pink;
+      }
+    }
+
+    &Dash {
+      font-size: 12px;
+      color: $text;
+      margin: 0 8px;
+    }
+
+    &Button {
+      border-radius: 5px;
+      border: none;
+      background: $cyan;
+      color: $white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 0;
+      width: 90px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin-left: 18px;
+    }
+
+    &Note {
+      color: $pink;
+      font-size: 12px;
+      margin-top: 14px;
+      padding: 0 15px;
+    }
+
+    &Select {
+      width: 100%;
+      border: 1px solid $text;
+      border-radius: 5px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 12px;
+      background: url(../../assets/img/ico_arrow-down-black.png) no-repeat
+        center;
+      background-size: 8px auto;
+      background-position: right 15px center;
+    }
+
+    &Wrap {
+      margin-bottom: 40px;
+
+      .ecoOrder__formText {
+        margin-bottom: 30px;
+      }
+    }
+
+    &Radio {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+
+      &Wrap {
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      &Check {
+        width: 21px;
+        height: 21px;
+        margin-right: 8px;
+      }
+
+      &Label {
+        font-size: 14px;
+        color: $text;
+      }
+    }
+  }
+
+  &__area {
+    max-width: 765px;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    color: $text;
+    font-size: 14px;
+    margin-bottom: 100px;
+
+    &Holder {
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      resize: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  .Button {
+    font-weight: bold;
+    width: 300px;
+    border-radius: 5px;
+
+    &--grey {
+      color: $white;
+      background: #7e7e7e;
+
+      &:hover {
+        background: lighten(#7e7e7e, 10%);
+      }
+    }
+  }
+}
