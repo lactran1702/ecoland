@@ -827,6 +827,35 @@ img {
       color: #029E9E;
       font-size: 18px;
       font-weight: bold; }
+  .ecoOrder__input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px; }
+    .ecoOrder__inputItem {
+      display: flex;
+      align-items: center;
+      margin-right: 30px; }
+    .ecoOrder__inputText {
+      color: #029E9E;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 10px; }
+    .ecoOrder__inputLabel {
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+    .ecoOrder__inputContent {
+      color: #029E9E;
+      font-size: 18px;
+      font-weight: bold; }
+    .ecoOrder__inputBox {
+      height: 55px;
+      width: 55px;
+      margin-right: 5px;
+      border-radius: 5px;
+      font-size: 18px;
+      border: 2px solid #029E9E;
+      padding: 0 5px; }
   .ecoOrder__choice {
     display: flex;
     align-items: center;
@@ -850,39 +879,75 @@ img {
         color: #fff;
         background-color: #029E9E;
         transition: all 0.3s ease; }
-  .ecoOrder__select {
+  .ecoOrder__category {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    width: 100%; }
+  .ecoOrder__queue {
+    width: 343px; }
+    .ecoOrder__queue .ecoOrder__furnitureItem {
+      width: 100%; }
+  .ecoOrder__select {
+    width: calc(100% - 343px);
+    padding-right: 40px;
     margin-bottom: 70px; }
+    .ecoOrder__selectTitle {
+      font-size: 24px;
+      font-weight: bold;
+      color: #029E9E;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #029E9E;
+      margin-bottom: 24px; }
+    .ecoOrder__selectWrap {
+      margin-bottom: 60px; }
     .ecoOrder__selectItem {
       border-radius: 5px;
       border: 2px solid #029E9E;
       overflow: hidden;
-      margin-right: 25px;
-      width: calc(100% / 3); }
-      .ecoOrder__selectItem:last-child {
-        margin-right: 0; }
-      .ecoOrder__selectItem.is-open .ecoOrder__selectLeadIcon {
-        transform: rotate(0deg);
-        transition: all 0.3s ease; }
+      width: 100%;
+      margin-bottom: 20px; }
+      .ecoOrder__selectItem.is-open .ecoOrder__selectLead {
+        background-color: #029E9E; }
+        .ecoOrder__selectItem.is-open .ecoOrder__selectLeadText {
+          color: #fff; }
+        .ecoOrder__selectItem.is-open .ecoOrder__selectLead::after {
+          background-image: url(../../assets/img/ico_arrow-right.png);
+          transform: rotate(90deg);
+          transition: all 0.3s ease; }
       .ecoOrder__selectItem.is-open .ecoOrder__selectOption {
         display: block; }
     .ecoOrder__selectLead {
-      background: #029E9E;
+      background: #fff;
       padding: 15px 25px;
       display: flex;
       align-items: center;
-      cursor: pointer; }
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.3s ease; }
+      .ecoOrder__selectLead::after {
+        content: "";
+        width: 6px;
+        height: 12px;
+        display: block;
+        background-image: url(../../assets/img/ico_arrow-right-cyan.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        transform: rotate(0deg);
+        transition: all 0.3s ease; }
       .ecoOrder__selectLeadText {
         font-size: 18px;
-        color: #fff;
+        color: #029E9E;
         font-weight: bold;
-        margin-right: 12px; }
-      .ecoOrder__selectLeadIcon {
-        width: 10px;
-        transform: rotate(-90deg);
+        margin-right: 12px;
         transition: all 0.3s ease; }
+      .ecoOrder__selectLead:hover {
+        background-color: #029E9E; }
+        .ecoOrder__selectLead:hover .ecoOrder__selectLeadText {
+          color: #fff;
+          transition: all 0.3s ease; }
+        .ecoOrder__selectLead:hover::after {
+          background-image: url(../../assets/img/ico_arrow-right.png);
+          transition: all 0.3s ease; }
     .ecoOrder__selectOption {
       width: 100%;
       display: none; }
@@ -892,12 +957,20 @@ img {
         justify-content: space-between;
         width: 100%;
         padding: 10px 25px;
-        border-bottom: 1px solid #029E9E; }
+        border-bottom: 1px solid #029E9E;
+        transition: all 0.3s ease;
+        cursor: pointer; }
         .ecoOrder__selectOptionItem:last-child {
           border: none; }
+        .ecoOrder__selectOptionItem:hover {
+          background-color: #029E9E; }
+          .ecoOrder__selectOptionItem:hover .ecoOrder__selectOptionText {
+            color: #fff;
+            transition: all 0.3s ease; }
       .ecoOrder__selectOptionText {
         font-size: 18px;
-        color: #029E9E; }
+        color: #029E9E;
+        transition: all 0.3s ease; }
         .ecoOrder__selectOptionText--bold {
           font-weight: bold; }
   .ecoOrder__tagline {
@@ -914,10 +987,14 @@ img {
   .ecoOrder__furniture {
     width: 100%;
     margin-bottom: 100px; }
+    .ecoOrder__furniture > .ecoOrder__text {
+      margin-bottom: 15px; }
     .ecoOrder__furnitureRow {
       display: flex;
       align-items: flex-start;
       justify-content: space-between; }
+      .ecoOrder__furnitureRow .ecoOrder__furnitureItem--default {
+        width: 50%; }
     .ecoOrder__furnitureItem {
       width: calc(100% / 3);
       margin: 0 25px 25px 0;
@@ -927,13 +1004,43 @@ img {
         margin-right: 0; }
       .ecoOrder__furnitureItem--default {
         border: none;
-        border-radius: 0; }
+        border-radius: 0;
+        margin-bottom: 10px; }
         .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead {
-          background: url(../../assets/img/ico_close.png) no-repeat center;
-          background-position: right 15px center;
-          background-size: 14px auto;
+          background: none;
           background-color: #029E9E;
-          border-radius: 5px; }
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px; }
+          .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white {
+            background-color: #fff;
+            border: 2px solid #029E9E; }
+            .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white .ecoOrder__furnitureText {
+              color: #029E9E; }
+            .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white .ecoOrder__furnitureButton {
+              background: url(../../assets/img/ico_close-cyan.png) no-repeat center;
+              background-position: center;
+              background-size: 14px auto;
+              transform: rotate(45deg); }
+            .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white:hover {
+              background-color: #029E9E; }
+              .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white:hover .ecoOrder__furnitureText {
+                color: #fff; }
+              .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white:hover .ecoOrder__furnitureButton {
+                background: url(../../assets/img/ico_close.png) no-repeat center;
+                background-position: center;
+                background-size: 14px auto; }
+        .ecoOrder__furnitureItem--default .ecoOrder__furnitureButton {
+          display: block;
+          width: 14px;
+          height: 14px;
+          background: url(../../assets/img/ico_close.png) no-repeat center;
+          background-position: center;
+          background-size: 14px auto;
+          border-radius: 5px;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          margin-top: -7px; }
       .ecoOrder__furnitureItem.is-open .ecoOrder__furnitureLead {
         background: url(../../assets/img/ico_arrow-down.png) no-repeat center;
         background-position: right 15px center;
@@ -949,6 +1056,7 @@ img {
         border-top: none;
         border-top: 1px solid #029E9E; }
     .ecoOrder__furnitureLead {
+      position: relative;
       display: flex;
       align-items: center;
       width: 100%;
@@ -967,6 +1075,11 @@ img {
       height: 80px;
       background: #fff;
       margin-right: 14px; }
+      .ecoOrder__furnitureHolder img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
     .ecoOrder__furnitureText {
       font-size: 24px;
       font-weight: bold;
@@ -977,6 +1090,9 @@ img {
         font-size: 14px;
         font-weight: 500;
         margin-top: 60px; }
+      .ecoOrder__furnitureText span {
+        font-size: 14px;
+        display: block; }
     .ecoOrder__furnitureContent {
       padding-top: 0;
       border: 2px solid #029E9E;

@@ -314,6 +314,47 @@
     }
   }
 
+  &__input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    &Item {
+      display: flex;
+      align-items: center;
+      margin-right: 30px;
+    }
+
+    &Text {
+      color: $cyan;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    &Label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &Content {
+      color: $cyan;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &Box {
+      height: 55px;
+      width: 55px;
+      margin-right: 5px;
+      border-radius: 5px;
+      font-size: 18px;
+      border: 2px solid $cyan;
+      padding: 0 5px;
+    }
+  }
+
   &__choice {
     display: flex;
     align-items: center;
@@ -343,53 +384,117 @@
     }
   }
 
-  &__select {
+  &__category {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__queue {
+    width: 343px;
+
+    .ecoOrder__furnitureItem {
+      width: 100%;
+    }
+  }
+
+  &__select {
+    width: calc(100% - 343px);
+    // display: flex;
+    // align-items: flex-start;
+    // justify-content: space-between;
+    padding-right: 40px;
     margin-bottom: 70px;
+
+    &Title {
+      font-size: 24px;
+      font-weight: bold;
+      color: $cyan;
+      padding-bottom: 12px;
+      border-bottom: 1px solid $cyan;
+      margin-bottom: 24px;
+    }
+
+    &Wrap {
+      margin-bottom: 60px;
+    }
 
     &Item {
       border-radius: 5px;
       border: 2px solid $cyan;
       overflow: hidden;
-      margin-right: 25px;
-      width: calc(100% / 3);
+      // margin-right: 25px;
+      width: 100%;
+      margin-bottom: 20px;
 
-      &:last-child {
-        margin-right: 0;
-      }
+      // &:last-child {
+      //   margin-right: 0;
+      // }
 
       &.is-open {
-        .ecoOrder__selectLeadIcon {
-          transform: rotate(0deg);
-          transition: $ease;
-        }
+        .ecoOrder__select {
+          &Lead {
+            background-color: $cyan;
 
-        .ecoOrder__selectOption {
-          display: block;
+            &Text {
+              color: $white;
+            }
+
+            &::after {
+              background-image: url(../../assets/img/ico_arrow-right.png);
+              transform: rotate(90deg);
+              transition: $ease;
+            }
+          }
+
+          &Option {
+            display: block;
+          }
         }
       }
     }
 
     &Lead {
-      background: $cyan;
+      background: $white;
       padding: 15px 25px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       cursor: pointer;
+      transition: $ease;
+
+      &::after {
+        content: "";
+        width: 6px;
+        height: 12px;
+        display: block;
+        background-image: url(../../assets/img/ico_arrow-right-cyan.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+        transform: rotate(0deg);
+        transition: $ease;
+      }
 
       &Text {
         font-size: 18px;
-        color: $white;
+        color: $cyan;
         font-weight: bold;
         margin-right: 12px;
+        transition: $ease;
       }
 
-      &Icon {
-        width: 10px;
-        transform: rotate(-90deg);
-        transition: $ease;
+      &:hover {
+        background-color: $cyan;
+
+        .ecoOrder__selectLeadText {
+          color: $white;
+          transition: $ease;
+        }
+
+        &::after {
+          background-image: url(../../assets/img/ico_arrow-right.png);
+          transition: $ease;
+        }
       }
     }
 
@@ -404,15 +509,27 @@
         width: 100%;
         padding: 10px 25px;
         border-bottom: 1px solid $cyan;
+        transition: $ease;
+        cursor: pointer;
 
         &:last-child {
           border: none;
+        }
+
+        &:hover {
+          background-color: $cyan;
+
+          .ecoOrder__selectOptionText {
+            color: $white;
+            transition: $ease;
+          }
         }
       }
 
       &Text {
         font-size: 18px;
         color: $cyan;
+        transition: $ease;
 
         &--bold {
           font-weight: bold;
@@ -440,10 +557,18 @@
     width: 100%;
     margin-bottom: 100px;
 
+    > .ecoOrder__text {
+      margin-bottom: 15px;
+    }
+
     &Row {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+
+      .ecoOrder__furnitureItem--default {
+        width: 50%;
+      }
     }
 
     &Item {
@@ -459,13 +584,59 @@
       &--default {
         border: none;
         border-radius: 0;
+        margin-bottom: 10px;
 
         .ecoOrder__furnitureLead {
-          background: url(../../assets/img/ico_close.png) no-repeat center;
-          background-position: right 15px center;
-          background-size: 14px auto;
+          background: none;
           background-color: $cyan;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+
+          &--white {
+            background-color: $white;
+            border: 2px solid $cyan;
+
+            .ecoOrder__furnitureText {
+              color: $cyan;
+            }
+
+            .ecoOrder__furnitureButton {
+              background: url(../../assets/img/ico_close-cyan.png) no-repeat
+                center;
+              background-position: center;
+              background-size: 14px auto;
+              transform: rotate(45deg);
+            }
+
+            &:hover {
+              background-color: $cyan;
+
+              .ecoOrder__furnitureText {
+                color: $white;
+              }
+
+              .ecoOrder__furnitureButton {
+                background: url(../../assets/img/ico_close.png) no-repeat
+                  center;
+                background-position: center;
+                background-size: 14px auto;
+              }
+            }
+          }
+        }
+
+        .ecoOrder__furnitureButton {
+          display: block;
+          width: 14px;
+          height: 14px;
+          background: url(../../assets/img/ico_close.png) no-repeat center;
+          background-position: center;
+          background-size: 14px auto;
           border-radius: 5px;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          margin-top: -7px;
         }
       }
 
@@ -495,6 +666,7 @@
     }
 
     &Lead {
+      position: relative;
       display: flex;
       align-items: center;
       width: 100%;
@@ -515,6 +687,12 @@
       height: 80px;
       background: $white;
       margin-right: 14px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     &Text {
@@ -528,6 +706,11 @@
         font-size: 14px;
         font-weight: 500;
         margin-top: 60px;
+      }
+
+      span {
+        font-size: 14px;
+        display: block;
       }
     }
 

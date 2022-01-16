@@ -299,6 +299,47 @@
       }
     }
 
+    &__input {
+      max-width: 220px;
+      width: 100%;
+      margin: 0 auto 40px;
+
+      &Item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      &Text {
+        color: $cyan;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      &Label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      &Content {
+        color: $cyan;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      &Box {
+        height: 55px;
+        width: 55px;
+        margin-right: 5px;
+        border-radius: 5px;
+        font-size: 18px;
+        border: 2px solid $cyan;
+        padding: 0 5px;
+      }
+    }
+
     &__choice {
       display: flex;
       align-items: center;

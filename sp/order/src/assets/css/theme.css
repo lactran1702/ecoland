@@ -826,6 +826,35 @@ img {
       color: #029E9E;
       font-size: 18px;
       font-weight: bold; }
+  .ecoSp .ecoOrder__input {
+    max-width: 220px;
+    width: 100%;
+    margin: 0 auto 40px; }
+    .ecoSp .ecoOrder__inputItem {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; }
+    .ecoSp .ecoOrder__inputText {
+      color: #029E9E;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 10px; }
+    .ecoSp .ecoOrder__inputLabel {
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+    .ecoSp .ecoOrder__inputContent {
+      color: #029E9E;
+      font-size: 18px;
+      font-weight: bold; }
+    .ecoSp .ecoOrder__inputBox {
+      height: 55px;
+      width: 55px;
+      margin-right: 5px;
+      border-radius: 5px;
+      font-size: 18px;
+      border: 2px solid #029E9E;
+      padding: 0 5px; }
   .ecoSp .ecoOrder__choice {
     display: flex;
     align-items: center;
