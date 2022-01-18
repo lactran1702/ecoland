@@ -991,15 +991,19 @@ img {
       margin-bottom: 15px; }
     .ecoOrder__furnitureRow {
       display: flex;
-      align-items: flex-start;
-      justify-content: space-between; }
+      flex-wrap: wrap;
+      margin: 0 -12px; }
       .ecoOrder__furnitureRow .ecoOrder__furnitureItem--default {
         width: 50%; }
     .ecoOrder__furnitureItem {
-      width: calc(100% / 3);
-      margin: 0 25px 25px 0;
+      width: calc(100% / 3 - 24px);
+      margin: 0 12px 24px;
       border-radius: 5px;
-      background-color: #fff; }
+      background-color: #fff;
+      border: 2px solid #029E9E;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
       .ecoOrder__furnitureItem:last-child {
         margin-right: 0; }
       .ecoOrder__furnitureItem--default {
@@ -1095,10 +1099,7 @@ img {
         display: block; }
     .ecoOrder__furnitureContent {
       padding-top: 0;
-      border: 2px solid #029E9E;
-      border-top: none;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px; }
+      height: calc(100% - 195px); }
       .ecoOrder__furnitureContentItem {
         margin-bottom: 10px;
         padding: 0 10px;
@@ -1116,7 +1117,51 @@ img {
         padding: 0 15px; }
         .ecoOrder__furnitureContentRowItem {
           display: flex;
-          align-items: center; }
+          align-items: center;
+          flex-wrap: wrap; }
+          .ecoOrder__furnitureContentRowItemCheck {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px; }
+            .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkMark {
+              width: 18px;
+              height: 18px;
+              border: 1px solid #029E9E;
+              border-radius: 0;
+              box-sizing: border-box; }
+            .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkBox:checked ~ .ecoOrder__checkMark {
+              background-color: #fff;
+              border: 1px solid #029E9E; }
+            .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkMark::after {
+              width: 3px;
+              height: 6px;
+              border-width: 0 2px 2px 0;
+              border-color: #029E9E; }
+            .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkContent {
+              font-size: 14px;
+              color: #333;
+              font-weight: normal; }
+            .ecoOrder__furnitureContentRowItemCheck .Button {
+              margin-left: 18px;
+              width: 100px !important;
+              font-size: 12px;
+              line-height: 24px;
+              height: 24px; }
+          .ecoOrder__furnitureContentRowItemHolder {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -4px 24px; }
+            .ecoOrder__furnitureContentRowItemHolderItem {
+              margin: 0 4px;
+              width: 90px;
+              height: 90px;
+              border-radius: 5px;
+              overflow: hidden; }
+              .ecoOrder__furnitureContentRowItemHolderItem img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                   object-fit: cover; }
       .ecoOrder__furnitureContentText {
         font-size: 12px;
         color: #333;
@@ -1126,6 +1171,8 @@ img {
         .ecoOrder__furnitureContentText--bold {
           font-size: 14px;
           font-weight: bold; }
+        .ecoOrder__furnitureContentText--cyan {
+          color: #029E9E; }
       .ecoOrder__furnitureContentInput {
         margin: 0;
         border-radius: 5px;
