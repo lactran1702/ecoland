@@ -121,6 +121,10 @@
     &--center {
       text-align: center;
     }
+
+    &--step12 {
+      margin: 70px 0;
+    }
   }
 
   &__charge {
@@ -1066,6 +1070,10 @@
       font-weight: bold;
       color: $text;
       margin-bottom: 10px;
+
+      &--cyan {
+        color: $cyan;
+      }
     }
 
     &Require {
@@ -1160,6 +1168,10 @@
       color: $text;
       margin-bottom: 14px;
 
+      &--pink {
+        color: $pink;
+      }
+
       span {
         color: $pink;
       }
@@ -1235,6 +1247,10 @@
         font-size: 14px;
         color: $text;
       }
+    }
+
+    &--fWidth {
+      width: 100%;
     }
   }
 
