@@ -725,6 +725,15 @@
         margin-bottom: 10px;
         padding: 0 10px;
         display: none;
+
+        &--row {
+          display: flex !important;
+          align-items: center;
+
+          .ecoOrder__furnitureContentTitle {
+            margin-bottom: 0;
+          }
+        }
       }
 
       &Title {
@@ -858,6 +867,12 @@
           font-weight: bold;
         }
       }
+
+      &Line {
+        margin: 20px 0 10px;
+        border: none;
+        background-color: $cyan;
+      }
     }
 
     &Icon {
@@ -956,21 +971,21 @@
   }
 
   &__packing {
-    max-width: 676px;
+    max-width: 870px;
     width: 100%;
     margin: 0 auto 100px;
     border: 2px solid $cyan;
     border-radius: 5px;
+    padding-top: 25px;
 
     &Wrap {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
-      padding-top: 25px;
-      margin-bottom: 10px;
     }
 
     &Item {
+      display: flex;
+      align-items: center;
       margin: 0 35px 15px;
 
       .ecoOrder__checkMark {
@@ -992,6 +1007,22 @@
         font-weight: bold;
         color: $text;
         line-height: 18px;
+      }
+
+      &Input {
+        margin-left: 10px;
+
+        &Text {
+          width: 38px;
+          height: 21px;
+          line-height: 21px;
+          border: 1px solid $cyan;
+          border-radius: 5px;
+          margin: 0;
+          padding: 0;
+          text-align: right;
+          padding: 0 5px;
+        }
       }
     }
 

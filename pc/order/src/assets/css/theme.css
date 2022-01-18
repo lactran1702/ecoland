@@ -1104,6 +1104,11 @@ img {
         margin-bottom: 10px;
         padding: 0 10px;
         display: none; }
+        .ecoOrder__furnitureContentItem--row {
+          display: flex !important;
+          align-items: center; }
+          .ecoOrder__furnitureContentItem--row .ecoOrder__furnitureContentTitle {
+            margin-bottom: 0; }
       .ecoOrder__furnitureContentTitle {
         font-size: 14px;
         font-weight: bold;
@@ -1197,6 +1202,10 @@ img {
           color: #e74b9c;
           font-size: 24px;
           font-weight: bold; }
+      .ecoOrder__furnitureContentLine {
+        margin: 20px 0 10px;
+        border: none;
+        background-color: #029E9E; }
     .ecoOrder__furnitureIcon {
       margin: 50px auto;
       width: 30px; }
@@ -1260,18 +1269,18 @@ img {
       .ecoOrder__furnitureNote--pink {
         color: #e74b9c; }
   .ecoOrder__packing {
-    max-width: 676px;
+    max-width: 870px;
     width: 100%;
     margin: 0 auto 100px;
     border: 2px solid #029E9E;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding-top: 25px; }
     .ecoOrder__packingWrap {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      padding-top: 25px;
-      margin-bottom: 10px; }
+      flex-wrap: wrap; }
     .ecoOrder__packingItem {
+      display: flex;
+      align-items: center;
       margin: 0 35px 15px; }
       .ecoOrder__packingItem .ecoOrder__checkMark {
         width: 18px;
@@ -1288,6 +1297,18 @@ img {
         font-weight: bold;
         color: #333;
         line-height: 18px; }
+      .ecoOrder__packingItemInput {
+        margin-left: 10px; }
+        .ecoOrder__packingItemInputText {
+          width: 38px;
+          height: 21px;
+          line-height: 21px;
+          border: 1px solid #029E9E;
+          border-radius: 5px;
+          margin: 0;
+          padding: 0;
+          text-align: right;
+          padding: 0 5px; }
     .ecoOrder__packingTotal {
       display: flex;
       align-items: center;
