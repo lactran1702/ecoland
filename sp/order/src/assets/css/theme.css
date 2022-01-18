@@ -969,11 +969,25 @@ img {
     border-right: none;
     text-align: center;
     margin-bottom: 30px; }
+    .ecoSp .ecoOrder__tagline--fix {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      z-index: 4;
+      background-color: #fff;
+      padding: 18px 20px; }
+      .ecoSp .ecoOrder__tagline--fix .ecoOrder__taglineSpan {
+        color: #e74b9c; }
   .ecoSp .ecoOrder__furniture {
     width: 100%;
     margin-bottom: 50px; }
     .ecoSp .ecoOrder__furniture > .ecoOrder__text {
       margin-bottom: 15px; }
+    .ecoSp .ecoOrder__furnitureWrap.is-hide {
+      display: none; }
     .ecoSp .ecoOrder__furnitureRow .ecoOrder__furnitureItem--default {
       width: 100%; }
     .ecoSp .ecoOrder__furnitureItem {
