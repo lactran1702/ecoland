@@ -1106,8 +1106,13 @@
         align-items: center;
         justify-content: space-between;
 
+        .ecoOrder__formRowItem {
+          width: 48%;
+          justify-content: space-between;
+        }
+
         .ecoOrder__formInput {
-          width: auto;
+          width: calc(100% - 40px);
         }
 
         .ecoOrder__formText {
@@ -1134,6 +1139,10 @@
         .ecoOrder__formRowItem {
           margin-bottom: 10px;
         }
+      }
+
+      &--half {
+        width: 50%;
       }
     }
 
@@ -1230,7 +1239,6 @@
   }
 
   &__area {
-    max-width: 765px;
     width: 100%;
     height: 250px;
     margin: 0 auto;

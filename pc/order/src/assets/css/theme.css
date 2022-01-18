@@ -1361,8 +1361,11 @@ img {
         display: flex;
         align-items: center;
         justify-content: space-between; }
+        .ecoOrder__formRow--flex .ecoOrder__formRowItem {
+          width: 48%;
+          justify-content: space-between; }
         .ecoOrder__formRow--flex .ecoOrder__formInput {
-          width: auto; }
+          width: calc(100% - 40px); }
         .ecoOrder__formRow--flex .ecoOrder__formText {
           margin-right: 6px;
           margin-bottom: 0; }
@@ -1376,6 +1379,8 @@ img {
         margin-left: 10px; }
       .ecoOrder__formRow--column .ecoOrder__formRowItem {
         margin-bottom: 10px; }
+      .ecoOrder__formRow--half {
+        width: 50%; }
     .ecoOrder__formInput {
       border: 1px solid #333;
       border-radius: 5px;
@@ -1441,7 +1446,6 @@ img {
         font-size: 14px;
         color: #333; }
   .ecoOrder__area {
-    max-width: 765px;
     width: 100%;
     height: 250px;
     margin: 0 auto;
