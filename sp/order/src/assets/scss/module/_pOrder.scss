@@ -121,6 +121,10 @@
       &--pink {
         color: $pink;
       }
+
+      &--step12 {
+        margin: 70px 0;
+      }
     }
 
     &__charge {
@@ -179,7 +183,6 @@
         border: 2px solid $cyan;
         border-radius: 5px;
         padding: 24px 0;
-        width: 165px;
         width: calc(50% - 10px);
       }
 
@@ -300,14 +303,17 @@
     }
 
     &__input {
-      max-width: 220px;
-      width: 100%;
-      margin: 0 auto 40px;
+      margin-bottom: 60px;
+      padding-left: 30px;
 
       &Item {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+
+        &:last-child {
+          margin-left: 25%;
+        }
       }
 
       &Text {
@@ -369,64 +375,101 @@
       }
     }
 
+    &__category {
+      width: 100%;
+    }
+
+    &__queue {
+      width: 100%;
+
+      .ecoOrder__furnitureItem {
+        width: 100%;
+      }
+    }
+
     &__select {
+      width: 100%;
       margin-bottom: 50px;
+
+      &Title {
+        font-size: 24px;
+        font-weight: bold;
+        color: $cyan;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $cyan;
+        margin-bottom: 24px;
+      }
+
+      &Wrap {
+        margin-bottom: 60px;
+      }
 
       &Item {
         border-radius: 5px;
-        border: 1px solid transparent;
+        border: 2px solid $cyan;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
         &:last-child {
           margin-right: 0;
         }
 
         &.is-open {
-          .ecoOrder__selectLead {
-            border-top-right-radius: 5px;
-            border-top-left-radius: 5px;
-          }
+          .ecoOrder__select {
+            &Lead {
+              background-color: $cyan;
 
-          .ecoOrder__selectLeadIcon {
-            transform: rotate(0deg);
-            transition: $ease;
-          }
+              &Text {
+                color: $white;
+              }
 
-          .ecoOrder__selectOption {
-            display: block;
+              &::after {
+                background-image: url(../../assets/img/ico_arrow-right.png);
+                transform: rotate(90deg);
+                transition: $ease;
+              }
+            }
+
+            &Option {
+              display: block;
+            }
           }
         }
       }
 
       &Lead {
-        background: $cyan;
+        background: $white;
         padding: 15px 25px;
-        border-radius: 5px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         cursor: pointer;
+        transition: $ease;
+
+        &::after {
+          content: "";
+          width: 6px;
+          height: 12px;
+          display: block;
+          background-image: url(../../assets/img/ico_arrow-right-cyan.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 100% auto;
+          transform: rotate(0deg);
+          transition: $ease;
+        }
 
         &Text {
           font-size: 18px;
-          color: $white;
+          color: $cyan;
           font-weight: bold;
           margin-right: 12px;
-        }
-
-        &Icon {
-          width: 10px;
-          transform: rotate(-90deg);
           transition: $ease;
         }
       }
 
       &Option {
         width: 100%;
-        border: 1px solid $cyan;
-        border-top: none;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
         display: none;
 
         &Item {
@@ -436,6 +479,8 @@
           width: 100%;
           padding: 10px 25px;
           border-bottom: 1px solid $cyan;
+          transition: $ease;
+          cursor: pointer;
 
           &:last-child {
             border: none;
@@ -445,6 +490,7 @@
         &Text {
           font-size: 18px;
           color: $cyan;
+          transition: $ease;
 
           &--bold {
             font-weight: bold;
@@ -468,12 +514,26 @@
       width: 100%;
       margin-bottom: 50px;
 
+      > .ecoOrder__text {
+        margin-bottom: 15px;
+      }
+
+      &Row {
+
+        .ecoOrder__furnitureItem--default {
+          width: 100%;
+        }
+      }
+
       &Item {
-        width: calc(100% / 3);
         width: 100%;
         margin-bottom: 10px;
         border-radius: 5px;
         background-color: $white;
+        border: 2px solid $cyan;
+        border-top: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
 
         &:last-child {
           margin-right: 0;
@@ -482,13 +542,44 @@
         &--default {
           border: none;
           border-radius: 0;
+          margin-bottom: 10px;
 
           .ecoOrder__furnitureLead {
-            background: url(../../assets/img/ico_close.png) no-repeat center;
-            background-position: right 15px center;
-            background-size: 14px auto;
+            background: none;
             background-color: $cyan;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            &--white {
+              background-color: $white;
+              border: 2px solid $cyan;
+
+              .ecoOrder__furnitureText {
+                color: $cyan;
+              }
+
+              .ecoOrder__furnitureButton {
+                background: url(../../assets/img/ico_close-cyan.png) no-repeat
+                  center;
+                background-position: center;
+                background-size: 14px auto;
+                transform: rotate(45deg);
+              }
+            }
+          }
+
+          .ecoOrder__furnitureButton {
+            display: block;
+            width: 14px;
+            height: 14px;
+            background: url(../../assets/img/ico_close.png) no-repeat center;
+            background-position: center;
+            background-size: 14px auto;
             border-radius: 5px;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin-top: -7px;
           }
         }
 
@@ -519,6 +610,7 @@
       }
 
       &Lead {
+        position: relative;
         display: flex;
         align-items: center;
         width: 100%;
@@ -539,6 +631,12 @@
         height: 80px;
         background: $white;
         margin-right: 14px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
 
       &Text {
@@ -553,19 +651,30 @@
           font-weight: 500;
           margin-top: 60px;
         }
+
+        span {
+          font-size: 14px;
+          display: block;
+        }
       }
 
       &Content {
         padding-top: 0;
-        border: 2px solid $cyan;
-        border-top: none;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        height: calc(100% - 195px);
 
         &Item {
           margin-bottom: 10px;
           padding: 0 10px;
           display: none;
+
+          &--row {
+            display: flex !important;
+            align-items: center;
+
+            .ecoOrder__furnitureContentTitle {
+              margin-bottom: 0;
+            }
+          }
         }
 
         &Title {
@@ -583,7 +692,67 @@
           &Item {
             display: flex;
             align-items: center;
-            margin: 0 5px;
+            flex-wrap: wrap;
+
+            &Check {
+              display: flex;
+              align-items: center;
+              margin-bottom: 24px;
+
+              .ecoOrder__checkMark {
+                width: 18px;
+                height: 18px;
+                border: 1px solid $cyan;
+                border-radius: 0;
+                box-sizing: border-box;
+              }
+
+              .ecoOrder__checkBox:checked ~ .ecoOrder__checkMark {
+                background-color: $white;
+                border: 1px solid $cyan;
+              }
+
+              .ecoOrder__checkMark::after {
+                width: 3px;
+                height: 6px;
+                border-width: 0 2px 2px 0;
+                border-color: $cyan;
+              }
+
+              .ecoOrder__checkContent {
+                font-size: 14px;
+                color: $text;
+                font-weight: normal;
+              }
+
+              .Button {
+                margin-left: 18px;
+                width: 100px !important;
+                font-size: 12px !important;
+                line-height: 24px !important;
+                height: 24px !important;
+              }
+            }
+
+            &Holder {
+              display: flex;
+              flex-wrap: wrap;
+              margin: 0 -4px 24px;
+
+              &Item {
+                margin: 0 4px;
+                width: calc(100% / 3 - 8px);
+                height: 90px;
+                border-radius: 5px;
+                overflow: hidden;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
           }
         }
 
@@ -599,6 +768,10 @@
           &--bold {
             font-size: 14px;
             font-weight: bold;
+          }
+
+          &--cyan {
+            color: $cyan;
           }
         }
 
@@ -632,6 +805,12 @@
             font-size: 24px;
             font-weight: bold;
           }
+        }
+
+        &Line {
+          margin: 20px 0 10px;
+          border: none;
+          background-color: $cyan;
         }
       }
 
@@ -695,7 +874,6 @@
         }
 
         &Left {
-          // width: 50%;
           width: 100%;
         }
 
@@ -742,23 +920,21 @@
     }
 
     &__packing {
-      max-width: 676px;
       width: 100%;
       margin: 0 auto 40px;
       border: 2px solid $cyan;
       border-radius: 5px;
+      padding-top: 25px;
 
       &Wrap {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        padding-top: 20px;
-        margin-bottom: 10px;
       }
 
       &Item {
+        display: flex;
+        align-items: center;
         margin: 0 10px 15px;
-        width: calc(50% - 20px);
 
         .ecoOrder__checkMark {
           width: 18px;
@@ -779,13 +955,33 @@
           font-weight: bold;
           color: $text;
           line-height: 18px;
+
+          &--big {
+            width: 150px;
+          }
+        }
+
+        &Input {
+          margin-left: 10px;
+
+          &Text {
+            width: 38px;
+            height: 21px;
+            line-height: 21px;
+            border: 1px solid $cyan;
+            border-radius: 5px;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            padding: 0 5px;
+          }
         }
       }
 
       &Total {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding: 10px 25px;
         border-top: 1px solid $cyan;
 
@@ -821,6 +1017,10 @@
         font-weight: bold;
         color: $text;
         margin-bottom: 10px;
+
+        &--cyan {
+          color: $cyan;
+        }
       }
 
       &Require {
@@ -836,12 +1036,11 @@
         &Item {
           display: flex;
           align-items: center;
-          // width: 50%;
-          margin-right: 15px;
+              margin-right: 15px;
 
-          &:last-child {
-            margin-right: 0;
-          }
+              &:last-child {
+                margin-right: 0;
+              }
         }
 
         &--small {
@@ -865,11 +1064,9 @@
         &--flex {
           display: flex;
           align-items: center;
-          // justify-content: space-between;
           width: 100%;
 
           .ecoOrder__formInput {
-            // width: auto;
             width: 120px;
           }
 
@@ -897,7 +1094,12 @@
 
           .ecoOrder__formRowItem {
             margin-bottom: 10px;
+            flex-wrap: wrap;
           }
+        }
+
+        &--half {
+          width: 50%;
         }
       }
 
@@ -914,6 +1116,10 @@
         font-size: 14px;
         color: $text;
         margin-bottom: 14px;
+
+        &--pink {
+          color: $pink;
+        }
 
         span {
           color: $pink;
@@ -996,12 +1202,15 @@
           color: $text;
         }
       }
+
+      &--fWidth {
+        width: 100%;
+      }
     }
 
     &__area {
-      max-width: 765px;
       width: 100%;
-      height: 200px;
+          height: 200px;
       margin: 0 auto;
       color: $text;
       font-size: 14px;
