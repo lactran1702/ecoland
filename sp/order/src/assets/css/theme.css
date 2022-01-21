@@ -747,7 +747,14 @@ img {
       border: 2px solid #029E9E;
       border-radius: 5px;
       padding: 24px 0;
-      width: calc(50% - 10px); }
+      width: calc(50% - 10px);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+      transform: translateY(0);
+      transition: all 0.3s ease; }
+      .ecoSp .ecoOrder__listItem.is-active {
+        box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+        transition: all 0.3s ease; }
     .ecoSp .ecoOrder__listOverlay {
       position: absolute;
       top: 0;
@@ -833,7 +840,7 @@ img {
     .ecoSp .ecoOrder__inputItem {
       display: flex;
       align-items: center;
-      margin-bottom: 10px; }
+      margin-bottom: 20px; }
       .ecoSp .ecoOrder__inputItem:last-child {
         margin-left: 25%; }
     .ecoSp .ecoOrder__inputText {
@@ -844,7 +851,17 @@ img {
     .ecoSp .ecoOrder__inputLabel {
       display: flex;
       align-items: center;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative; }
+    .ecoSp .ecoOrder__inputError {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      color: red;
+      font-size: 12px;
+      display: none; }
+      .ecoSp .ecoOrder__inputError.is-error {
+        display: block; }
     .ecoSp .ecoOrder__inputContent {
       color: #029E9E;
       font-size: 18px;
@@ -857,6 +874,8 @@ img {
       font-size: 18px;
       border: 2px solid #029E9E;
       padding: 0 5px; }
+      .ecoSp .ecoOrder__inputBox.is-error {
+        border-color: red; }
   .ecoSp .ecoOrder__choice {
     display: flex;
     align-items: center;
@@ -876,7 +895,7 @@ img {
       border-radius: 5px;
       background: #fff;
       transition: all 0.3s ease; }
-      .ecoSp .ecoOrder__choiceItem:hover {
+      .ecoSp .ecoOrder__choiceItem:hover, .ecoSp .ecoOrder__choiceItem.is-active {
         color: #fff;
         background-color: #029E9E;
         transition: all 0.3s ease; }
@@ -1347,20 +1366,25 @@ img {
           margin-right: 0; }
       .ecoSp .ecoOrder__formRow--small {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        flex-wrap: wrap; }
         .ecoSp .ecoOrder__formRow--small .ecoOrder__formInput {
           width: 55px; }
       .ecoSp .ecoOrder__formRow--medium {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        flex-wrap: wrap; }
         .ecoSp .ecoOrder__formRow--medium .ecoOrder__formInput {
           width: 90px; }
       .ecoSp .ecoOrder__formRow--flex {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         width: 100%; }
+        .ecoSp .ecoOrder__formRow--flex .ecoOrder__formRowItem {
+          flex-wrap: wrap;
+          justify-content: space-between; }
         .ecoSp .ecoOrder__formRow--flex .ecoOrder__formInput {
-          width: 120px; }
+          width: calc(100% - 40px); }
         .ecoSp .ecoOrder__formRow--flex .ecoOrder__formText {
           margin-right: 6px;
           margin-bottom: 0; }
@@ -1386,6 +1410,17 @@ img {
       height: 30px;
       line-height: 30px;
       margin: 0; }
+      .ecoSp .ecoOrder__formInput.is-error {
+        border-color: red; }
+    .ecoSp .ecoOrder__formError {
+      font-size: 12px;
+      color: red;
+      width: 100%;
+      display: none; }
+      .ecoSp .ecoOrder__formError.is-error {
+        display: block; }
+      .ecoSp .ecoOrder__formError.pl40 {
+        padding-left: 40px; }
     .ecoSp .ecoOrder__formText {
       font-size: 14px;
       color: #333;
