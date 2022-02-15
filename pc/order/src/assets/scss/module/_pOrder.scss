@@ -594,7 +594,7 @@
       margin: 0 -12px;
 
       .ecoOrder__furnitureItem--default {
-        width: 50%;
+        width: calc(50% - 24px);
       }
     }
 

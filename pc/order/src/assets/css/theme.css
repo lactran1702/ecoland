@@ -1011,7 +1011,7 @@ img {
       flex-wrap: wrap;
       margin: 0 -12px; }
       .ecoOrder__furnitureRow .ecoOrder__furnitureItem--default {
-        width: 50%; }
+        width: calc(50% - 24px); }
     .ecoOrder__furnitureItem {
       width: calc(100% / 3 - 24px);
       margin: 0 12px 24px;
