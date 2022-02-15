@@ -1144,13 +1144,16 @@ img {
           .ecoOrder__furnitureContentRowItemCheck {
             display: flex;
             align-items: center;
-            margin-bottom: 24px; }
+            margin-bottom: 24px;
+            flex-wrap: wrap; }
             .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkMark {
               width: 18px;
               height: 18px;
               border: 1px solid #029E9E;
               border-radius: 0;
               box-sizing: border-box; }
+              .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkMark.is-error {
+                border-color: red; }
             .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkBox:checked ~ .ecoOrder__checkMark {
               background-color: #fff;
               border: 1px solid #029E9E; }
@@ -1461,6 +1464,8 @@ img {
       background: url(../../assets/img/ico_arrow-down-black.png) no-repeat center;
       background-size: 8px auto;
       background-position: right 15px center; }
+      .ecoOrder__formSelect--calendar {
+        background: none; }
     .ecoOrder__formWrap {
       margin-bottom: 40px; }
       .ecoOrder__formWrap .ecoOrder__formText {

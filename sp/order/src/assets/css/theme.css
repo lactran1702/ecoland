@@ -1131,13 +1131,16 @@ img {
           .ecoSp .ecoOrder__furnitureContentRowItemCheck {
             display: flex;
             align-items: center;
-            margin-bottom: 24px; }
+            margin-bottom: 24px;
+            flex-wrap: wrap; }
             .ecoSp .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkMark {
               width: 18px;
               height: 18px;
               border: 1px solid #029E9E;
               border-radius: 0;
               box-sizing: border-box; }
+              .ecoSp .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkMark.is-error {
+                border-color: red; }
             .ecoSp .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkBox:checked ~ .ecoOrder__checkMark {
               background-color: #fff;
               border: 1px solid #029E9E; }
@@ -1159,6 +1162,7 @@ img {
           .ecoSp .ecoOrder__furnitureContentRowItemHolder {
             display: flex;
             flex-wrap: wrap;
+            width: 100%;
             margin: 0 -4px 24px; }
             .ecoSp .ecoOrder__furnitureContentRowItemHolderItem {
               margin: 0 4px;
@@ -1298,6 +1302,8 @@ img {
         height: 18px;
         border-radius: 0;
         border-width: 1px; }
+        .ecoSp .ecoOrder__packingItem .ecoOrder__checkMark.is-error {
+          border-color: red; }
       .ecoSp .ecoOrder__packingItem .ecoOrder__checkMark::after {
         width: 3px;
         height: 6px;
@@ -1461,6 +1467,8 @@ img {
       background: url(../../assets/img/ico_arrow-down-black.png) no-repeat center;
       background-size: 8px auto;
       background-position: right 15px center; }
+      .ecoSp .ecoOrder__formSelect--calendar {
+        background: none; }
     .ecoSp .ecoOrder__formWrap {
       margin-bottom: 40px; }
       .ecoSp .ecoOrder__formWrap .ecoOrder__formText {

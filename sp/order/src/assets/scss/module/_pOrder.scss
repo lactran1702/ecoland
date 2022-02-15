@@ -747,6 +747,7 @@
               display: flex;
               align-items: center;
               margin-bottom: 24px;
+              flex-wrap: wrap;
 
               .ecoOrder__checkMark {
                 width: 18px;
@@ -754,6 +755,9 @@
                 border: 1px solid $cyan;
                 border-radius: 0;
                 box-sizing: border-box;
+                &.is-error {
+                  border-color: red;
+                }
               }
 
               .ecoOrder__checkBox:checked ~ .ecoOrder__checkMark {
@@ -786,6 +790,7 @@
             &Holder {
               display: flex;
               flex-wrap: wrap;
+              width: 100%;
               margin: 0 -4px 24px;
 
               &Item {
@@ -990,6 +995,9 @@
           height: 18px;
           border-radius: 0;
           border-width: 1px;
+          &.is-error {
+            border-color: red;
+          }
         }
 
         .ecoOrder__checkMark::after {
@@ -1240,6 +1248,10 @@
           center;
         background-size: 8px auto;
         background-position: right 15px center;
+
+        &--calendar {
+          background: none;
+        }
       }
 
       &Wrap {
