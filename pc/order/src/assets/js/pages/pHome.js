@@ -1,14 +1,11 @@
-
-
 //
 // pHome.js
 // Page module
 //
 
-'use strict';
+"use strict";
 
 var pHome = (function () {
-
   //
   // Variables
   //
@@ -16,8 +13,8 @@ var pHome = (function () {
   // Functions
   //
   function init() {
-    console.log('<pHome> => INIT!');
-    $(window).on('resize', onResize);
+    console.log("<pHome> => INIT!");
+    $(window).on("resize", onResize);
     onResize();
     // PRELOADER.hide();
     // alert('pHome!');
@@ -25,7 +22,9 @@ var pHome = (function () {
 
   function onResize(e) {
     // do your fucking resizing
-    console.log('Browser size: ' + window.innerWidth + 'x' + window.innerHeight);
+    console.log(
+      "Browser size: " + window.innerWidth + "x" + window.innerHeight
+    );
   }
 
   //
@@ -38,5 +37,4 @@ var pHome = (function () {
   //
 
   return true;
-
 })();

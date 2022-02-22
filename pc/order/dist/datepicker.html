@@ -2,6 +2,13 @@
 <html lang="vi">
   <!-- HEAD
   ================================================== -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+    integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -9,7 +16,7 @@
     <meta http-equiv="content-language" content="en" />
 
     <!-- SEO -->
-    <title>PC-Order-form-step1</title>
+    <title>PC-Order-datepicker</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
@@ -52,6 +59,7 @@
   </head>
 
 
+
   <body>
     <!-- NAVBAR
     ================================================== -->
@@ -61,65 +69,13 @@
         <p class="ecoHeader__slogan">見積もりシミュレーション</p>
       </div>
     </header>
-    <section class="ecoOrder">
-      <div class="ecoOrder__wrap">
-        <p class="ecoOrder__step">1/12</p>
-        <h2 class="ecoOrder__head ecoOrder__head--exclam">はじめに以下をご確認ください。</h2>
-        <h3 class="ecoOrder__title">回収対応エリア</h3>
-        <div class="ecoOrder__collection">
-          <div class="ecoOrder__collectionColumn">
-            <div class="ecoOrder__collectionItem">
-              <p class="ecoOrder__collectionItemLocation">東京都</p>
-              <p class="ecoOrder__collectionItemCopy">全域</p>
-            </div>
-            <div class="ecoOrder__collectionItem">
-              <p class="ecoOrder__collectionItemLocation">埼玉県</p>
-              <p class="ecoOrder__collectionItemCopy">朝霞市、入間市、入間郡三芳町、川口市、狭山市、志木市、草加市、所沢市、戸田市、新座市、鳩ヶ谷市、富士見市、ふじみ野市、和光市、蕨市、さいたま市、<span>吉川市、越谷市、三郷市、八潮市、上尾市、川越市、日高市、飯能市</span></p>
-            </div>
-          </div>
-          <div class="ecoOrder__collectionColumn">
-            <div class="ecoOrder__collectionItem">
-              <p class="ecoOrder__collectionItemLocation">神奈川県</p>
-              <p class="ecoOrder__collectionItemCopy">川崎市、横浜市、<span>鎌倉市、逗子市、横須賀市、三浦市、葉山町、大和市、相模原市、藤沢市</span></p>
-            </div>
-            <div class="ecoOrder__collectionItem">
-              <p class="ecoOrder__collectionItemLocation">千葉県</p>
-              <p class="ecoOrder__collectionItemCopy">市川市、浦安市、<span>千葉市、習志野市、八千代市、船橋市、鎌ヶ谷市、松戸市、柏市、流山市</span></p>
-            </div>
-          </div>
-          <p class="ecoOrder__collectionText">※<span>赤字</span>のエリアは、基本料金が7,700円(税込)となります。また回収日のご指定はいただけますが、<strong>到着時間帯のご指定は承れません。</strong></p>
-        </div>
-        <div class="ecoOrder__charge">
-          <h3 class="ecoOrder__title">料金体系について</h3>
-          <p class="ecoOrder__text ecoOrder__text--center">エコランドでは以下の項目に則り、合計金額を算出します。</p>
-          <div class="ecoOrder__chargeRow">
-            <p class="ecoOrder__chargeItem">基本料金</p>
-            <p class="ecoOrder__chargeIcon"><img src="assets/img/ico_plus.png" alt="ico_plus"></p>
-            <p class="ecoOrder__chargeItem">品物別料金</p>
-            <p class="ecoOrder__chargeIcon"><img src="assets/img/ico_plus.png" alt="ico_plus"></p>
-            <p class="ecoOrder__chargeItem">特殊作業料金</p>
-          </div>
-          <div class="ecoOrder__chargeRow">
-            <p class="ecoOrder__chargeItem">時間指定料金</p>
-            <p class="ecoOrder__chargeIcon"><img src="assets/img/ico_plus.png" alt="ico_plus"></p>
-            <p class="ecoOrder__chargeItem">買取価格</p>
-          </div>
-          <div class="ecoOrder__chargeRow">
-            <p class="ecoOrder__chargeIcon"><img src="assets/img/ico_equal.png" alt="ico_equal"></p>
-          </div>
-          <div class="ecoOrder__chargeRow">
-            <p class="ecoOrder__chargeItem ecoOrder__chargeItem--pink">合計金額</p>
-          </div>
-          <p class="ecoOrder__chargeText">エコ回収では、出張費として1度の訪問につき、<strong>基本料金 税込3,300円（赤字のエリアは税込7,700円）</strong>を頂戴いたします。この先の質問にお答えいただく事により、合計支払金額の概算をご案内いたします。</p>
-          <p class="ecoOrder__chargeText">買取希望の商品は、<strong>お申込み後に買取査定のご案内をさせていただきます</strong>。WEB上で買取価格のご案内はできません。予めご了承ください。</p>
-          <p class="ecoOrder__chargeText">※弊社では、3階以上の階数からの吊り降ろし作業や、家電製品の吊り降ろし作業は行っておりません。ご了承ください。</p>
-          <p class="ecoOrder__chargeButton">
-            <a href="#" class="Button Button--pink">確認しました</a>
-          </p>
+    <section class="ecoUser">
+      <div style="margin: 350px auto; width: 500px">
+        <div class="ecoUser__datepicker">
+          <p>Date: <input type="text" id="datepicker" /></p>
         </div>
       </div>
     </section>
-  
 
     <!-- FOOTER
     ================================================== -->
@@ -176,6 +132,37 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(function () {
+        $("#datepicker").datepicker({
+          numberOfMonths: 2,
+          showButtonPanel: true,
+        });
+      });
+
+      
+
+      // jQuery(function ($) {
+      //   $.datepicker.regional["ja"] = {
+      //     closeText: "閉じる",
+      //     prevText: "&#x3C;前",
+      //     dateFormat: "yy/mm/dd",
+      //     firstDay: 0,
+      //     isRTL: false,
+      //     showMonthAfterYear: true,
+      //     yearSuffix: "年",
+      //   };
+      //   $.datepicker.setDefaults($.datepicker.regional["ja"]);
+      // });
+    </script>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <!-- <script src="./assets/js/pages/pHome.js"></script> -->
