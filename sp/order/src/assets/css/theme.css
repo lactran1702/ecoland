@@ -1115,7 +1115,8 @@ img {
     .ecoSp .ecoOrder__furnitureText {
       font-size: 24px;
       font-weight: bold;
-      color: #fff; }
+      color: #fff;
+      width: calc(100% - 114px); }
       .ecoSp .ecoOrder__furnitureText--pink {
         text-align: center;
         color: #e74b9c;
@@ -1149,7 +1150,8 @@ img {
         .ecoSp .ecoOrder__furnitureContentRowItem {
           display: flex;
           align-items: center;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          width: 100%; }
           .ecoSp .ecoOrder__furnitureContentRowItemCheck {
             display: flex;
             align-items: center;

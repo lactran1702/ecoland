@@ -1011,13 +1011,18 @@ img {
       flex-wrap: wrap;
       margin: 0 -12px; }
       .ecoOrder__furnitureRow .ecoOrder__furnitureItem--default {
-        width: calc(50% - 24px); }
+        width: calc(50% - 24px);
+        border: 2px solid #029E9E;
+        background-color: #fff;
+        border-radius: 5px;
+        transition: all 0.3s ease; }
+        .ecoOrder__furnitureRow .ecoOrder__furnitureItem--default:hover,
+        .ecoOrder__furnitureRow .ecoOrder__furnitureItem--default .is-active {
+          background-color: #029E9E;
+          transition: all 0.3s ease; }
     .ecoOrder__furnitureItem {
       width: calc(100% / 3 - 24px);
       margin: 0 12px 24px;
-      border-radius: 5px;
-      background-color: #fff;
-      border: 2px solid #029E9E;
       border-top: none;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px; }
@@ -1033,8 +1038,8 @@ img {
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px; }
           .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white {
-            background-color: #fff;
-            border: 2px solid #029E9E; }
+            background-color: transparent;
+            border: 2px solid transparent; }
             .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white .ecoOrder__furnitureText {
               color: #029E9E; }
             .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white .ecoOrder__furnitureButton {
@@ -1043,7 +1048,7 @@ img {
               background-size: 14px auto;
               transform: rotate(45deg); }
             .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white:hover {
-              background-color: #029E9E; }
+              background-color: transparent; }
               .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white:hover .ecoOrder__furnitureText {
                 color: #fff; }
               .ecoOrder__furnitureItem--default .ecoOrder__furnitureLead--white:hover .ecoOrder__furnitureButton {
@@ -1104,7 +1109,8 @@ img {
     .ecoOrder__furnitureText {
       font-size: 24px;
       font-weight: bold;
-      color: #fff; }
+      color: #fff;
+      width: calc(100% - 114px); }
       .ecoOrder__furnitureText--pink {
         text-align: center;
         color: #e74b9c;
@@ -1145,7 +1151,8 @@ img {
             display: flex;
             align-items: center;
             margin-bottom: 24px;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+            width: 100%; }
             .ecoOrder__furnitureContentRowItemCheck .ecoOrder__checkMark {
               width: 18px;
               height: 18px;
