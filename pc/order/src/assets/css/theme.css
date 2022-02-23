@@ -588,7 +588,7 @@ img {
 
 .ui-datepicker td a {
   position: relative; }
-  .ui-datepicker td a::after {
+  .ui-datepicker td a.is-show::after {
     content: "";
     background: url(../../assets/img/ico-money.png) no-repeat center;
     background-size: 100% auto;
@@ -608,7 +608,7 @@ html .ui-button.ui-state-disabled:active {
   line-height: 25px;
   background: #fff;
   padding: 0.2em 0.4em;
-  color: blue; }
+  color: #1c94c4; }
 
 .ui-state-active,
 .ui-widget-content .ui-state-active,
@@ -618,6 +618,9 @@ a.ui-button:active,
 .ui-button.ui-state-active:hover {
   color: #000;
   border-color: yellow; }
+
+.ui-datepicker-week-end a {
+  background: #ffd3d3 !important; }
 
 .ecoHeader {
   width: 100%;

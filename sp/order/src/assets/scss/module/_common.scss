@@ -8,11 +8,92 @@ img {
   width: auto;
 }
 
-// test
-// .formError {
-//   opacity: 0;
-//   visibility: hidden;
-// }
 .hideElm {
   display: none;
+}
+
+.ui-datepicker-buttonpane.ui-widget-content:before {
+  content: "";
+  background: url(../../assets/img/ico-money.png) no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  bottom: 23px;
+  left: 15px;
+}
+
+.ui-datepicker-buttonpane.ui-widget-content:after {
+  content: "マーク 早割引き（-¥1,080）";
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+}
+.ui-datepicker-buttonpane.ui-widget-content .ui-datepicker-close:before {
+  content: "会員割引以外の割引とは併用できません。";
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  font-weight: normal;
+  color: #000;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  display: none;
+}
+
+.ui-widget-header {
+  background: #f8b64a;
+  color: $white;
+  border-color: #f8b64a;
+}
+
+.ui-widget.ui-widget-content {
+  background: #eee;
+  width: 100% !important;
+  max-width: 350px;
+}
+
+.ui-datepicker td a {
+  position: relative;
+
+  &.is-show {
+    &::after {
+      content: "";
+      background: url(../../assets/img/ico-money.png) no-repeat center;
+      background-size: 100% auto;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 50%;
+      left: 3px;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  line-height: 25px;
+  background: #fff;
+  padding: 0.2em 0.4em;
+  color: #1c94c4;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  color: #000;
+  border-color: yellow;
+}
+
+.ui-datepicker-week-end a {
+  background: #ffd3d3 !important;
 }

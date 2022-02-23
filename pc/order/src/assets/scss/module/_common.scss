@@ -8,11 +8,6 @@ img {
   width: auto;
 }
 
-// test
-// .formError {
-//   opacity: 0;
-//   visibility: hidden;
-// }
 .hideElm {
   display: none;
 }
@@ -62,17 +57,18 @@ img {
 .ui-datepicker td a {
   position: relative;
 
-  &::after {
-    content: "";
-    background: url(../../assets/img/ico-money.png) no-repeat center;
-    background-size: 100% auto;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 50%;
-    left: 3px;
-    transform: translate(0, -50%);
-    // left: 15px;
+  &.is-show {
+    &::after {
+      content: "";
+      background: url(../../assets/img/ico-money.png) no-repeat center;
+      background-size: 100% auto;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 50%;
+      left: 3px;
+      transform: translate(0, -50%);
+    }
   }
 }
 
@@ -85,7 +81,7 @@ html .ui-button.ui-state-disabled:active {
   line-height: 25px;
   background: #fff;
   padding: 0.2em 0.4em;
-  color: blue;
+  color: #1c94c4;
 }
 
 .ui-state-active,
@@ -96,4 +92,8 @@ a.ui-button:active,
 .ui-button.ui-state-active:hover {
   color: #000;
   border-color: yellow;
+}
+
+.ui-datepicker-week-end a {
+  background: #ffd3d3 !important;
 }
