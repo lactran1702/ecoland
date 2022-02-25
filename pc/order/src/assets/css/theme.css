@@ -588,16 +588,6 @@ img {
 
 .ui-datepicker td a {
   position: relative; }
-  .ui-datepicker td a.is-show::after {
-    content: "";
-    background: url(../../assets/img/ico-money.png) no-repeat center;
-    background-size: 100% auto;
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 50%;
-    left: 3px;
-    transform: translate(0, -50%); }
 
 .ui-state-default,
 .ui-widget-content .ui-state-default,
@@ -621,6 +611,17 @@ a.ui-button:active,
 
 .ui-datepicker-week-end a {
   background: #ffd3d3 !important; }
+
+.dateToday a::after {
+  content: "";
+  background: url(../../assets/img/ico-money.png) no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translate(0, -50%); }
 
 .ecoHeader {
   width: 100%;
@@ -1097,9 +1098,8 @@ a.ui-button:active,
     .ecoOrder__furnitureItem {
       width: calc(100% / 3 - 24px);
       margin: 0 12px 24px;
-      border-top: none;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px; }
+      border: 2px solid #029E9E;
+      border-radius: 5px; }
       .ecoOrder__furnitureItem:last-child {
         margin-right: 0; }
       .ecoOrder__furnitureItem--default {
@@ -1161,9 +1161,6 @@ a.ui-button:active,
       align-items: center;
       width: 100%;
       padding: 10px;
-      border-radius: 5px;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
       background: url(../../assets/img/ico_arrow-right.png) no-repeat center;
       background-position: right 15px center;
       background-size: 8px auto;

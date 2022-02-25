@@ -56,20 +56,6 @@ img {
 
 .ui-datepicker td a {
   position: relative;
-
-  &.is-show {
-    &::after {
-      content: "";
-      background: url(../../assets/img/ico-money.png) no-repeat center;
-      background-size: 100% auto;
-      width: 15px;
-      height: 15px;
-      position: absolute;
-      top: 50%;
-      left: 3px;
-      transform: translate(0, -50%);
-    }
-  }
 }
 
 .ui-state-default,
@@ -96,4 +82,19 @@ a.ui-button:active,
 
 .ui-datepicker-week-end a {
   background: #ffd3d3 !important;
+}
+
+
+.dateToday a {
+  &::after {
+    content: "";
+    background: url(../../assets/img/ico-money.png) no-repeat center;
+    background-size: 100% auto;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translate(0, -50%);
+  }
 }

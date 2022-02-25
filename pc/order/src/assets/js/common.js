@@ -65,4 +65,4 @@ jQuery(function ($) {
 });
 
 
-// $('.ui-datepicker td a').addClass('is-show');
+$('.ui-datepicker td a').addClass('is-show');

@@ -59,7 +59,6 @@
   </head>
 
 
-
   <body>
     <!-- NAVBAR
     ================================================== -->
@@ -145,7 +144,28 @@
         $("#datepicker").datepicker({
           numberOfMonths: 2,
           showButtonPanel: true,
+          beforeShowDay: showDays,
         });
+        var cloDays = ["1", "2", "3", "4", "5"];
+        var now = new Date();
+        var next_date = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate() + 1
+        );
+        var discount_date = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate() + 14
+        );
+        function showDays(date) {
+          var sDate = date.getDay().toString();
+          if ($.inArray(sDate, cloDays) != -1 && date >= discount_date)
+            return [true, "dateToday", "discount"];
+          else if ($.inArray(sDate, cloDays) == -1 && date >= discount_date)
+            return [true, "dateToday", ""];
+          else return [true, ""];
+        }
       });
     </script>
 
