@@ -158,6 +158,11 @@
 
   &__product {
     margin-bottom: 20px;
+    background-color: #f7f7f7;
+
+    &Wrap {
+      padding: 0 30px 30px;
+    }
 
     &Img {
       margin: 0 auto 50px;
@@ -185,9 +190,10 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
+      justify-content: space-between;
 
       &Item {
-        margin: 0 28px 10px 0;
+        margin: 0 0 10px 0;
       }
 
       &Link {
@@ -203,17 +209,20 @@
         }
       }
 
-      &--long {
-        .ecoTop__productListItem {
-          margin-right: 18px;
-        }
-      }
+      // &--long {
+      //   .ecoTop__productListItem {
+      //     margin-right: 18px;
+      //   }
+      // }
 
       &--hideCheck {
-        margin-left: -20px;
         .ecoTop__productCheckMark {
           opacity: 0;
           visibility: hidden;
+          display: none;
+        }
+        .ecoTop__productCheckText {
+          padding-left: 0;
         }
       }
     }
