@@ -138,8 +138,9 @@
     }
 
     &__product {
-      padding: 46px 26px 0;
-      margin-bottom: 20px;
+      padding: 46px 15px 20px;
+      margin: 15px 15px 20px;
+      background-color: #f7f7f7;
 
       &Img {
         margin: 0 auto 25px;
@@ -166,6 +167,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        margin-left: 20px;
 
         &Item {
           width: 50%;
@@ -186,7 +188,6 @@
         }
 
         &--hideCheck {
-          margin-left: -20px;
           .ecoTop__productCheckMark {
             opacity: 0;
             visibility: hidden;

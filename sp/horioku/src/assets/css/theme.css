@@ -898,8 +898,9 @@ img {
     font-size: 22px; }
 
 .ecoSp .ecoTop__product {
-  padding: 46px 26px 0;
-  margin-bottom: 20px; }
+  padding: 46px 15px 20px;
+  margin: 15px 15px 20px;
+  background-color: #f7f7f7; }
   .ecoSp .ecoTop__productImg {
     margin: 0 auto 25px; }
     .ecoSp .ecoTop__productImg img {
@@ -916,7 +917,8 @@ img {
   .ecoSp .ecoTop__productList {
     display: flex;
     flex-wrap: wrap;
-    width: 100%; }
+    width: 100%;
+    margin-left: 20px; }
     .ecoSp .ecoTop__productListItem {
       width: 50%;
       margin-bottom: 10px; }
@@ -929,11 +931,9 @@ img {
       .ecoSp .ecoTop__productListLink:hover {
         color: #029E9E;
         transition: all 0.3s ease; }
-    .ecoSp .ecoTop__productList--hideCheck {
-      margin-left: -20px; }
-      .ecoSp .ecoTop__productList--hideCheck .ecoTop__productCheckMark {
-        opacity: 0;
-        visibility: hidden; }
+    .ecoSp .ecoTop__productList--hideCheck .ecoTop__productCheckMark {
+      opacity: 0;
+      visibility: hidden; }
   .ecoSp .ecoTop__productCheck {
     cursor: pointer;
     display: flex;
