@@ -51,5 +51,12 @@
 // }
 
 // IPHONE 5 PORTRAIT 320x568
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) and (max-height: 700px) {
+  .ecoSp .ecoOrder__queue.is-open .ecoOrder__furnitureWrap {
+    height: 80vh;
+  }
+  
+  .ecoSp .ecoOrder__queue.is-open .ecoOrder__furnitureWrapContent {
+    height: 70vh;
+  }
 }
