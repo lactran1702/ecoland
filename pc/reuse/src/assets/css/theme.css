@@ -955,8 +955,17 @@ img {
     color: #e74b9c; }
 
 .ecoReuse__button {
-  display: block;
-  margin-bottom: 16px; }
+  height: 36px;
+  line-height: 36px;
+  color: #029E9E;
+  border: 2px solid #029E9E;
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 18px;
+  font-size: 14px; }
 
 .ecoReuse__faq {
   margin-bottom: 25px; }
